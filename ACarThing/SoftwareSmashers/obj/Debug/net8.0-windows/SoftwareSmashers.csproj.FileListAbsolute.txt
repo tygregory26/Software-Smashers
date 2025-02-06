@@ -1,0 +1,17 @@
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\bin\Debug\net8.0-windows\SoftwareSmashers.exe
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\bin\Debug\net8.0-windows\SoftwareSmashers.deps.json
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\bin\Debug\net8.0-windows\SoftwareSmashers.runtimeconfig.json
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\bin\Debug\net8.0-windows\SoftwareSmashers.dll
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\bin\Debug\net8.0-windows\SoftwareSmashers.pdb
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.Form1.resources
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.csproj.GenerateResource.cache
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.AssemblyInfoInputs.cache
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.AssemblyInfo.cs
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.csproj.CoreCompileInputs.cache
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.sourcelink.json
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.dll
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\refint\SoftwareSmashers.dll
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.pdb
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.genruntimeconfig.cache
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\ref\SoftwareSmashers.dll
