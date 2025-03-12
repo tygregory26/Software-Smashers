@@ -1,6 +1,6 @@
 ﻿namespace SoftwareSmashers
 {
-    partial class Form1
+    partial class ACarThing
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            menu1 = new Menu();
             SuspendLayout();
             // 
-            // Form1
+            // menu1
+            // 
+            menu1.Location = new Point(0, 0);
+            menu1.Name = "menu1";
+            menu1.Size = new Size(267, 844);
+            menu1.TabIndex = 0;
+            // 
+            // ACarThing
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Name = "Form1";
-            Text = "Form1";
+            ClientSize = new Size(1531, 842);
+            Controls.Add(menu1);
+            ForeColor = SystemColors.ControlText;
+            Name = "ACarThing";
+            Text = "Software Smashers";
             Load += Form1_Load;
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Menu menu1;
     }
 }
