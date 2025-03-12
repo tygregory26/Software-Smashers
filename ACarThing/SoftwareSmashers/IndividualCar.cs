@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SoftwareSmashers
 {
-    public partial class Menu : UserControl
+    public partial class IndividualCar : UserControl
     {
-        public Menu()
+        public IndividualCar()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

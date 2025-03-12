@@ -45,6 +45,7 @@
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -66,7 +67,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(36, 469);
+            button4.Location = new Point(33, 469);
             button4.Name = "button4";
             button4.Size = new Size(191, 69);
             button4.TabIndex = 3;
@@ -96,6 +97,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSalmon;
             Controls.Add(pictureBox1);
             Controls.Add(button5);
             Controls.Add(button4);

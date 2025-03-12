@@ -29,20 +29,48 @@
         private void InitializeComponent()
         {
             menu1 = new Menu();
+            myCars1 = new MyCars();
+            individualCar1 = new IndividualCar();
+            settings1 = new Settings();
             SuspendLayout();
             // 
             // menu1
             // 
+            menu1.BackColor = Color.LightSalmon;
             menu1.Location = new Point(0, 0);
             menu1.Name = "menu1";
             menu1.Size = new Size(267, 844);
             menu1.TabIndex = 0;
+            // 
+            // myCars1
+            // 
+            myCars1.Location = new Point(267, 0);
+            myCars1.Name = "myCars1";
+            myCars1.Size = new Size(1264, 844);
+            myCars1.TabIndex = 1;
+            // 
+            // individualCar1
+            // 
+            individualCar1.Location = new Point(267, 0);
+            individualCar1.Name = "individualCar1";
+            individualCar1.Size = new Size(1264, 844);
+            individualCar1.TabIndex = 2;
+            // 
+            // settings1
+            // 
+            settings1.Location = new Point(267, 0);
+            settings1.Name = "settings1";
+            settings1.Size = new Size(1264, 844);
+            settings1.TabIndex = 3;
             // 
             // ACarThing
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1531, 842);
+            Controls.Add(settings1);
+            Controls.Add(individualCar1);
+            Controls.Add(myCars1);
             Controls.Add(menu1);
             ForeColor = SystemColors.ControlText;
             Name = "ACarThing";
@@ -54,5 +82,8 @@
         #endregion
 
         private Menu menu1;
+        private MyCars myCars1;
+        private IndividualCar individualCar1;
+        private Settings settings1;
     }
 }

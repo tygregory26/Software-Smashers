@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace SoftwareSmashers
 {
-    public partial class Menu : UserControl
+    public partial class Settings : UserControl
     {
-        public Menu()
+        public Settings()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
