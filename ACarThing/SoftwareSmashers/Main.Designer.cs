@@ -32,6 +32,7 @@
             myCars1 = new MyCars();
             individualCar1 = new IndividualCar();
             settings1 = new Settings();
+            login1 = new Login();
             SuspendLayout();
             // 
             // menu1
@@ -63,6 +64,13 @@
             settings1.Size = new Size(1264, 844);
             settings1.TabIndex = 3;
             // 
+            // login1
+            // 
+            login1.Location = new Point(0, 0);
+            login1.Name = "login1";
+            login1.Size = new Size(1531, 844);
+            login1.TabIndex = 4;
+            // 
             // ACarThing
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -72,6 +80,7 @@
             Controls.Add(individualCar1);
             Controls.Add(myCars1);
             Controls.Add(menu1);
+            Controls.Add(login1);
             ForeColor = SystemColors.ControlText;
             Name = "ACarThing";
             Text = "Software Smashers";
@@ -85,5 +94,6 @@
         private MyCars myCars1;
         private IndividualCar individualCar1;
         private Settings settings1;
+        private Login login1;
     }
 }

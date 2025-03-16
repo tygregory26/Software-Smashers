@@ -20,3 +20,4 @@ C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj
 C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.MyCars.resources
 C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.IndividualCar.resources
 C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.Settings.resources
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.Login.resources
