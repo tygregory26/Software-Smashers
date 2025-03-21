@@ -16,5 +16,25 @@ namespace SoftwareSmashers
         {
             InitializeComponent();
         }
+
+        private void btn_IndCar_Start_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_IndCar_Inside_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl_IndCar_InTemp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
