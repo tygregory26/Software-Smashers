@@ -22,19 +22,20 @@ namespace SoftwareSmashers
 
         }
 
-        private void lbl_IndCar_Inside_Click(object sender, EventArgs e)
+        private void btn_IndCar_Windows_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void lbl_IndCar_InTemp_Click(object sender, EventArgs e)
+        private void btn_IndCar_Arm_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void btn_IndCar_Lock_Click(object sender, EventArgs e)
         {
 
         }
+
     }
 }

@@ -39,9 +39,10 @@
             // 
             // button1
             // 
-            button1.Location = new Point(33, 244);
+            button1.Location = new Point(23, 146);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(191, 69);
+            button1.Size = new Size(134, 41);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
@@ -49,36 +50,40 @@
             // 
             // button2
             // 
-            button2.Location = new Point(33, 319);
+            button2.Location = new Point(23, 191);
+            button2.Margin = new Padding(2, 2, 2, 2);
             button2.Name = "button2";
-            button2.Size = new Size(191, 69);
+            button2.Size = new Size(134, 41);
             button2.TabIndex = 1;
             button2.Text = "button2";
             button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Location = new Point(33, 394);
+            button3.Location = new Point(23, 236);
+            button3.Margin = new Padding(2, 2, 2, 2);
             button3.Name = "button3";
-            button3.Size = new Size(191, 69);
+            button3.Size = new Size(134, 41);
             button3.TabIndex = 2;
             button3.Text = "button3";
             button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            button4.Location = new Point(33, 469);
+            button4.Location = new Point(23, 281);
+            button4.Margin = new Padding(2, 2, 2, 2);
             button4.Name = "button4";
-            button4.Size = new Size(191, 69);
+            button4.Size = new Size(134, 41);
             button4.TabIndex = 3;
             button4.Text = "button4";
             button4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
-            button5.Location = new Point(33, 544);
+            button5.Location = new Point(23, 326);
+            button5.Margin = new Padding(2, 2, 2, 2);
             button5.Name = "button5";
-            button5.Size = new Size(191, 69);
+            button5.Size = new Size(134, 41);
             button5.TabIndex = 4;
             button5.Text = "button5";
             button5.UseVisualStyleBackColor = true;
@@ -86,26 +91,28 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.software_smashers_noText;
-            pictureBox1.Location = new Point(3, 0);
+            pictureBox1.Location = new Point(2, 0);
+            pictureBox1.Margin = new Padding(2, 2, 2, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(261, 238);
+            pictureBox1.Size = new Size(183, 143);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.LightSalmon;
+            BackColor = Color.FromArgb(225, 166, 145);
             Controls.Add(pictureBox1);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Menu";
-            Size = new Size(267, 844);
+            Size = new Size(187, 506);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }

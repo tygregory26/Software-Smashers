@@ -34,9 +34,9 @@
             btn_IndCar_Windows = new Button();
             btn_IndCar_Arm = new Button();
             btn_IndCar_Lock = new Button();
-            this.lbl_IndCar_Outside = new Label();
-            this.lbl_IndCar_inside = new Label();
-            this.lbl_IndCar_Degree2 = new Label();
+            lbl_IndCar_Outside = new Label();
+            lbl_IndCar_Inside = new Label();
+            lbl_IndCar_Degree2 = new Label();
             lbl_IndCar_Degree1 = new Label();
             lbl_IndCar_InTemp = new Label();
             lbl_IndCar_OutTemp = new Label();
@@ -131,7 +131,7 @@
             btn_IndCar_Arm.TabIndex = 6;
             btn_IndCar_Arm.Text = "Arm";
             btn_IndCar_Arm.UseVisualStyleBackColor = false;
-            btn_IndCar_Arm.Click += this.button1_Click;
+            btn_IndCar_Arm.Click += this.btn_IndCar_Arm_Click;
             // 
             // btn_IndCar_Lock
             // 
@@ -147,7 +147,7 @@
             btn_IndCar_Lock.TabIndex = 5;
             btn_IndCar_Lock.Text = "Lock";
             btn_IndCar_Lock.UseVisualStyleBackColor = false;
-            btn_IndCar_Lock.Click += this.button2_Click;
+            btn_IndCar_Lock.Click += this.btn_IndCar_Lock_Click;
             // 
             // lbl_IndCar_Outside
             // 
@@ -165,21 +165,21 @@
             this.lbl_IndCar_Outside.TextAlign = ContentAlignment.MiddleLeft;
             this.lbl_IndCar_Outside.UseWaitCursor = true;
             // 
-            // lbl_IndCar_inside
+            // lbl_IndCar_Inside
             // 
-            this.lbl_IndCar_inside.BackColor = Color.FromArgb(227, 225, 232);
-            this.lbl_IndCar_inside.CausesValidation = false;
-            this.lbl_IndCar_inside.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
-            this.lbl_IndCar_inside.ForeColor = Color.FromArgb(37, 30, 56);
-            this.lbl_IndCar_inside.Location = new Point(79, 22);
-            this.lbl_IndCar_inside.Margin = new Padding(10);
-            this.lbl_IndCar_inside.Name = "lbl_IndCar_inside";
-            this.lbl_IndCar_inside.Padding = new Padding(10);
-            this.lbl_IndCar_inside.Size = new Size(130, 65);
-            this.lbl_IndCar_inside.TabIndex = 10;
-            this.lbl_IndCar_inside.Text = "Inside:";
-            this.lbl_IndCar_inside.TextAlign = ContentAlignment.MiddleLeft;
-            this.lbl_IndCar_inside.UseWaitCursor = true;
+            this.lbl_IndCar_Inside.BackColor = Color.FromArgb(227, 225, 232);
+            this.lbl_IndCar_Inside.CausesValidation = false;
+            this.lbl_IndCar_Inside.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
+            this.lbl_IndCar_Inside.ForeColor = Color.FromArgb(37, 30, 56);
+            this.lbl_IndCar_Inside.Location = new Point(79, 22);
+            this.lbl_IndCar_Inside.Margin = new Padding(10);
+            this.lbl_IndCar_Inside.Name = "lbl_IndCar_Inside";
+            this.lbl_IndCar_Inside.Padding = new Padding(10);
+            this.lbl_IndCar_Inside.Size = new Size(130, 65);
+            this.lbl_IndCar_Inside.TabIndex = 10;
+            this.lbl_IndCar_Inside.Text = "Inside:";
+            this.lbl_IndCar_Inside.TextAlign = ContentAlignment.MiddleLeft;
+            this.lbl_IndCar_Inside.UseWaitCursor = true;
             // 
             // lbl_IndCar_Degree2
             // 
@@ -228,7 +228,6 @@
             lbl_IndCar_InTemp.Text = "000";
             lbl_IndCar_InTemp.TextAlign = ContentAlignment.MiddleRight;
             lbl_IndCar_InTemp.UseWaitCursor = true;
-            lbl_IndCar_InTemp.Click += lbl_IndCar_InTemp_Click;
             // 
             // lbl_IndCar_OutTemp
             // 
@@ -248,7 +247,7 @@
             // 
             // grp_Temps
             // 
-            grp_Temps.Controls.Add(this.lbl_IndCar_inside);
+            grp_Temps.Controls.Add(this.lbl_IndCar_Inside);
             grp_Temps.Controls.Add(this.lbl_IndCar_Degree2);
             grp_Temps.Controls.Add(lbl_IndCar_OutTemp);
             grp_Temps.Controls.Add(lbl_IndCar_InTemp);
@@ -333,7 +332,6 @@
             lbl_IndCar_percentSymbol.Text = "%";
             lbl_IndCar_percentSymbol.TextAlign = ContentAlignment.MiddleLeft;
             lbl_IndCar_percentSymbol.UseWaitCursor = true;
-            lbl_IndCar_percentSymbol.Click += label5_Click;
             // 
             // lbl_IndCar_FuelNum
             // 
@@ -416,9 +414,11 @@
         private Button btn_IndCar_Windows;
         private Button btn_IndCar_Arm;
         private Button btn_IndCar_Lock;
+        private Label lbl_IndCar_Outside;
         private Label lbl_IndCar_Inside;
         private Label label1;
         private Label lbl_IndCar_Degree1;
+        private Label lbl_IndCar_Degree2;
         private Label lbl_IndCar_InTemp;
         private Label lbl_IndCar_OutTemp;
         private GroupBox grp_Temps;
