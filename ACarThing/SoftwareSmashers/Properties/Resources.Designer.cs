@@ -63,6 +63,57 @@ namespace SoftwareSmashers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _28ce8267dc297ff4432b5be6b1ebaf79_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("28ce8267dc297ff4432b5be6b1ebaf79-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _9fa50573faae5ee2827b73c7e4ea9ebc_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("9fa50573faae5ee2827b73c7e4ea9ebc-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap c22df54dbb32b4d5bb6fcf2b2dcf21de_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("c22df54dbb32b4d5bb6fcf2b2dcf21de-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hand_drawn_luxury_grey_offroad_4x4_pickup_car_dually_truck_side_view_isolated_on_white_vector_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("hand-drawn-luxury-grey-offroad-4x4-pickup-car-dually-truck-side-view-isolated-on-" +
+                        "white-vector-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2025_03_23_011252 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2025-03-23 011252", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap software_smashers_noText {
             get {
                 object obj = ResourceManager.GetObject("software-smashers_noText", resourceCulture);
