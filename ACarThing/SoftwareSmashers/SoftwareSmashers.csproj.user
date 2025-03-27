@@ -16,6 +16,9 @@
     <Compile Update="MyCars.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="NewUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
