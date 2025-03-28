@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyCars));
-            btn_IndCar_Start = new Button();
+            btn_IndCar_start = new Button();
             button1 = new Button();
             imageList4 = new ImageList(components);
             pictureBox1 = new PictureBox();
@@ -50,20 +50,20 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
-            // btn_IndCar_Start
+            // btn_IndCar_start
             // 
-            btn_IndCar_Start.BackColor = Color.FromArgb(229, 155, 137);
-            btn_IndCar_Start.BackgroundImageLayout = ImageLayout.None;
-            btn_IndCar_Start.FlatAppearance.BorderSize = 0;
-            btn_IndCar_Start.FlatStyle = FlatStyle.Flat;
-            btn_IndCar_Start.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            btn_IndCar_Start.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_IndCar_Start.Location = new Point(368, 338);
-            btn_IndCar_Start.Name = "btn_IndCar_Start";
-            btn_IndCar_Start.Size = new Size(158, 38);
-            btn_IndCar_Start.TabIndex = 4;
-            btn_IndCar_Start.Text = "Register New";
-            btn_IndCar_Start.UseVisualStyleBackColor = false;
+            btn_IndCar_start.BackColor = Color.FromArgb(229, 155, 137);
+            btn_IndCar_start.BackgroundImageLayout = ImageLayout.None;
+            btn_IndCar_start.FlatAppearance.BorderSize = 0;
+            btn_IndCar_start.FlatStyle = FlatStyle.Flat;
+            btn_IndCar_start.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_IndCar_start.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_IndCar_start.Location = new Point(368, 338);
+            btn_IndCar_start.Name = "btn_IndCar_start";
+            btn_IndCar_start.Size = new Size(158, 38);
+            btn_IndCar_start.TabIndex = 4;
+            btn_IndCar_start.Text = "Register New";
+            btn_IndCar_start.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -204,7 +204,7 @@
             Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(button1);
-            Controls.Add(btn_IndCar_Start);
+            Controls.Add(btn_IndCar_start);
             Margin = new Padding(2);
             Name = "MyCars";
             Size = new Size(885, 506);
@@ -220,7 +220,7 @@
 
         #endregion
 
-        private Button btn_IndCar_Start;
+        private Button btn_IndCar_start;
         private Button button1;
         private ImageList imageList4;
         private PictureBox pictureBox1;

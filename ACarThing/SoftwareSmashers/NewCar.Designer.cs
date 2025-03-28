@@ -247,7 +247,7 @@
             lbl_NewCar_Make.TextAlign = ContentAlignment.MiddleLeft;
             toolTip.SetToolTip(lbl_NewCar_Make, "The brand that made the vehicle.");
             lbl_NewCar_Make.UseWaitCursor = true;
-            lbl_NewCar_Make.Click += lbl_IndCar_Inside_Click;
+            lbl_NewCar_Make.Click += lbl_IndCar_inside_Click;
             // 
             // txt_NewCar_VIN
             // 
@@ -321,7 +321,7 @@
             btn_NewCar_Save.TabIndex = 19;
             btn_NewCar_Save.Text = "SAVE";
             btn_NewCar_Save.UseVisualStyleBackColor = false;
-            btn_NewCar_Save.Click += btn_IndCar_Windows_Click;
+            btn_NewCar_Save.Click += btn_IndCar_windows_Click;
             // 
             // btn_NewCar_Cancel
             // 

@@ -1562,7 +1562,7 @@
         JEmSJEmSdKP+f0NoeKumpN9hAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pic_IndCar_Arm.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pic_IndCar_arm.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA/4AAAPGCAYAAABatUENAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAANdMAADXTAQwhQ3cAAFMjSURBVHhe7d3LseXKuphXGsKufFCDBoouiBbQE5rBCIkR
@@ -1923,7 +1923,7 @@
         JEmSJEmSdKP+f0NoeKumpN9hAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pic_IndCar_CarTypeIndicator.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pic_IndCar_carTypeIndicator.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA/4AAAPGCAYAAABatUENAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAANdMAADXTAQwhQ3cAAFMjSURBVHhe7d3LseXKuphXGsKufFCDBoouiBbQE5rBCIkR

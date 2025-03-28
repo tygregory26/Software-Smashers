@@ -17,22 +17,22 @@ namespace SoftwareSmashers
             InitializeComponent();
         }
 
-        private void btn_IndCar_Start_Click(object sender, EventArgs e)
+        private void btn_IndCar_start_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_IndCar_Windows_Click(object sender, EventArgs e)
+        private void btn_IndCar_windows_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_IndCar_Arm_Click(object sender, EventArgs e)
+        private void btn_IndCar_arm_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_IndCar_Lock_Click(object sender, EventArgs e)
+        private void btn_IndCar_lock_Click(object sender, EventArgs e)
         {
 
         }

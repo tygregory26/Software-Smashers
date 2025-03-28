@@ -21,7 +21,7 @@ namespace SoftwareSmashers
         // Gas:        0
         // Electric:   1
         // Hybrid:     2
-        private void lbl_IndCar_Inside_Click(object sender, EventArgs e)
+        private void lbl_IndCar_inside_Click(object sender, EventArgs e)
         {
 
         }
@@ -40,7 +40,7 @@ namespace SoftwareSmashers
 
         }
 
-        private void btn_IndCar_Windows_Click(object sender, EventArgs e)
+        private void btn_IndCar_windows_Click(object sender, EventArgs e)
         {
 
         }
