@@ -35,7 +35,7 @@
             lbl_NewUser_phoneNum = new Label();
             lbl_NewUser_password = new Label();
             pic_NewUser_logo = new PictureBox();
-            lbl_NewUser_Register = new Label();
+            lbl_NewUser_register = new Label();
             txt_NewUser_fname = new TextBox();
             txt_NewUser_lname = new TextBox();
             txt_NewUser_email = new TextBox();
@@ -43,9 +43,9 @@
             txt_NewUser_password = new TextBox();
             btn_NewUser_save = new Button();
             btn_NewUser_cancel = new Button();
-            panel1 = new Panel();
+            grp_NewUser_registrationInfo = new Panel();
             ((System.ComponentModel.ISupportInitialize)pic_NewUser_logo).BeginInit();
-            panel1.SuspendLayout();
+            grp_NewUser_registrationInfo.SuspendLayout();
             SuspendLayout();
             // 
             // lbl_NewUser_fname
@@ -129,18 +129,18 @@
             pic_NewUser_logo.TabIndex = 5;
             pic_NewUser_logo.TabStop = false;
             // 
-            // lbl_NewUser_Register
+            // lbl_NewUser_register
             // 
-            lbl_NewUser_Register.AutoSize = true;
-            lbl_NewUser_Register.BackColor = Color.FromArgb(229, 155, 137);
-            lbl_NewUser_Register.Font = new Font("Verdana", 20.25F, FontStyle.Bold);
-            lbl_NewUser_Register.ForeColor = Color.FromArgb(37, 30, 56);
-            lbl_NewUser_Register.Location = new Point(118, 19);
-            lbl_NewUser_Register.Margin = new Padding(2, 0, 2, 0);
-            lbl_NewUser_Register.Name = "lbl_NewUser_Register";
-            lbl_NewUser_Register.Size = new Size(140, 32);
-            lbl_NewUser_Register.TabIndex = 6;
-            lbl_NewUser_Register.Text = "Register";
+            lbl_NewUser_register.AutoSize = true;
+            lbl_NewUser_register.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_register.Font = new Font("Verdana", 20.25F, FontStyle.Bold);
+            lbl_NewUser_register.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_register.Location = new Point(118, 19);
+            lbl_NewUser_register.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_register.Name = "lbl_NewUser_register";
+            lbl_NewUser_register.Size = new Size(140, 32);
+            lbl_NewUser_register.TabIndex = 6;
+            lbl_NewUser_register.Text = "Register";
             // 
             // txt_NewUser_fname
             // 
@@ -226,24 +226,24 @@
             btn_NewUser_cancel.Text = "Cancel";
             btn_NewUser_cancel.UseVisualStyleBackColor = false;
             // 
-            // panel1
+            // grp_NewUser_registrationInfo
             // 
-            panel1.BackColor = Color.FromArgb(229, 155, 137);
-            panel1.Controls.Add(lbl_NewUser_fname);
-            panel1.Controls.Add(lbl_NewUser_lname);
-            panel1.Controls.Add(lbl_NewUser_Register);
-            panel1.Controls.Add(txt_NewUser_password);
-            panel1.Controls.Add(lbl_NewUser_email);
-            panel1.Controls.Add(txt_NewUser_phoneNum);
-            panel1.Controls.Add(lbl_NewUser_phoneNum);
-            panel1.Controls.Add(txt_NewUser_email);
-            panel1.Controls.Add(lbl_NewUser_password);
-            panel1.Controls.Add(txt_NewUser_lname);
-            panel1.Controls.Add(txt_NewUser_fname);
-            panel1.Location = new Point(587, 68);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(397, 270);
-            panel1.TabIndex = 14;
+            grp_NewUser_registrationInfo.BackColor = Color.FromArgb(229, 155, 137);
+            grp_NewUser_registrationInfo.Controls.Add(lbl_NewUser_fname);
+            grp_NewUser_registrationInfo.Controls.Add(lbl_NewUser_lname);
+            grp_NewUser_registrationInfo.Controls.Add(lbl_NewUser_register);
+            grp_NewUser_registrationInfo.Controls.Add(txt_NewUser_password);
+            grp_NewUser_registrationInfo.Controls.Add(lbl_NewUser_email);
+            grp_NewUser_registrationInfo.Controls.Add(txt_NewUser_phoneNum);
+            grp_NewUser_registrationInfo.Controls.Add(lbl_NewUser_phoneNum);
+            grp_NewUser_registrationInfo.Controls.Add(txt_NewUser_email);
+            grp_NewUser_registrationInfo.Controls.Add(lbl_NewUser_password);
+            grp_NewUser_registrationInfo.Controls.Add(txt_NewUser_lname);
+            grp_NewUser_registrationInfo.Controls.Add(txt_NewUser_fname);
+            grp_NewUser_registrationInfo.Location = new Point(587, 68);
+            grp_NewUser_registrationInfo.Name = "grp_NewUser_registrationInfo";
+            grp_NewUser_registrationInfo.Size = new Size(397, 270);
+            grp_NewUser_registrationInfo.TabIndex = 14;
             // 
             // NewUser
             // 
@@ -253,13 +253,13 @@
             Controls.Add(btn_NewUser_cancel);
             Controls.Add(btn_NewUser_save);
             Controls.Add(pic_NewUser_logo);
-            Controls.Add(panel1);
+            Controls.Add(grp_NewUser_registrationInfo);
             Margin = new Padding(2);
             Name = "NewUser";
             Size = new Size(1072, 506);
             ((System.ComponentModel.ISupportInitialize)pic_NewUser_logo).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            grp_NewUser_registrationInfo.ResumeLayout(false);
+            grp_NewUser_registrationInfo.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -271,7 +271,7 @@
         private Label lbl_NewUser_phoneNum;
         private Label lbl_NewUser_password;
         private PictureBox pic_NewUser_logo;
-        private Label lbl_NewUser_Register;
+        private Label lbl_NewUser_register;
         private TextBox txt_NewUser_fname;
         private TextBox txt_NewUser_lname;
         private TextBox txt_NewUser_email;
@@ -279,6 +279,6 @@
         private TextBox txt_NewUser_password;
         private Button btn_NewUser_save;
         private Button btn_NewUser_cancel;
-        private Panel panel1;
+        private Panel grp_NewUser_registrationInfo;
     }
 }
