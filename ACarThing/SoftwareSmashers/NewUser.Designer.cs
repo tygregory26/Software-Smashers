@@ -29,222 +29,256 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewUser));
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            pictureBox1 = new PictureBox();
-            label6 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            button2 = new Button();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            lbl_NewUser_fname = new Label();
+            lbl_NewUser_lname = new Label();
+            lbl_NewUser_email = new Label();
+            lbl_NewUser_phoneNum = new Label();
+            lbl_NewUser_password = new Label();
+            pic_NewUser_logo = new PictureBox();
+            lbl_NewUser_Register = new Label();
+            txt_NewUser_fname = new TextBox();
+            txt_NewUser_lname = new TextBox();
+            txt_NewUser_email = new TextBox();
+            txt_NewUser_phoneNum = new TextBox();
+            txt_NewUser_password = new TextBox();
+            btn_NewUser_save = new Button();
+            btn_NewUser_cancel = new Button();
+            panel1 = new Panel();
+            ((System.ComponentModel.ISupportInitialize)pic_NewUser_logo).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // lbl_NewUser_fname
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(37, 30, 56);
-            label1.Location = new Point(645, 149);
-            label1.Margin = new Padding(2, 0, 2, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(90, 17);
-            label1.TabIndex = 0;
-            label1.Text = "First Name";
+            lbl_NewUser_fname.AutoSize = true;
+            lbl_NewUser_fname.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_fname.FlatStyle = FlatStyle.Flat;
+            lbl_NewUser_fname.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_NewUser_fname.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_fname.Location = new Point(34, 74);
+            lbl_NewUser_fname.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_fname.Name = "lbl_NewUser_fname";
+            lbl_NewUser_fname.Size = new Size(102, 18);
+            lbl_NewUser_fname.TabIndex = 0;
+            lbl_NewUser_fname.Text = "First Name";
             // 
-            // label2
+            // lbl_NewUser_lname
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label2.ForeColor = Color.FromArgb(37, 30, 56);
-            label2.Location = new Point(645, 183);
-            label2.Margin = new Padding(2, 0, 2, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(88, 17);
-            label2.TabIndex = 1;
-            label2.Text = "Last Name";
+            lbl_NewUser_lname.AutoSize = true;
+            lbl_NewUser_lname.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_lname.FlatStyle = FlatStyle.Flat;
+            lbl_NewUser_lname.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_NewUser_lname.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_lname.Location = new Point(34, 108);
+            lbl_NewUser_lname.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_lname.Name = "lbl_NewUser_lname";
+            lbl_NewUser_lname.Size = new Size(101, 18);
+            lbl_NewUser_lname.TabIndex = 1;
+            lbl_NewUser_lname.Text = "Last Name";
             // 
-            // label3
+            // lbl_NewUser_email
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label3.ForeColor = Color.FromArgb(37, 30, 56);
-            label3.Location = new Point(645, 220);
-            label3.Margin = new Padding(2, 0, 2, 0);
-            label3.Name = "label3";
-            label3.Size = new Size(49, 17);
-            label3.TabIndex = 2;
-            label3.Text = "Email";
+            lbl_NewUser_email.AutoSize = true;
+            lbl_NewUser_email.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_email.FlatStyle = FlatStyle.Flat;
+            lbl_NewUser_email.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_NewUser_email.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_email.Location = new Point(34, 145);
+            lbl_NewUser_email.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_email.Name = "lbl_NewUser_email";
+            lbl_NewUser_email.Size = new Size(54, 18);
+            lbl_NewUser_email.TabIndex = 2;
+            lbl_NewUser_email.Text = "Email";
             // 
-            // label4
+            // lbl_NewUser_phoneNum
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label4.ForeColor = Color.FromArgb(37, 30, 56);
-            label4.Location = new Point(645, 256);
-            label4.Margin = new Padding(2, 0, 2, 0);
-            label4.Name = "label4";
-            label4.Size = new Size(123, 17);
-            label4.TabIndex = 3;
-            label4.Text = "Phone Number";
+            lbl_NewUser_phoneNum.AutoSize = true;
+            lbl_NewUser_phoneNum.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_phoneNum.FlatStyle = FlatStyle.Flat;
+            lbl_NewUser_phoneNum.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_NewUser_phoneNum.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_phoneNum.Location = new Point(34, 181);
+            lbl_NewUser_phoneNum.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_phoneNum.Name = "lbl_NewUser_phoneNum";
+            lbl_NewUser_phoneNum.Size = new Size(139, 18);
+            lbl_NewUser_phoneNum.TabIndex = 3;
+            lbl_NewUser_phoneNum.Text = "Phone Number";
             // 
-            // label5
+            // lbl_NewUser_password
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label5.ForeColor = Color.FromArgb(37, 30, 56);
-            label5.Location = new Point(645, 293);
-            label5.Margin = new Padding(2, 0, 2, 0);
-            label5.Name = "label5";
-            label5.Size = new Size(84, 17);
-            label5.TabIndex = 4;
-            label5.Text = "Password";
+            lbl_NewUser_password.AutoSize = true;
+            lbl_NewUser_password.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_password.FlatStyle = FlatStyle.Flat;
+            lbl_NewUser_password.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_NewUser_password.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_password.Location = new Point(34, 219);
+            lbl_NewUser_password.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_password.Name = "lbl_NewUser_password";
+            lbl_NewUser_password.Size = new Size(95, 18);
+            lbl_NewUser_password.TabIndex = 4;
+            lbl_NewUser_password.Text = "Password";
             // 
-            // pictureBox1
+            // pic_NewUser_logo
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(46, 58);
-            pictureBox1.Margin = new Padding(2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(506, 358);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            pic_NewUser_logo.Image = (Image)resources.GetObject("pic_NewUser_logo.Image");
+            pic_NewUser_logo.Location = new Point(46, 58);
+            pic_NewUser_logo.Margin = new Padding(2);
+            pic_NewUser_logo.Name = "pic_NewUser_logo";
+            pic_NewUser_logo.Size = new Size(508, 378);
+            pic_NewUser_logo.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_NewUser_logo.TabIndex = 5;
+            pic_NewUser_logo.TabStop = false;
             // 
-            // label6
+            // lbl_NewUser_Register
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Verdana", 20.25F, FontStyle.Bold);
-            label6.ForeColor = Color.FromArgb(37, 30, 56);
-            label6.Location = new Point(741, 67);
-            label6.Margin = new Padding(2, 0, 2, 0);
-            label6.Name = "label6";
-            label6.Size = new Size(140, 32);
-            label6.TabIndex = 6;
-            label6.Text = "Register";
+            lbl_NewUser_Register.AutoSize = true;
+            lbl_NewUser_Register.BackColor = Color.FromArgb(229, 155, 137);
+            lbl_NewUser_Register.Font = new Font("Verdana", 20.25F, FontStyle.Bold);
+            lbl_NewUser_Register.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_NewUser_Register.Location = new Point(118, 19);
+            lbl_NewUser_Register.Margin = new Padding(2, 0, 2, 0);
+            lbl_NewUser_Register.Name = "lbl_NewUser_Register";
+            lbl_NewUser_Register.Size = new Size(140, 32);
+            lbl_NewUser_Register.TabIndex = 6;
+            lbl_NewUser_Register.Text = "Register";
             // 
-            // textBox1
+            // txt_NewUser_fname
             // 
-            textBox1.Location = new Point(802, 145);
-            textBox1.Margin = new Padding(2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 23);
-            textBox1.TabIndex = 7;
+            txt_NewUser_fname.BackColor = Color.FromArgb(227, 225, 232);
+            txt_NewUser_fname.BorderStyle = BorderStyle.None;
+            txt_NewUser_fname.Location = new Point(200, 74);
+            txt_NewUser_fname.Margin = new Padding(2);
+            txt_NewUser_fname.Name = "txt_NewUser_fname";
+            txt_NewUser_fname.Size = new Size(166, 16);
+            txt_NewUser_fname.TabIndex = 7;
             // 
-            // textBox2
+            // txt_NewUser_lname
             // 
-            textBox2.Location = new Point(802, 179);
-            textBox2.Margin = new Padding(2);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 23);
-            textBox2.TabIndex = 8;
+            txt_NewUser_lname.BackColor = Color.FromArgb(227, 225, 232);
+            txt_NewUser_lname.BorderStyle = BorderStyle.None;
+            txt_NewUser_lname.Location = new Point(200, 108);
+            txt_NewUser_lname.Margin = new Padding(2);
+            txt_NewUser_lname.Name = "txt_NewUser_lname";
+            txt_NewUser_lname.Size = new Size(166, 16);
+            txt_NewUser_lname.TabIndex = 8;
             // 
-            // textBox3
+            // txt_NewUser_email
             // 
-            textBox3.Location = new Point(802, 216);
-            textBox3.Margin = new Padding(2);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(175, 23);
-            textBox3.TabIndex = 9;
+            txt_NewUser_email.BackColor = Color.FromArgb(227, 225, 232);
+            txt_NewUser_email.BorderStyle = BorderStyle.None;
+            txt_NewUser_email.Location = new Point(200, 145);
+            txt_NewUser_email.Margin = new Padding(2);
+            txt_NewUser_email.Name = "txt_NewUser_email";
+            txt_NewUser_email.Size = new Size(166, 16);
+            txt_NewUser_email.TabIndex = 9;
             // 
-            // textBox4
+            // txt_NewUser_phoneNum
             // 
-            textBox4.Location = new Point(802, 252);
-            textBox4.Margin = new Padding(2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(175, 23);
-            textBox4.TabIndex = 10;
+            txt_NewUser_phoneNum.BackColor = Color.FromArgb(227, 225, 232);
+            txt_NewUser_phoneNum.BorderStyle = BorderStyle.None;
+            txt_NewUser_phoneNum.Location = new Point(200, 181);
+            txt_NewUser_phoneNum.Margin = new Padding(2);
+            txt_NewUser_phoneNum.Name = "txt_NewUser_phoneNum";
+            txt_NewUser_phoneNum.Size = new Size(166, 16);
+            txt_NewUser_phoneNum.TabIndex = 10;
             // 
-            // textBox5
+            // txt_NewUser_password
             // 
-            textBox5.Location = new Point(802, 290);
-            textBox5.Margin = new Padding(2);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(175, 23);
-            textBox5.TabIndex = 11;
+            txt_NewUser_password.BackColor = Color.FromArgb(227, 225, 232);
+            txt_NewUser_password.BorderStyle = BorderStyle.None;
+            txt_NewUser_password.Location = new Point(200, 219);
+            txt_NewUser_password.Margin = new Padding(2);
+            txt_NewUser_password.Name = "txt_NewUser_password";
+            txt_NewUser_password.Size = new Size(166, 16);
+            txt_NewUser_password.TabIndex = 11;
             // 
-            // button2
+            // btn_NewUser_save
             // 
-            button2.BackColor = Color.FromArgb(229, 155, 137);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 169, 200);
-            button2.FlatAppearance.MouseOverBackColor = Color.FromArgb(216, 136, 116);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button2.ForeColor = Color.FromArgb(37, 30, 56);
-            button2.Location = new Point(829, 344);
-            button2.Margin = new Padding(2);
-            button2.Name = "button2";
-            button2.Size = new Size(122, 47);
-            button2.TabIndex = 12;
-            button2.Text = "Save";
-            button2.UseVisualStyleBackColor = false;
+            btn_NewUser_save.BackColor = Color.FromArgb(229, 155, 137);
+            btn_NewUser_save.FlatAppearance.BorderSize = 0;
+            btn_NewUser_save.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 169, 200);
+            btn_NewUser_save.FlatAppearance.MouseOverBackColor = Color.FromArgb(216, 136, 116);
+            btn_NewUser_save.FlatStyle = FlatStyle.Flat;
+            btn_NewUser_save.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_NewUser_save.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_NewUser_save.Location = new Point(803, 355);
+            btn_NewUser_save.Margin = new Padding(2);
+            btn_NewUser_save.Name = "btn_NewUser_save";
+            btn_NewUser_save.Size = new Size(150, 67);
+            btn_NewUser_save.TabIndex = 12;
+            btn_NewUser_save.Text = "Save";
+            btn_NewUser_save.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_NewUser_cancel
             // 
-            button1.BackColor = Color.FromArgb(229, 155, 137);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 169, 200);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(216, 136, 116);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button1.ForeColor = Color.FromArgb(37, 30, 56);
-            button1.Location = new Point(674, 344);
-            button1.Margin = new Padding(2);
-            button1.Name = "button1";
-            button1.Size = new Size(122, 47);
-            button1.TabIndex = 13;
-            button1.Text = "Cancel";
-            button1.UseVisualStyleBackColor = false;
+            btn_NewUser_cancel.BackColor = Color.FromArgb(229, 155, 137);
+            btn_NewUser_cancel.FlatAppearance.BorderSize = 0;
+            btn_NewUser_cancel.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 169, 200);
+            btn_NewUser_cancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(216, 136, 116);
+            btn_NewUser_cancel.FlatStyle = FlatStyle.Flat;
+            btn_NewUser_cancel.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_NewUser_cancel.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_NewUser_cancel.Location = new Point(621, 355);
+            btn_NewUser_cancel.Margin = new Padding(2);
+            btn_NewUser_cancel.Name = "btn_NewUser_cancel";
+            btn_NewUser_cancel.Size = new Size(150, 67);
+            btn_NewUser_cancel.TabIndex = 13;
+            btn_NewUser_cancel.Text = "Cancel";
+            btn_NewUser_cancel.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(229, 155, 137);
+            panel1.Controls.Add(lbl_NewUser_fname);
+            panel1.Controls.Add(lbl_NewUser_lname);
+            panel1.Controls.Add(lbl_NewUser_Register);
+            panel1.Controls.Add(txt_NewUser_password);
+            panel1.Controls.Add(lbl_NewUser_email);
+            panel1.Controls.Add(txt_NewUser_phoneNum);
+            panel1.Controls.Add(lbl_NewUser_phoneNum);
+            panel1.Controls.Add(txt_NewUser_email);
+            panel1.Controls.Add(lbl_NewUser_password);
+            panel1.Controls.Add(txt_NewUser_lname);
+            panel1.Controls.Add(txt_NewUser_fname);
+            panel1.Location = new Point(587, 68);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(397, 270);
+            panel1.TabIndex = 14;
             // 
             // NewUser
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 225, 232);
-            Controls.Add(button1);
-            Controls.Add(button2);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label6);
-            Controls.Add(pictureBox1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(btn_NewUser_cancel);
+            Controls.Add(btn_NewUser_save);
+            Controls.Add(pic_NewUser_logo);
+            Controls.Add(panel1);
             Margin = new Padding(2);
             Name = "NewUser";
             Size = new Size(1072, 506);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_NewUser_logo).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private PictureBox pictureBox1;
-        private Label label6;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private Button button2;
-        private Button button1;
+        private Label lbl_NewUser_fname;
+        private Label lbl_NewUser_lname;
+        private Label lbl_NewUser_email;
+        private Label lbl_NewUser_phoneNum;
+        private Label lbl_NewUser_password;
+        private PictureBox pic_NewUser_logo;
+        private Label lbl_NewUser_Register;
+        private TextBox txt_NewUser_fname;
+        private TextBox txt_NewUser_lname;
+        private TextBox txt_NewUser_email;
+        private TextBox txt_NewUser_phoneNum;
+        private TextBox txt_NewUser_password;
+        private Button btn_NewUser_save;
+        private Button btn_NewUser_cancel;
+        private Panel panel1;
     }
 }
