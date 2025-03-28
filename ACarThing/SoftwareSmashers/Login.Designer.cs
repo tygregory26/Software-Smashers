@@ -103,7 +103,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(225, 166, 145);
+            button1.BackColor = Color.FromArgb(229, 155, 137);
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Verdana", 12F, FontStyle.Bold);
             button1.ForeColor = Color.FromArgb(37, 30, 56);
@@ -116,7 +116,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(225, 166, 145);
+            button2.BackColor = Color.FromArgb(229, 155, 137);
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Verdana", 12F, FontStyle.Bold);
             button2.ForeColor = Color.FromArgb(37, 30, 56);

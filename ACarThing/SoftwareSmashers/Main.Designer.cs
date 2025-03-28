@@ -38,7 +38,7 @@
             // 
             // menu1
             // 
-            menu1.BackColor = Color.FromArgb(225, 166, 145);
+            menu1.BackColor = Color.FromArgb(229, 155, 137);
             menu1.Location = new Point(0, 0);
             menu1.Name = "menu1";
             menu1.Size = new Size(267, 844);

@@ -52,7 +52,7 @@
             // 
             // btn_IndCar_Start
             // 
-            btn_IndCar_Start.BackColor = Color.FromArgb(225, 166, 145);
+            btn_IndCar_Start.BackColor = Color.FromArgb(229, 155, 137);
             btn_IndCar_Start.BackgroundImageLayout = ImageLayout.None;
             btn_IndCar_Start.FlatAppearance.BorderSize = 0;
             btn_IndCar_Start.FlatStyle = FlatStyle.Flat;
@@ -67,7 +67,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(225, 166, 145);
+            button1.BackColor = Color.FromArgb(229, 155, 137);
             button1.BackgroundImageLayout = ImageLayout.None;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
@@ -98,7 +98,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.FromArgb(225, 166, 145);
+            button2.BackColor = Color.FromArgb(229, 155, 137);
             button2.BackgroundImageLayout = ImageLayout.None;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
@@ -113,7 +113,7 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.FromArgb(225, 166, 145);
+            button3.BackColor = Color.FromArgb(229, 155, 137);
             button3.BackgroundImageLayout = ImageLayout.None;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
@@ -138,7 +138,7 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.FromArgb(225, 166, 145);
+            button4.BackColor = Color.FromArgb(229, 155, 137);
             button4.BackgroundImageLayout = ImageLayout.None;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
