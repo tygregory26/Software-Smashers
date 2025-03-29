@@ -30,55 +30,55 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyCars));
-            btn_IndCar_start = new Button();
-            button1 = new Button();
+            btn_MyCars_registerNew = new Button();
+            btn_MyCars_selectVehicle = new Button();
             imageList4 = new ImageList(components);
-            pictureBox1 = new PictureBox();
-            button2 = new Button();
-            button3 = new Button();
-            pictureBox2 = new PictureBox();
-            button4 = new Button();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            pic_MyCars_frameFord = new PictureBox();
+            btn_MyCars_ford = new Button();
+            btn_MyCars_chevy = new Button();
+            pic_MyCars_frameChevy = new PictureBox();
+            btn_MyCars_honda = new Button();
+            pic_MyCars_frameHonda = new PictureBox();
+            pic_MyCars_ford = new PictureBox();
+            pic_MyCars_chevy = new PictureBox();
+            pic_MyCars_honda = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_frameFord).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_frameChevy).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_frameHonda).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_ford).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_chevy).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_honda).BeginInit();
             SuspendLayout();
             // 
-            // btn_IndCar_start
+            // btn_MyCars_registerNew
             // 
-            btn_IndCar_start.BackColor = Color.FromArgb(229, 155, 137);
-            btn_IndCar_start.BackgroundImageLayout = ImageLayout.None;
-            btn_IndCar_start.FlatAppearance.BorderSize = 0;
-            btn_IndCar_start.FlatStyle = FlatStyle.Flat;
-            btn_IndCar_start.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            btn_IndCar_start.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_IndCar_start.Location = new Point(368, 338);
-            btn_IndCar_start.Name = "btn_IndCar_start";
-            btn_IndCar_start.Size = new Size(158, 38);
-            btn_IndCar_start.TabIndex = 4;
-            btn_IndCar_start.Text = "Register New";
-            btn_IndCar_start.UseVisualStyleBackColor = false;
+            btn_MyCars_registerNew.BackColor = Color.FromArgb(229, 155, 137);
+            btn_MyCars_registerNew.BackgroundImageLayout = ImageLayout.None;
+            btn_MyCars_registerNew.FlatAppearance.BorderSize = 0;
+            btn_MyCars_registerNew.FlatStyle = FlatStyle.Flat;
+            btn_MyCars_registerNew.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_MyCars_registerNew.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_MyCars_registerNew.Location = new Point(367, 417);
+            btn_MyCars_registerNew.Name = "btn_MyCars_registerNew";
+            btn_MyCars_registerNew.Size = new Size(158, 38);
+            btn_MyCars_registerNew.TabIndex = 4;
+            btn_MyCars_registerNew.Text = "Register New";
+            btn_MyCars_registerNew.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_MyCars_selectVehicle
             // 
-            button1.BackColor = Color.FromArgb(229, 155, 137);
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button1.ForeColor = Color.FromArgb(37, 30, 56);
-            button1.Location = new Point(314, 294);
-            button1.Name = "button1";
-            button1.Size = new Size(267, 38);
-            button1.TabIndex = 5;
-            button1.Text = "Select Veichle";
-            button1.UseVisualStyleBackColor = false;
+            btn_MyCars_selectVehicle.BackColor = Color.FromArgb(229, 155, 137);
+            btn_MyCars_selectVehicle.BackgroundImageLayout = ImageLayout.None;
+            btn_MyCars_selectVehicle.FlatAppearance.BorderSize = 0;
+            btn_MyCars_selectVehicle.FlatStyle = FlatStyle.Flat;
+            btn_MyCars_selectVehicle.Font = new Font("Verdana", 20F, FontStyle.Bold);
+            btn_MyCars_selectVehicle.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_MyCars_selectVehicle.Location = new Point(310, 333);
+            btn_MyCars_selectVehicle.Name = "btn_MyCars_selectVehicle";
+            btn_MyCars_selectVehicle.Size = new Size(273, 69);
+            btn_MyCars_selectVehicle.TabIndex = 5;
+            btn_MyCars_selectVehicle.Text = "Select Vehicle";
+            btn_MyCars_selectVehicle.UseVisualStyleBackColor = false;
             // 
             // imageList4
             // 
@@ -87,150 +87,151 @@
             imageList4.TransparentColor = Color.Transparent;
             imageList4.Images.SetKeyName(0, "Screenshot 2025-03-23 011252.png");
             // 
-            // pictureBox1
+            // pic_MyCars_frameFord
             // 
-            pictureBox1.Image = Properties.Resources.Screenshot_2025_03_23_011252;
-            pictureBox1.Location = new Point(81, 54);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(184, 129);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            pic_MyCars_frameFord.Image = Properties.Resources.Screenshot_2025_03_23_011252;
+            pic_MyCars_frameFord.Location = new Point(85, 67);
+            pic_MyCars_frameFord.Name = "pic_MyCars_frameFord";
+            pic_MyCars_frameFord.Size = new Size(184, 129);
+            pic_MyCars_frameFord.TabIndex = 6;
+            pic_MyCars_frameFord.TabStop = false;
             // 
-            // button2
+            // btn_MyCars_ford
             // 
-            button2.BackColor = Color.FromArgb(229, 155, 137);
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button2.ForeColor = Color.FromArgb(37, 30, 56);
-            button2.Location = new Point(81, 179);
-            button2.Name = "button2";
-            button2.Size = new Size(184, 38);
-            button2.TabIndex = 7;
-            button2.Text = "Ford";
-            button2.UseVisualStyleBackColor = false;
+            btn_MyCars_ford.BackColor = Color.FromArgb(229, 155, 137);
+            btn_MyCars_ford.BackgroundImageLayout = ImageLayout.None;
+            btn_MyCars_ford.FlatAppearance.BorderSize = 0;
+            btn_MyCars_ford.FlatStyle = FlatStyle.Flat;
+            btn_MyCars_ford.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_MyCars_ford.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_MyCars_ford.Location = new Point(85, 192);
+            btn_MyCars_ford.Name = "btn_MyCars_ford";
+            btn_MyCars_ford.Size = new Size(184, 38);
+            btn_MyCars_ford.TabIndex = 7;
+            btn_MyCars_ford.Text = "Ford";
+            btn_MyCars_ford.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btn_MyCars_chevy
             // 
-            button3.BackColor = Color.FromArgb(229, 155, 137);
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button3.ForeColor = Color.FromArgb(37, 30, 56);
-            button3.Location = new Point(342, 179);
-            button3.Name = "button3";
-            button3.Size = new Size(184, 38);
-            button3.TabIndex = 8;
-            button3.Text = "Chevy";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            btn_MyCars_chevy.BackColor = Color.FromArgb(229, 155, 137);
+            btn_MyCars_chevy.BackgroundImageLayout = ImageLayout.None;
+            btn_MyCars_chevy.FlatAppearance.BorderSize = 0;
+            btn_MyCars_chevy.FlatStyle = FlatStyle.Flat;
+            btn_MyCars_chevy.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_MyCars_chevy.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_MyCars_chevy.Location = new Point(352, 192);
+            btn_MyCars_chevy.Name = "btn_MyCars_chevy";
+            btn_MyCars_chevy.Size = new Size(184, 38);
+            btn_MyCars_chevy.TabIndex = 8;
+            btn_MyCars_chevy.Text = "Chevy";
+            btn_MyCars_chevy.UseVisualStyleBackColor = false;
+            btn_MyCars_chevy.Click += button3_Click;
             // 
-            // pictureBox2
+            // pic_MyCars_frameChevy
             // 
-            pictureBox2.Image = Properties.Resources.Screenshot_2025_03_23_011252;
-            pictureBox2.Location = new Point(342, 54);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(184, 129);
-            pictureBox2.TabIndex = 9;
-            pictureBox2.TabStop = false;
+            pic_MyCars_frameChevy.Image = Properties.Resources.Screenshot_2025_03_23_011252;
+            pic_MyCars_frameChevy.Location = new Point(352, 67);
+            pic_MyCars_frameChevy.Name = "pic_MyCars_frameChevy";
+            pic_MyCars_frameChevy.Size = new Size(184, 129);
+            pic_MyCars_frameChevy.TabIndex = 9;
+            pic_MyCars_frameChevy.TabStop = false;
             // 
-            // button4
+            // btn_MyCars_honda
             // 
-            button4.BackColor = Color.FromArgb(229, 155, 137);
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button4.ForeColor = Color.FromArgb(37, 30, 56);
-            button4.Location = new Point(621, 179);
-            button4.Name = "button4";
-            button4.Size = new Size(184, 38);
-            button4.TabIndex = 10;
-            button4.Text = "Honda";
-            button4.UseVisualStyleBackColor = false;
+            btn_MyCars_honda.BackColor = Color.FromArgb(229, 155, 137);
+            btn_MyCars_honda.BackgroundImageLayout = ImageLayout.None;
+            btn_MyCars_honda.FlatAppearance.BorderSize = 0;
+            btn_MyCars_honda.FlatStyle = FlatStyle.Flat;
+            btn_MyCars_honda.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_MyCars_honda.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_MyCars_honda.Location = new Point(625, 192);
+            btn_MyCars_honda.Name = "btn_MyCars_honda";
+            btn_MyCars_honda.Size = new Size(184, 38);
+            btn_MyCars_honda.TabIndex = 10;
+            btn_MyCars_honda.Text = "Honda";
+            btn_MyCars_honda.UseVisualStyleBackColor = false;
             // 
-            // pictureBox3
+            // pic_MyCars_frameHonda
             // 
-            pictureBox3.Image = Properties.Resources.Screenshot_2025_03_23_011252;
-            pictureBox3.Location = new Point(621, 54);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(184, 129);
-            pictureBox3.TabIndex = 11;
-            pictureBox3.TabStop = false;
+            pic_MyCars_frameHonda.Image = Properties.Resources.Screenshot_2025_03_23_011252;
+            pic_MyCars_frameHonda.Location = new Point(625, 67);
+            pic_MyCars_frameHonda.Name = "pic_MyCars_frameHonda";
+            pic_MyCars_frameHonda.Size = new Size(184, 129);
+            pic_MyCars_frameHonda.TabIndex = 11;
+            pic_MyCars_frameHonda.TabStop = false;
             // 
-            // pictureBox4
+            // pic_MyCars_ford
             // 
-            pictureBox4.Image = Properties.Resources._9fa50573faae5ee2827b73c7e4ea9ebc_removebg_preview;
-            pictureBox4.Location = new Point(92, 65);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(157, 108);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 12;
-            pictureBox4.TabStop = false;
+            pic_MyCars_ford.Image = Properties.Resources._9fa50573faae5ee2827b73c7e4ea9ebc_removebg_preview;
+            pic_MyCars_ford.Location = new Point(96, 78);
+            pic_MyCars_ford.Name = "pic_MyCars_ford";
+            pic_MyCars_ford.Size = new Size(157, 108);
+            pic_MyCars_ford.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_MyCars_ford.TabIndex = 12;
+            pic_MyCars_ford.TabStop = false;
             // 
-            // pictureBox5
+            // pic_MyCars_chevy
             // 
-            pictureBox5.Image = Properties.Resources._28ce8267dc297ff4432b5be6b1ebaf79_removebg_preview;
-            pictureBox5.Location = new Point(347, 65);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(166, 108);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 13;
-            pictureBox5.TabStop = false;
+            pic_MyCars_chevy.Image = Properties.Resources._28ce8267dc297ff4432b5be6b1ebaf79_removebg_preview;
+            pic_MyCars_chevy.Location = new Point(360, 78);
+            pic_MyCars_chevy.Name = "pic_MyCars_chevy";
+            pic_MyCars_chevy.Size = new Size(166, 108);
+            pic_MyCars_chevy.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_MyCars_chevy.TabIndex = 13;
+            pic_MyCars_chevy.TabStop = false;
             // 
-            // pictureBox6
+            // pic_MyCars_honda
             // 
-            pictureBox6.Image = Properties.Resources.c22df54dbb32b4d5bb6fcf2b2dcf21de_removebg_preview;
-            pictureBox6.Location = new Point(634, 65);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(156, 108);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 14;
-            pictureBox6.TabStop = false;
+            pic_MyCars_honda.Image = Properties.Resources.c22df54dbb32b4d5bb6fcf2b2dcf21de_removebg_preview;
+            pic_MyCars_honda.Location = new Point(638, 78);
+            pic_MyCars_honda.Name = "pic_MyCars_honda";
+            pic_MyCars_honda.Size = new Size(156, 108);
+            pic_MyCars_honda.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_MyCars_honda.TabIndex = 14;
+            pic_MyCars_honda.TabStop = false;
             // 
             // MyCars
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(button4);
-            Controls.Add(pictureBox2);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(pictureBox1);
-            Controls.Add(button1);
-            Controls.Add(btn_IndCar_start);
+            BackColor = Color.FromArgb(227, 225, 232);
+            Controls.Add(pic_MyCars_honda);
+            Controls.Add(pic_MyCars_chevy);
+            Controls.Add(pic_MyCars_ford);
+            Controls.Add(pic_MyCars_frameHonda);
+            Controls.Add(btn_MyCars_honda);
+            Controls.Add(pic_MyCars_frameChevy);
+            Controls.Add(btn_MyCars_chevy);
+            Controls.Add(btn_MyCars_ford);
+            Controls.Add(pic_MyCars_frameFord);
+            Controls.Add(btn_MyCars_selectVehicle);
+            Controls.Add(btn_MyCars_registerNew);
             Margin = new Padding(2);
             Name = "MyCars";
             Size = new Size(885, 506);
             Load += MyCars_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_frameFord).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_frameChevy).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_frameHonda).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_ford).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_chevy).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_MyCars_honda).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btn_IndCar_start;
-        private Button button1;
+        private Button btn_MyCars_registerNew;
+        private Button btn_MyCars_selectVehicle;
         private ImageList imageList4;
-        private PictureBox pictureBox1;
-        private Button button2;
-        private Button button3;
-        private PictureBox pictureBox2;
-        private Button button4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private PictureBox pic_MyCars_frameFord;
+        private Button btn_MyCars_ford;
+        private Button btn_MyCars_chevy;
+        private PictureBox pic_MyCars_frameChevy;
+        private Button btn_MyCars_honda;
+        private PictureBox pic_MyCars_frameHonda;
+        private PictureBox pic_MyCars_ford;
+        private PictureBox pic_MyCars_chevy;
+        private PictureBox pic_MyCars_honda;
     }
 }
