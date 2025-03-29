@@ -28,135 +28,149 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            lbl_Login_login = new Label();
+            pic_Login_logo = new PictureBox();
+            lbl_Login_email = new Label();
+            lbl_Login_password = new Label();
+            txt_Login_email = new TextBox();
+            txt_Login_password = new TextBox();
+            btn_Login_register = new Button();
+            btn_Login_login = new Button();
+            ((System.ComponentModel.ISupportInitialize)pic_Login_logo).BeginInit();
             SuspendLayout();
             // 
-            // label1
+            // lbl_Login_login
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Verdana", 20.25F, FontStyle.Bold);
-            label1.ForeColor = Color.FromArgb(37, 30, 56);
-            label1.Location = new Point(1046, 190);
-            label1.Name = "label1";
-            label1.Size = new Size(148, 49);
-            label1.TabIndex = 0;
-            label1.Text = "Login";
-            label1.Click += label1_Click;
+            lbl_Login_login.AutoSize = true;
+            lbl_Login_login.Font = new Font("Verdana", 20.25F, FontStyle.Bold);
+            lbl_Login_login.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Login_login.Location = new Point(753, 113);
+            lbl_Login_login.Margin = new Padding(2, 0, 2, 0);
+            lbl_Login_login.Name = "lbl_Login_login";
+            lbl_Login_login.Size = new Size(97, 32);
+            lbl_Login_login.TabIndex = 0;
+            lbl_Login_login.Text = "Login";
             // 
-            // pictureBox1
+            // pic_Login_logo
             // 
-            pictureBox1.Image = Properties.Resources.software_smashers_noText;
-            pictureBox1.Location = new Point(65, 97);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(723, 596);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            pic_Login_logo.Image = Properties.Resources.software_smashers_noText;
+            pic_Login_logo.Location = new Point(46, 58);
+            pic_Login_logo.Margin = new Padding(2);
+            pic_Login_logo.Name = "pic_Login_logo";
+            pic_Login_logo.Size = new Size(506, 358);
+            pic_Login_logo.SizeMode = PictureBoxSizeMode.Zoom;
+            pic_Login_logo.TabIndex = 1;
+            pic_Login_logo.TabStop = false;
             // 
-            // label2
+            // lbl_Login_email
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label2.ForeColor = Color.FromArgb(37, 30, 56);
-            label2.Location = new Point(990, 294);
-            label2.Name = "label2";
-            label2.Size = new Size(74, 25);
-            label2.TabIndex = 2;
-            label2.Text = "Email";
-            label2.Click += label2_Click;
+            lbl_Login_email.AutoSize = true;
+            lbl_Login_email.Font = new Font("Verdana", 10F, FontStyle.Bold);
+            lbl_Login_email.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Login_email.Location = new Point(688, 183);
+            lbl_Login_email.Margin = new Padding(2, 0, 2, 0);
+            lbl_Login_email.Name = "lbl_Login_email";
+            lbl_Login_email.Size = new Size(49, 17);
+            lbl_Login_email.TabIndex = 2;
+            lbl_Login_email.Text = "Email";
             // 
-            // label3
+            // lbl_Login_password
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Verdana", 10F, FontStyle.Bold);
-            label3.ForeColor = Color.FromArgb(37, 30, 56);
-            label3.Location = new Point(990, 402);
-            label3.Name = "label3";
-            label3.Size = new Size(122, 25);
-            label3.TabIndex = 3;
-            label3.Text = "Password";
-            label3.Click += label3_Click;
+            lbl_Login_password.AutoSize = true;
+            lbl_Login_password.Font = new Font("Verdana", 10F, FontStyle.Bold);
+            lbl_Login_password.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Login_password.Location = new Point(688, 239);
+            lbl_Login_password.Margin = new Padding(2, 0, 2, 0);
+            lbl_Login_password.Name = "lbl_Login_password";
+            lbl_Login_password.Size = new Size(84, 17);
+            lbl_Login_password.TabIndex = 3;
+            lbl_Login_password.Text = "Password";
             // 
-            // textBox1
+            // txt_Login_email
             // 
-            textBox1.Location = new Point(990, 354);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(331, 31);
-            textBox1.TabIndex = 4;
+            txt_Login_email.Location = new Point(688, 202);
+            txt_Login_email.Margin = new Padding(2);
+            txt_Login_email.Name = "txt_Login_email";
+            txt_Login_email.Size = new Size(233, 23);
+            txt_Login_email.TabIndex = 4;
+            txt_Login_email.TextChanged += txt_Login_email_TextChanged;
             // 
-            // textBox2
+            // txt_Login_password
             // 
-            textBox2.Location = new Point(990, 446);
-            textBox2.Name = "textBox2";
-            textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(331, 31);
-            textBox2.TabIndex = 5;
-            textBox2.TextChanged += textBox2_TextChanged;
+            txt_Login_password.Location = new Point(688, 258);
+            txt_Login_password.Margin = new Padding(2);
+            txt_Login_password.Name = "txt_Login_password";
+            txt_Login_password.PasswordChar = '*';
+            txt_Login_password.Size = new Size(233, 23);
+            txt_Login_password.TabIndex = 5;
+            txt_Login_password.TextChanged += txt_Login_password_TextChanged;
             // 
-            // button1
+            // btn_Login_register
             // 
-            button1.BackColor = Color.FromArgb(229, 155, 137);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button1.ForeColor = Color.FromArgb(37, 30, 56);
-            button1.Location = new Point(969, 524);
-            button1.Name = "button1";
-            button1.Size = new Size(174, 79);
-            button1.TabIndex = 6;
-            button1.Text = "Register";
-            button1.UseVisualStyleBackColor = false;
+            btn_Login_register.BackColor = Color.FromArgb(229, 155, 137);
+            btn_Login_register.FlatAppearance.BorderSize = 0;
+            btn_Login_register.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 169, 200);
+            btn_Login_register.FlatAppearance.MouseOverBackColor = Color.FromArgb(216, 136, 116);
+            btn_Login_register.FlatStyle = FlatStyle.Flat;
+            btn_Login_register.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_Login_register.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_Login_register.Location = new Point(675, 314);
+            btn_Login_register.Margin = new Padding(2);
+            btn_Login_register.Name = "btn_Login_register";
+            btn_Login_register.Size = new Size(122, 47);
+            btn_Login_register.TabIndex = 6;
+            btn_Login_register.Text = "Register";
+            btn_Login_register.UseVisualStyleBackColor = false;
+            btn_Login_register.Click += btn_Login_register_Click;
             // 
-            // button2
+            // btn_Login_login
             // 
-            button2.BackColor = Color.FromArgb(229, 155, 137);
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Verdana", 12F, FontStyle.Bold);
-            button2.ForeColor = Color.FromArgb(37, 30, 56);
-            button2.Location = new Point(1172, 524);
-            button2.Name = "button2";
-            button2.Size = new Size(174, 79);
-            button2.TabIndex = 7;
-            button2.Text = "Login";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btn_Login_login.BackColor = Color.FromArgb(229, 155, 137);
+            btn_Login_login.FlatAppearance.BorderSize = 0;
+            btn_Login_login.FlatAppearance.MouseDownBackColor = Color.FromArgb(60, 169, 200);
+            btn_Login_login.FlatAppearance.MouseOverBackColor = Color.FromArgb(216, 136, 116);
+            btn_Login_login.FlatStyle = FlatStyle.Flat;
+            btn_Login_login.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_Login_login.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_Login_login.Location = new Point(825, 314);
+            btn_Login_login.Margin = new Padding(2);
+            btn_Login_login.Name = "btn_Login_login";
+            btn_Login_login.Size = new Size(122, 47);
+            btn_Login_login.TabIndex = 7;
+            btn_Login_login.Text = "Login";
+            btn_Login_login.UseVisualStyleBackColor = false;
+            btn_Login_login.Click += btn_Login_login_Click;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 225, 232);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(pictureBox1);
-            Controls.Add(label1);
+            Controls.Add(btn_Login_login);
+            Controls.Add(btn_Login_register);
+            Controls.Add(txt_Login_password);
+            Controls.Add(txt_Login_email);
+            Controls.Add(lbl_Login_password);
+            Controls.Add(lbl_Login_email);
+            Controls.Add(pic_Login_logo);
+            Controls.Add(lbl_Login_login);
+            Margin = new Padding(2);
             Name = "Login";
-            Size = new Size(1531, 844);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Size = new Size(1072, 506);
+            ((System.ComponentModel.ISupportInitialize)pic_Login_logo).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Label label1;
-        private PictureBox pictureBox1;
-        private Label label2;
-        private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private Label lbl_Login_login;
+        private PictureBox pic_Login_logo;
+        private Label lbl_Login_email;
+        private Label lbl_Login_password;
+        private TextBox txt_Login_email;
+        private TextBox txt_Login_password;
+        private Button btn_Login_register;
+        private Button btn_Login_login;
     }
 }

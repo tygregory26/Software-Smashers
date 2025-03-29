@@ -17,27 +17,22 @@ namespace SoftwareSmashers
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btn_Login_login_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void btn_Login_register_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void txt_Login_email_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void txt_Login_password_TextChanged(object sender, EventArgs e)
         {
 
         }
