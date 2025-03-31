@@ -34,6 +34,7 @@
             settings1 = new Settings();
             login1 = new Login();
             newUser1 = new NewUser();
+            logs1 = new Logs();
             SuspendLayout();
             // 
             // menu1
@@ -83,11 +84,19 @@
             newUser1.Size = new Size(1531, 844);
             newUser1.TabIndex = 5;
             // 
+            // logs1
+            // 
+            logs1.Location = new Point(267, 0);
+            logs1.Name = "logs1";
+            logs1.Size = new Size(1264, 844);
+            logs1.TabIndex = 6;
+            // 
             // ACarThing
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1531, 842);
+            Controls.Add(logs1);
             Controls.Add(menu1);
             Controls.Add(settings1);
             Controls.Add(individualCar1);
@@ -109,5 +118,6 @@
         private Settings settings1;
         private Login login1;
         private NewUser newUser1;
+        private Logs logs1;
     }
 }
