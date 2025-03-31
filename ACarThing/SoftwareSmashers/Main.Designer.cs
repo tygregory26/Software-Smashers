@@ -46,6 +46,7 @@
             // 
             // myCars1
             // 
+            myCars1.BackColor = Color.FromArgb(227, 225, 232);
             myCars1.Location = new Point(267, 0);
             myCars1.Name = "myCars1";
             myCars1.Size = new Size(1264, 844);
@@ -87,12 +88,12 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1531, 842);
-            Controls.Add(newUser1);
-            Controls.Add(login1);
             Controls.Add(menu1);
             Controls.Add(settings1);
             Controls.Add(individualCar1);
             Controls.Add(myCars1);
+            Controls.Add(newUser1);
+            Controls.Add(login1);
             ForeColor = SystemColors.ControlText;
             Name = "ACarThing";
             Text = "Software Smashers";

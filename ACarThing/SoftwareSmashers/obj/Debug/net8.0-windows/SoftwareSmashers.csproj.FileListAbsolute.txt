@@ -70,3 +70,4 @@ C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSma
 C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.pdb
 C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.genruntimeconfig.cache
 C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\ref\SoftwareSmashers.dll
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.NewCar.resources
