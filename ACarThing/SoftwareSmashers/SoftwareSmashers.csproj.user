@@ -4,6 +4,9 @@
     <Compile Update="IndividualCar.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="InfoBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Login.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -41,6 +41,8 @@
             comboBox5 = new ComboBox();
             btnSaveSettings = new Button();
             btnCancelSettings = new Button();
+            comboBox6 = new ComboBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -146,7 +148,7 @@
             // 
             // btnSaveSettings
             // 
-            btnSaveSettings.Location = new Point(725, 620);
+            btnSaveSettings.Location = new Point(725, 656);
             btnSaveSettings.Name = "btnSaveSettings";
             btnSaveSettings.Size = new Size(112, 34);
             btnSaveSettings.TabIndex = 12;
@@ -155,17 +157,37 @@
             // 
             // btnCancelSettings
             // 
-            btnCancelSettings.Location = new Point(559, 620);
+            btnCancelSettings.Location = new Point(559, 656);
             btnCancelSettings.Name = "btnCancelSettings";
             btnCancelSettings.Size = new Size(112, 34);
             btnCancelSettings.TabIndex = 13;
             btnCancelSettings.Text = "Cancel";
             btnCancelSettings.UseVisualStyleBackColor = true;
             // 
+            // comboBox6
+            // 
+            comboBox6.FormattingEnabled = true;
+            comboBox6.Items.AddRange(new object[] { "12 hour", "24 hour" });
+            comboBox6.Location = new Point(689, 553);
+            comboBox6.Name = "comboBox6";
+            comboBox6.Size = new Size(182, 33);
+            comboBox6.TabIndex = 15;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(516, 556);
+            label7.Name = "label7";
+            label7.Size = new Size(95, 25);
+            label7.TabIndex = 14;
+            label7.Text = "Time Units";
+            // 
             // Settings
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(comboBox6);
+            Controls.Add(label7);
             Controls.Add(btnCancelSettings);
             Controls.Add(btnSaveSettings);
             Controls.Add(comboBox5);
@@ -200,5 +222,7 @@
         private ComboBox comboBox5;
         private Button btnSaveSettings;
         private Button btnCancelSettings;
+        private ComboBox comboBox6;
+        private Label label7;
     }
 }
