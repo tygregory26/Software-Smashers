@@ -1,30 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\",
+  "WorkspaceRootPath": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\infobar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\infobar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\softwaresmashers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\newcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\newcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\sydney\\home folder\\github stuff\\software-smashers\\acarthing\\softwaresmashers\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\mycars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\mycars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\sydney\\home folder\\github stuff\\software-smashers\\acarthing\\softwaresmashers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\sydney\\home folder\\github stuff\\software-smashers\\acarthing\\softwaresmashers\\individualcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\individualcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\softwaresmashers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\softwaresmashers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\sydney\\home folder\\github stuff\\software-smashers\\acarthing\\softwaresmashers\\infobar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\infobar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\softwaresmashers\\mycars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\mycars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\softwaresmashers\\newcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\newcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,11 +58,47 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IndividualCar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\IndividualCar.cs",
+              "RelativeDocumentMoniker": "SoftwareSmashers\\IndividualCar.cs",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\IndividualCar.cs [Design]",
+              "RelativeToolTip": "SoftwareSmashers\\IndividualCar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T02:23:47.271Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Login.cs",
+              "RelativeDocumentMoniker": "SoftwareSmashers\\Login.cs",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Login.cs [Design]",
+              "RelativeToolTip": "SoftwareSmashers\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T02:23:43.643Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NewUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewUser.cs",
+              "RelativeDocumentMoniker": "SoftwareSmashers\\NewUser.cs",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewUser.cs [Design]",
+              "RelativeToolTip": "SoftwareSmashers\\NewUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T02:23:38.24Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Settings.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Settings.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs [Design]",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Settings.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:54:24.934Z",
@@ -58,11 +106,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "NewCar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewCar.cs",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewCar.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\NewCar.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewCar.cs [Design]",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewCar.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\NewCar.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:50:57.511Z",
@@ -70,11 +118,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "MyCars.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\MyCars.cs",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\MyCars.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\MyCars.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\MyCars.cs [Design]",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\MyCars.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\MyCars.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:50:47.517Z",
@@ -84,9 +132,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Menu.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Menu.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs [Design]",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:50:35.442Z",
@@ -96,9 +144,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Main.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs [Design]",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Main.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:49:26.774Z",
@@ -106,11 +154,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "InfoBar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\InfoBar.cs",
+              "DocumentMoniker": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\InfoBar.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\InfoBar.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\InfoBar.cs [Design]",
+              "ToolTip": "C:\\Users\\Sydney\\Home Folder\\Github stuff\\Software-Smashers\\ACarThing\\SoftwareSmashers\\InfoBar.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\InfoBar.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T20:48:36.771Z",

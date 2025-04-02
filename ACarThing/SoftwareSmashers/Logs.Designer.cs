@@ -28,58 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            dataGridView1 = new DataGridView();
-            label1 = new Label();
-            button1 = new Button();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            dataGrid_Logs_data = new DataGridView();
+            lbl_Logs_title = new Label();
+            btn_Logs_back = new Button();
+            ((System.ComponentModel.ISupportInitialize)dataGrid_Logs_data).BeginInit();
             SuspendLayout();
             // 
-            // dataGridView1
+            // dataGrid_Logs_data
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(145, 150);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 62;
-            dataGridView1.Size = new Size(946, 545);
-            dataGridView1.TabIndex = 0;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(227, 225, 232);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(37, 30, 56);
+            dataGridViewCellStyle1.Padding = new Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(37, 30, 56);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(227, 225, 232);
+            dataGrid_Logs_data.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGrid_Logs_data.BackgroundColor = Color.FromArgb(229, 155, 137);
+            dataGrid_Logs_data.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGrid_Logs_data.Location = new Point(105, 88);
+            dataGrid_Logs_data.Margin = new Padding(2, 2, 2, 2);
+            dataGrid_Logs_data.Name = "dataGrid_Logs_data";
+            dataGrid_Logs_data.RowHeadersWidth = 62;
+            dataGrid_Logs_data.Size = new Size(662, 327);
+            dataGrid_Logs_data.TabIndex = 0;
             // 
-            // label1
+            // lbl_Logs_title
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(145, 64);
-            label1.Name = "label1";
-            label1.Size = new Size(181, 25);
-            label1.TabIndex = 1;
-            label1.Text = "Logs for \"CARNAME\"";
-            label1.Click += label1_Click;
+            lbl_Logs_title.AutoSize = true;
+            lbl_Logs_title.Font = new Font("Verdana", 20F, FontStyle.Bold);
+            lbl_Logs_title.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Logs_title.Location = new Point(105, 36);
+            lbl_Logs_title.Margin = new Padding(2, 0, 2, 0);
+            lbl_Logs_title.Name = "lbl_Logs_title";
+            lbl_Logs_title.Size = new Size(328, 32);
+            lbl_Logs_title.TabIndex = 1;
+            lbl_Logs_title.Text = "Logs for \"CARNAME\"";
+            lbl_Logs_title.Click += label1_Click;
             // 
-            // button1
+            // btn_Logs_back
             // 
-            button1.Location = new Point(979, 725);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 2;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
+            btn_Logs_back.BackColor = Color.FromArgb(229, 155, 137);
+            btn_Logs_back.FlatAppearance.BorderSize = 0;
+            btn_Logs_back.FlatStyle = FlatStyle.Flat;
+            btn_Logs_back.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_Logs_back.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_Logs_back.Location = new Point(656, 430);
+            btn_Logs_back.Margin = new Padding(2, 2, 2, 2);
+            btn_Logs_back.Name = "btn_Logs_back";
+            btn_Logs_back.Size = new Size(111, 41);
+            btn_Logs_back.TabIndex = 2;
+            btn_Logs_back.Text = "Back";
+            btn_Logs_back.UseVisualStyleBackColor = false;
             // 
             // Logs
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(button1);
-            Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            BackColor = Color.FromArgb(227, 225, 232);
+            Controls.Add(btn_Logs_back);
+            Controls.Add(lbl_Logs_title);
+            Controls.Add(dataGrid_Logs_data);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Logs";
-            Size = new Size(1264, 844);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Size = new Size(885, 506);
+            ((System.ComponentModel.ISupportInitialize)dataGrid_Logs_data).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private DataGridView dataGridView1;
-        private Label label1;
-        private Button button1;
+        private DataGridView dataGrid_Logs_data;
+        private Label lbl_Logs_title;
+        private Button btn_Logs_back;
     }
 }
