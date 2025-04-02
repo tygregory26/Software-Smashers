@@ -28,201 +28,273 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            label2 = new Label();
-            comboBox1 = new ComboBox();
-            label3 = new Label();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            label4 = new Label();
-            label5 = new Label();
-            comboBox4 = new ComboBox();
-            label6 = new Label();
-            comboBox5 = new ComboBox();
-            btnSaveSettings = new Button();
-            btnCancelSettings = new Button();
-            comboBox6 = new ComboBox();
-            label7 = new Label();
+            lbl_Settings_timeZone = new Label();
+            combo_Settings_timeZone = new ComboBox();
+            lbl_Settings_notifs = new Label();
+            combo_Settings_notifs = new ComboBox();
+            combo_Settings_lengthUnits = new ComboBox();
+            lbl_Settings_lengthUnits = new Label();
+            lbl_Settings_volumeUnits = new Label();
+            combo_Settings_volumeUnits = new ComboBox();
+            lbl_Settings_tempUnits = new Label();
+            combo_Settings_tempUnits = new ComboBox();
+            btn_Settings_save = new Button();
+            btn_Settings_cancel = new Button();
+            combo_Settings_timeUnits = new ComboBox();
+            lbl_Settings_timeUnits = new Label();
+            grp_Settings_settings = new Panel();
+            lbl_Settings_title = new Label();
+            grp_Settings_settings.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // lbl_Settings_timeZone
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(632, 85);
-            label1.Name = "label1";
-            label1.Size = new Size(100, 32);
-            label1.TabIndex = 0;
-            label1.Text = "Settings";
-            label1.Click += label1_Click;
+            lbl_Settings_timeZone.AutoSize = true;
+            lbl_Settings_timeZone.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_Settings_timeZone.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_timeZone.Location = new Point(42, 96);
+            lbl_Settings_timeZone.Margin = new Padding(2, 0, 2, 0);
+            lbl_Settings_timeZone.Name = "lbl_Settings_timeZone";
+            lbl_Settings_timeZone.Size = new Size(111, 18);
+            lbl_Settings_timeZone.TabIndex = 1;
+            lbl_Settings_timeZone.Text = "Time Zone: ";
             // 
-            // label2
+            // combo_Settings_timeZone
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(516, 204);
-            label2.Name = "label2";
-            label2.Size = new Size(104, 25);
-            label2.TabIndex = 1;
-            label2.Text = "Time Zone: ";
+            combo_Settings_timeZone.BackColor = Color.FromArgb(227, 225, 232);
+            combo_Settings_timeZone.FlatStyle = FlatStyle.Flat;
+            combo_Settings_timeZone.ForeColor = Color.FromArgb(37, 30, 56);
+            combo_Settings_timeZone.FormattingEnabled = true;
+            combo_Settings_timeZone.Items.AddRange(new object[] { "Eastern Time", "Central Time", "Mountain Time", "Pacific Time", "Alaska Time", "Hawaii Time" });
+            combo_Settings_timeZone.Location = new Point(262, 96);
+            combo_Settings_timeZone.Margin = new Padding(2, 2, 2, 2);
+            combo_Settings_timeZone.Name = "combo_Settings_timeZone";
+            combo_Settings_timeZone.Size = new Size(129, 23);
+            combo_Settings_timeZone.TabIndex = 2;
             // 
-            // comboBox1
+            // lbl_Settings_notifs
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Eastern Time", "Central Time", "Mountain Time", "Pacific Time", "Alaska Time", "Hawaii Time" });
-            comboBox1.Location = new Point(689, 196);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(182, 33);
-            comboBox1.TabIndex = 2;
+            lbl_Settings_notifs.AutoSize = true;
+            lbl_Settings_notifs.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_Settings_notifs.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_notifs.Location = new Point(42, 137);
+            lbl_Settings_notifs.Margin = new Padding(2, 0, 2, 0);
+            lbl_Settings_notifs.Name = "lbl_Settings_notifs";
+            lbl_Settings_notifs.Size = new Size(116, 18);
+            lbl_Settings_notifs.TabIndex = 3;
+            lbl_Settings_notifs.Text = "Notifications";
             // 
-            // label3
+            // combo_Settings_notifs
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(516, 273);
-            label3.Name = "label3";
-            label3.Size = new Size(112, 25);
-            label3.TabIndex = 3;
-            label3.Text = "Notifications";
+            combo_Settings_notifs.BackColor = Color.FromArgb(227, 225, 232);
+            combo_Settings_notifs.FlatStyle = FlatStyle.Flat;
+            combo_Settings_notifs.ForeColor = Color.FromArgb(37, 30, 56);
+            combo_Settings_notifs.FormattingEnabled = true;
+            combo_Settings_notifs.Items.AddRange(new object[] { "All Notifications", "Important Notifications", "Notifications Off" });
+            combo_Settings_notifs.Location = new Point(262, 137);
+            combo_Settings_notifs.Margin = new Padding(2, 2, 2, 2);
+            combo_Settings_notifs.Name = "combo_Settings_notifs";
+            combo_Settings_notifs.Size = new Size(129, 23);
+            combo_Settings_notifs.TabIndex = 5;
             // 
-            // comboBox2
+            // combo_Settings_lengthUnits
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "All Notifications", "Important Notifications", "Notifications Off" });
-            comboBox2.Location = new Point(689, 265);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(182, 33);
-            comboBox2.TabIndex = 5;
+            combo_Settings_lengthUnits.BackColor = Color.FromArgb(227, 225, 232);
+            combo_Settings_lengthUnits.FlatStyle = FlatStyle.Flat;
+            combo_Settings_lengthUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            combo_Settings_lengthUnits.FormattingEnabled = true;
+            combo_Settings_lengthUnits.Items.AddRange(new object[] { "Miles", "Kilometers" });
+            combo_Settings_lengthUnits.Location = new Point(262, 183);
+            combo_Settings_lengthUnits.Margin = new Padding(2, 2, 2, 2);
+            combo_Settings_lengthUnits.Name = "combo_Settings_lengthUnits";
+            combo_Settings_lengthUnits.Size = new Size(129, 23);
+            combo_Settings_lengthUnits.TabIndex = 6;
             // 
-            // comboBox3
+            // lbl_Settings_lengthUnits
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Items.AddRange(new object[] { "Miles", "Kilometers" });
-            comboBox3.Location = new Point(689, 342);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(182, 33);
-            comboBox3.TabIndex = 6;
+            lbl_Settings_lengthUnits.AutoSize = true;
+            lbl_Settings_lengthUnits.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_Settings_lengthUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_lengthUnits.Location = new Point(42, 183);
+            lbl_Settings_lengthUnits.Margin = new Padding(2, 0, 2, 0);
+            lbl_Settings_lengthUnits.Name = "lbl_Settings_lengthUnits";
+            lbl_Settings_lengthUnits.Size = new Size(118, 18);
+            lbl_Settings_lengthUnits.TabIndex = 7;
+            lbl_Settings_lengthUnits.Text = "Length Units";
             // 
-            // label4
+            // lbl_Settings_volumeUnits
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(516, 350);
-            label4.Name = "label4";
-            label4.Size = new Size(111, 25);
-            label4.TabIndex = 7;
-            label4.Text = "Length Units";
+            lbl_Settings_volumeUnits.AutoSize = true;
+            lbl_Settings_volumeUnits.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_Settings_volumeUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_volumeUnits.Location = new Point(42, 225);
+            lbl_Settings_volumeUnits.Margin = new Padding(2, 0, 2, 0);
+            lbl_Settings_volumeUnits.Name = "lbl_Settings_volumeUnits";
+            lbl_Settings_volumeUnits.Size = new Size(122, 18);
+            lbl_Settings_volumeUnits.TabIndex = 8;
+            lbl_Settings_volumeUnits.Text = "Volume Units";
             // 
-            // label5
+            // combo_Settings_volumeUnits
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(516, 420);
-            label5.Name = "label5";
-            label5.Size = new Size(117, 25);
-            label5.TabIndex = 8;
-            label5.Text = "Volume Units";
+            combo_Settings_volumeUnits.BackColor = Color.FromArgb(227, 225, 232);
+            combo_Settings_volumeUnits.FlatStyle = FlatStyle.Flat;
+            combo_Settings_volumeUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            combo_Settings_volumeUnits.FormattingEnabled = true;
+            combo_Settings_volumeUnits.Items.AddRange(new object[] { "Gallons", "Liters" });
+            combo_Settings_volumeUnits.Location = new Point(262, 225);
+            combo_Settings_volumeUnits.Margin = new Padding(2, 2, 2, 2);
+            combo_Settings_volumeUnits.Name = "combo_Settings_volumeUnits";
+            combo_Settings_volumeUnits.Size = new Size(129, 23);
+            combo_Settings_volumeUnits.TabIndex = 9;
             // 
-            // comboBox4
+            // lbl_Settings_tempUnits
             // 
-            comboBox4.FormattingEnabled = true;
-            comboBox4.Items.AddRange(new object[] { "Gallons", "Liters" });
-            comboBox4.Location = new Point(689, 412);
-            comboBox4.Name = "comboBox4";
-            comboBox4.Size = new Size(182, 33);
-            comboBox4.TabIndex = 9;
+            lbl_Settings_tempUnits.AutoSize = true;
+            lbl_Settings_tempUnits.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_Settings_tempUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_tempUnits.Location = new Point(35, 266);
+            lbl_Settings_tempUnits.Margin = new Padding(2, 0, 2, 0);
+            lbl_Settings_tempUnits.Name = "lbl_Settings_tempUnits";
+            lbl_Settings_tempUnits.Size = new Size(174, 18);
+            lbl_Settings_tempUnits.TabIndex = 10;
+            lbl_Settings_tempUnits.Text = "Temperature Units";
             // 
-            // label6
+            // combo_Settings_tempUnits
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(516, 498);
-            label6.Name = "label6";
-            label6.Size = new Size(155, 25);
-            label6.TabIndex = 10;
-            label6.Text = "Temperature Units";
+            combo_Settings_tempUnits.BackColor = Color.FromArgb(227, 225, 232);
+            combo_Settings_tempUnits.FlatStyle = FlatStyle.Flat;
+            combo_Settings_tempUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            combo_Settings_tempUnits.FormattingEnabled = true;
+            combo_Settings_tempUnits.Items.AddRange(new object[] { "Fahrenheit", "Celsius" });
+            combo_Settings_tempUnits.Location = new Point(262, 266);
+            combo_Settings_tempUnits.Margin = new Padding(2, 2, 2, 2);
+            combo_Settings_tempUnits.Name = "combo_Settings_tempUnits";
+            combo_Settings_tempUnits.Size = new Size(129, 23);
+            combo_Settings_tempUnits.TabIndex = 11;
             // 
-            // comboBox5
+            // btn_Settings_save
             // 
-            comboBox5.FormattingEnabled = true;
-            comboBox5.Items.AddRange(new object[] { "Fahrenheit", "Celsius" });
-            comboBox5.Location = new Point(689, 495);
-            comboBox5.Name = "comboBox5";
-            comboBox5.Size = new Size(182, 33);
-            comboBox5.TabIndex = 11;
+            btn_Settings_save.BackColor = Color.FromArgb(229, 155, 137);
+            btn_Settings_save.FlatAppearance.BorderSize = 0;
+            btn_Settings_save.FlatStyle = FlatStyle.Flat;
+            btn_Settings_save.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_Settings_save.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_Settings_save.Location = new Point(474, 432);
+            btn_Settings_save.Margin = new Padding(2, 2, 2, 2);
+            btn_Settings_save.Name = "btn_Settings_save";
+            btn_Settings_save.Size = new Size(129, 36);
+            btn_Settings_save.TabIndex = 12;
+            btn_Settings_save.Text = "Save";
+            btn_Settings_save.UseVisualStyleBackColor = false;
             // 
-            // btnSaveSettings
+            // btn_Settings_cancel
             // 
-            btnSaveSettings.Location = new Point(725, 656);
-            btnSaveSettings.Name = "btnSaveSettings";
-            btnSaveSettings.Size = new Size(112, 34);
-            btnSaveSettings.TabIndex = 12;
-            btnSaveSettings.Text = "Save";
-            btnSaveSettings.UseVisualStyleBackColor = true;
+            btn_Settings_cancel.BackColor = Color.FromArgb(229, 155, 137);
+            btn_Settings_cancel.FlatAppearance.BorderSize = 0;
+            btn_Settings_cancel.FlatStyle = FlatStyle.Flat;
+            btn_Settings_cancel.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_Settings_cancel.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_Settings_cancel.Location = new Point(286, 432);
+            btn_Settings_cancel.Margin = new Padding(2, 2, 2, 2);
+            btn_Settings_cancel.Name = "btn_Settings_cancel";
+            btn_Settings_cancel.Size = new Size(129, 36);
+            btn_Settings_cancel.TabIndex = 13;
+            btn_Settings_cancel.Text = "Cancel";
+            btn_Settings_cancel.UseVisualStyleBackColor = false;
             // 
-            // btnCancelSettings
+            // combo_Settings_timeUnits
             // 
-            btnCancelSettings.Location = new Point(559, 656);
-            btnCancelSettings.Name = "btnCancelSettings";
-            btnCancelSettings.Size = new Size(112, 34);
-            btnCancelSettings.TabIndex = 13;
-            btnCancelSettings.Text = "Cancel";
-            btnCancelSettings.UseVisualStyleBackColor = true;
+            combo_Settings_timeUnits.BackColor = Color.FromArgb(227, 225, 232);
+            combo_Settings_timeUnits.FlatStyle = FlatStyle.Flat;
+            combo_Settings_timeUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            combo_Settings_timeUnits.FormattingEnabled = true;
+            combo_Settings_timeUnits.Items.AddRange(new object[] { "12 hour", "24 hour" });
+            combo_Settings_timeUnits.Location = new Point(262, 307);
+            combo_Settings_timeUnits.Margin = new Padding(2, 2, 2, 2);
+            combo_Settings_timeUnits.Name = "combo_Settings_timeUnits";
+            combo_Settings_timeUnits.Size = new Size(129, 23);
+            combo_Settings_timeUnits.TabIndex = 15;
             // 
-            // comboBox6
+            // lbl_Settings_timeUnits
             // 
-            comboBox6.FormattingEnabled = true;
-            comboBox6.Items.AddRange(new object[] { "12 hour", "24 hour" });
-            comboBox6.Location = new Point(689, 553);
-            comboBox6.Name = "comboBox6";
-            comboBox6.Size = new Size(182, 33);
-            comboBox6.TabIndex = 15;
+            lbl_Settings_timeUnits.AutoSize = true;
+            lbl_Settings_timeUnits.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            lbl_Settings_timeUnits.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_timeUnits.Location = new Point(42, 307);
+            lbl_Settings_timeUnits.Margin = new Padding(2, 0, 2, 0);
+            lbl_Settings_timeUnits.Name = "lbl_Settings_timeUnits";
+            lbl_Settings_timeUnits.Size = new Size(100, 18);
+            lbl_Settings_timeUnits.TabIndex = 14;
+            lbl_Settings_timeUnits.Text = "Time Units";
             // 
-            // label7
+            // grp_Settings_settings
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(516, 556);
-            label7.Name = "label7";
-            label7.Size = new Size(95, 25);
-            label7.TabIndex = 14;
-            label7.Text = "Time Units";
+            grp_Settings_settings.BackColor = Color.FromArgb(229, 155, 137);
+            grp_Settings_settings.Controls.Add(lbl_Settings_title);
+            grp_Settings_settings.Controls.Add(combo_Settings_timeUnits);
+            grp_Settings_settings.Controls.Add(lbl_Settings_timeZone);
+            grp_Settings_settings.Controls.Add(lbl_Settings_timeUnits);
+            grp_Settings_settings.Controls.Add(combo_Settings_timeZone);
+            grp_Settings_settings.Controls.Add(lbl_Settings_notifs);
+            grp_Settings_settings.Controls.Add(combo_Settings_notifs);
+            grp_Settings_settings.Controls.Add(combo_Settings_tempUnits);
+            grp_Settings_settings.Controls.Add(combo_Settings_lengthUnits);
+            grp_Settings_settings.Controls.Add(lbl_Settings_tempUnits);
+            grp_Settings_settings.Controls.Add(lbl_Settings_lengthUnits);
+            grp_Settings_settings.Controls.Add(combo_Settings_volumeUnits);
+            grp_Settings_settings.Controls.Add(lbl_Settings_volumeUnits);
+            grp_Settings_settings.Location = new Point(235, 40);
+            grp_Settings_settings.Name = "grp_Settings_settings";
+            grp_Settings_settings.Size = new Size(420, 369);
+            grp_Settings_settings.TabIndex = 16;
+            // 
+            // lbl_Settings_title
+            // 
+            lbl_Settings_title.CausesValidation = false;
+            lbl_Settings_title.Font = new Font("Verdana", 20F, FontStyle.Bold);
+            lbl_Settings_title.ForeColor = Color.FromArgb(37, 30, 56);
+            lbl_Settings_title.Location = new Point(101, 10);
+            lbl_Settings_title.Margin = new Padding(10);
+            lbl_Settings_title.Name = "lbl_Settings_title";
+            lbl_Settings_title.Padding = new Padding(10);
+            lbl_Settings_title.Size = new Size(220, 63);
+            lbl_Settings_title.TabIndex = 21;
+            lbl_Settings_title.Text = "Settings";
+            lbl_Settings_title.TextAlign = ContentAlignment.MiddleCenter;
+            lbl_Settings_title.UseWaitCursor = true;
             // 
             // Settings
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(comboBox6);
-            Controls.Add(label7);
-            Controls.Add(btnCancelSettings);
-            Controls.Add(btnSaveSettings);
-            Controls.Add(comboBox5);
-            Controls.Add(label6);
-            Controls.Add(comboBox4);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(label3);
-            Controls.Add(comboBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            BackColor = Color.FromArgb(227, 225, 232);
+            Controls.Add(grp_Settings_settings);
+            Controls.Add(btn_Settings_save);
+            Controls.Add(btn_Settings_cancel);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Settings";
-            Size = new Size(1264, 844);
+            Size = new Size(885, 506);
+            grp_Settings_settings.ResumeLayout(false);
+            grp_Settings_settings.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
-        private Label label2;
-        private ComboBox comboBox1;
-        private Label label3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private Label label4;
-        private Label label5;
-        private ComboBox comboBox4;
-        private Label label6;
-        private ComboBox comboBox5;
-        private Button btnSaveSettings;
-        private Button btnCancelSettings;
-        private ComboBox comboBox6;
-        private Label label7;
+        private Label lbl_Settings_timeZone;
+        private ComboBox combo_Settings_timeZone;
+        private Label lbl_Settings_notifs;
+        private ComboBox combo_Settings_notifs;
+        private ComboBox combo_Settings_lengthUnits;
+        private Label lbl_Settings_lengthUnits;
+        private Label lbl_Settings_volumeUnits;
+        private ComboBox combo_Settings_volumeUnits;
+        private Label lbl_Settings_tempUnits;
+        private ComboBox combo_Settings_tempUnits;
+        private Button btn_Settings_save;
+        private Button btn_Settings_cancel;
+        private ComboBox combo_Settings_timeUnits;
+        private Label lbl_Settings_timeUnits;
+        private Panel grp_Settings_settings;
+        private Label lbl_Settings_title;
     }
 }
