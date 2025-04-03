@@ -16,7 +16,7 @@ namespace SoftwareSmashers
         public Menu()
         {
             InitializeComponent();
-            
+
         }
 
         // Opening Settings
@@ -28,7 +28,18 @@ namespace SoftwareSmashers
 
         private void button2_Click(object sender, EventArgs e)
         {
+            ((ACarThing)this.Parent).loadCarList();
+        }
 
+        private void btn_Menu_viewLogs_Click(object sender, EventArgs e)
+        {
+            ((ACarThing)this.Parent).loadLogs();
+        }
+
+        private void btn_Menu_logout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ((ACarThing)this.Parent).loadLogin();
         }
     }
 }

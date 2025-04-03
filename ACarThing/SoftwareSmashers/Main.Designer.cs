@@ -28,92 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menu1 = new Menu();
-            myCars1 = new MyCars();
-            individualCar1 = new IndividualCar();
-            settings1 = new Settings();
-            login1 = new Login();
-            newUser1 = new NewUser();
-            logs1 = new Logs();
-            infoBar1 = new InfoBar();
             SuspendLayout();
-            // 
-            // menu1
-            // 
-            menu1.BackColor = Color.FromArgb(229, 155, 137);
-            menu1.Location = new Point(0, 0);
-            menu1.Name = "menu1";
-            menu1.Size = new Size(267, 844);
-            menu1.TabIndex = 0;
-            // 
-            // myCars1
-            // 
-            myCars1.BackColor = Color.FromArgb(227, 225, 232);
-            myCars1.Location = new Point(267, 0);
-            myCars1.Name = "myCars1";
-            myCars1.Size = new Size(1264, 844);
-            myCars1.TabIndex = 1;
-            // 
-            // individualCar1
-            // 
-            individualCar1.BackColor = Color.FromArgb(227, 225, 232);
-            individualCar1.Location = new Point(267, 0);
-            individualCar1.Name = "individualCar1";
-            individualCar1.Size = new Size(1264, 844);
-            individualCar1.TabIndex = 2;
-            // 
-            // settings1
-            // 
-            settings1.BackColor = Color.FromArgb(227, 225, 232);
-            settings1.Location = new Point(267, 0);
-            settings1.Name = "settings1";
-            settings1.Size = new Size(1264, 844);
-            settings1.TabIndex = 3;
-            // 
-            // login1
-            // 
-            login1.BackColor = Color.FromArgb(227, 225, 232);
-            login1.Location = new Point(0, 0);
-            login1.Name = "login1";
-            login1.Size = new Size(1531, 844);
-            login1.TabIndex = 4;
-            // 
-            // newUser1
-            // 
-            newUser1.BackColor = Color.FromArgb(227, 225, 232);
-            newUser1.Location = new Point(0, 0);
-            newUser1.Name = "newUser1";
-            newUser1.Size = new Size(1531, 844);
-            newUser1.TabIndex = 5;
-            // 
-            // logs1
-            // 
-            logs1.BackColor = Color.FromArgb(227, 225, 232);
-            logs1.Location = new Point(267, 0);
-            logs1.Name = "logs1";
-            logs1.Size = new Size(1264, 844);
-            logs1.TabIndex = 6;
-            // 
-            // infoBar1
-            // 
-            infoBar1.Location = new Point(267, 0);
-            infoBar1.Name = "infoBar1";
-            infoBar1.Size = new Size(1264, 50);
-            infoBar1.TabIndex = 7;
             // 
             // ACarThing
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1531, 842);
-            Controls.Add(login1);
-            Controls.Add(newUser1);
-            Controls.Add(menu1);
-            Controls.Add(infoBar1);
-            Controls.Add(logs1);
-            Controls.Add(settings1);
-            Controls.Add(individualCar1);
-            Controls.Add(myCars1);
             ForeColor = SystemColors.ControlText;
             Name = "ACarThing";
             Text = "Software Smashers";
@@ -122,14 +43,5 @@
         }
 
         #endregion
-
-        private Menu menu1;
-        private MyCars myCars1;
-        private IndividualCar individualCar1;
-        private Settings settings1;
-        private Login login1;
-        private NewUser newUser1;
-        private Logs logs1;
-        private InfoBar infoBar1;
     }
 }
