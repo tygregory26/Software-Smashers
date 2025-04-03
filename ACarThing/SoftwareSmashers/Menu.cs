@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace SoftwareSmashers
 {
@@ -15,10 +16,13 @@ namespace SoftwareSmashers
         public Menu()
         {
             InitializeComponent();
+            
         }
 
+        // Opening Settings
         private void button1_Click(object sender, EventArgs e)
         {
+            ((ACarThing)this.Parent).loadSettings();
 
         }
 
