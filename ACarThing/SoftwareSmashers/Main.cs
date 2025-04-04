@@ -1,8 +1,11 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace SoftwareSmashers
 {
     public partial class ACarThing : Form
     {
         UserControl? currentPage;
+        dbData DB = new dbData();
 
         public ACarThing()
         {
@@ -34,9 +37,12 @@ namespace SoftwareSmashers
 
         public void loadMenu()
         {
-            if (currentPage != null) { hideCurrentPage(); }
             Menu Menu = new Menu();
             Menu.Parent = this;
+            Menu.Show();
+
+            InfoBar infoBar = new InfoBar();
+            infoBar.Show();
             Menu.Show();
         }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,16 @@ namespace SoftwareSmashers
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGrid_Logs_data_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Logs_Load(object sender, EventArgs e)
+        {
+            dataGrid_Logs_data.DataSource = dbData.viewLogs();
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,23 @@ namespace SoftwareSmashers
             connection.Open();
         }
 
+        public static DataTable? viewLogs()
+        {
+            try
+            {
+                string query = "SELECT * FROM `group1-csci463_ACarThing`.user;";
+
+                MySqlDataAdapter sqlData = new MySqlDataAdapter(query, connection);
+                DataTable dTable = new DataTable();
+                sqlData.Fill(dTable);
+
+                return dTable;
+            }
+            catch (MySqlException ex)
+            {
+                return null; //QUERY FAILED
+            }
+        }
 
     }
 }
