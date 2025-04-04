@@ -52,7 +52,6 @@
             dataGrid_Logs_data.Size = new Size(946, 545);
             dataGrid_Logs_data.TabIndex = 0;
             dataGrid_Logs_data.CellContentClick += dataGrid_Logs_data_CellContentClick;
-            Load += Logs_Load;
             // 
             // lbl_Logs_title
             // 
@@ -88,8 +87,10 @@
             Controls.Add(btn_Logs_back);
             Controls.Add(lbl_Logs_title);
             Controls.Add(dataGrid_Logs_data);
+            Location = new Point(267, 0);
             Name = "Logs";
             Size = new Size(1264, 843);
+            Load += Logs_Load;
             ((System.ComponentModel.ISupportInitialize)dataGrid_Logs_data).EndInit();
             ResumeLayout(false);
             PerformLayout();

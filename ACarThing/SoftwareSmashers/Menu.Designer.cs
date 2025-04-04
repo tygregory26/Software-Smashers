@@ -120,6 +120,7 @@
             btn_Menu_editVehicle.TabIndex = 8;
             btn_Menu_editVehicle.Text = "Edit Vehicle";
             btn_Menu_editVehicle.UseVisualStyleBackColor = true;
+            btn_Menu_editVehicle.Click += btn_Menu_editVehicle_Click;
             // 
             // Menu
             // 

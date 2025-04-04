@@ -41,5 +41,10 @@ namespace SoftwareSmashers
             this.Hide();
             ((ACarThing)this.Parent).loadLogin();
         }
+
+        private void btn_Menu_editVehicle_Click(object sender, EventArgs e)
+        {
+            ((ACarThing)this.Parent).loadCurrCar();
+        }
     }
 }
