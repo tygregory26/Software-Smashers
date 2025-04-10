@@ -33,7 +33,6 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             btn_MyCars_registerNew = new Button();
             btn_MyCars_selectVehicle = new Button();
-            imageList4 = new ImageList(components);
             dataGrid_MyCars_CarsView = new DataGridView();
             txt_MyCar_vehicleID = new TextBox();
             lbl_MyCars_enterID = new Label();
@@ -71,13 +70,6 @@
             btn_MyCars_selectVehicle.Text = "Select Vehicle";
             btn_MyCars_selectVehicle.UseVisualStyleBackColor = false;
             btn_MyCars_selectVehicle.Click += btn_MyCars_selectVehicle_Click;
-            // 
-            // imageList4
-            // 
-            imageList4.ColorDepth = ColorDepth.Depth32Bit;
-            imageList4.ImageStream = (ImageListStreamer)resources.GetObject("imageList4.ImageStream");
-            imageList4.TransparentColor = Color.Transparent;
-            imageList4.Images.SetKeyName(0, "Screenshot 2025-03-23 011252.png");
             // 
             // dataGrid_MyCars_CarsView
             // 
@@ -158,7 +150,6 @@
 
         private Button btn_MyCars_registerNew;
         private Button btn_MyCars_selectVehicle;
-        private ImageList imageList4;
         private DataGridView dataGrid_MyCars_CarsView;
         private TextBox txt_MyCar_vehicleID;
         private Label lbl_MyCars_enterID;

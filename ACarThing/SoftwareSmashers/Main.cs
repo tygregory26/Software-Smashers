@@ -44,18 +44,23 @@ namespace SoftwareSmashers
             InfoBar infoBar = new InfoBar();
             infoBar.Show();
             Menu.Show();
-           
-
-            if (carSreen)
+            try
             {
-                Parent.Controls["btn_Menu_viewLogs"].Show();
-                Parent.Controls["btn_Menu_editVehicle"].Show();
-            }
-            else
+                if (carSreen)
+                {
+                    Menu.Controls["Btn_Menu_viewLogs"].Show();
+                    Menu.Controls["Btn_Menu_editVehicle"].Show();
+                }
+                else
+                {
+                    Menu.Controls["Btn_Menu_viewLogs"].Hide();
+                    Menu.Controls["Btn_Menu_editVehicle"].Hide();
+                }
+            } catch (NullReferenceException nre)
             {
-                Parent.Controls["btn_Menu_viewLogs"].Hide();
-                Parent.Controls["btn_Menu_editVehicle"].Hide();
+                // Temp thing for dealing with this
             }
+            
         }
 
         public void loadSettings()

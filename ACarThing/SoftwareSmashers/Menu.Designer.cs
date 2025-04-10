@@ -147,5 +147,8 @@
         private Button btn_Menu_logout;
         private Button btn_Menu_viewLogs;
         private Button btn_Menu_editVehicle;
+
+        public Button Btn_Menu_viewLogs { get => btn_Menu_viewLogs; set => btn_Menu_viewLogs = value; }
+        public Button Btn_Menu_editVehicle { get => btn_Menu_editVehicle; set => btn_Menu_editVehicle = value; }
     }
 }

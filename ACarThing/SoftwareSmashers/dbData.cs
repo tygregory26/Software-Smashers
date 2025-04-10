@@ -21,9 +21,18 @@ namespace SoftwareSmashers
 
         public dbData()
         {
-            connection = new MySqlConnection();
-            connection.ConnectionString = "server=" + server + ";uid=" + username + ";pwd=" + password + ";database=" + databaseName;
-            connection.Open();
+            try {
+                connection = new MySqlConnection();
+                connection.ConnectionString = "server=" + server + ";uid=" + username + ";pwd=" + password + ";database=" + databaseName;
+                connection.Open();
+            } catch (TimeoutException toe)
+            {
+                // Do something  ??
+            } catch (MySqlException sqle)
+            {
+                // also do something here
+            }
+            
         }
 
         public static DataTable? example()

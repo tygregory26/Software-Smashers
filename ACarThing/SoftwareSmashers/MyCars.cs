@@ -24,7 +24,8 @@ namespace SoftwareSmashers
 
         private void btn_MyCars_selectVehicle_Click(object sender, EventArgs e)
         {
-            
+            ((ACarThing)this.Parent).loadMenu(true);
+            this.Hide();
         }
     }
 }
