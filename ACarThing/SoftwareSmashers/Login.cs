@@ -26,7 +26,7 @@ namespace SoftwareSmashers
             if (user.Length == 0 && pass.Length == 0)
             {
                 this.Hide();
-                ((ACarThing)this.Parent).loadMenu();
+                ((ACarThing)this.Parent).loadMenu(false);
                 return;
             }
         }

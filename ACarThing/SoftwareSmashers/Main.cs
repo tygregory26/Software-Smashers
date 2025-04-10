@@ -35,7 +35,7 @@ namespace SoftwareSmashers
             NewUser.Show();
         }
 
-        public void loadMenu()
+        public void loadMenu(bool carSreen)
         {
             Menu Menu = new Menu();
             Menu.Parent = this;
@@ -44,6 +44,18 @@ namespace SoftwareSmashers
             InfoBar infoBar = new InfoBar();
             infoBar.Show();
             Menu.Show();
+           
+
+            if (carSreen)
+            {
+                Parent.Controls["btn_Menu_viewLogs"].Show();
+                Parent.Controls["btn_Menu_editVehicle"].Show();
+            }
+            else
+            {
+                Parent.Controls["btn_Menu_viewLogs"].Hide();
+                Parent.Controls["btn_Menu_editVehicle"].Hide();
+            }
         }
 
         public void loadSettings()

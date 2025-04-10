@@ -30,7 +30,7 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyCars));
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             btn_MyCars_registerNew = new Button();
             btn_MyCars_selectVehicle = new Button();
             imageList4 = new ImageList(components);
@@ -70,6 +70,7 @@
             btn_MyCars_selectVehicle.TabIndex = 5;
             btn_MyCars_selectVehicle.Text = "Select Vehicle";
             btn_MyCars_selectVehicle.UseVisualStyleBackColor = false;
+            btn_MyCars_selectVehicle.Click += btn_MyCars_selectVehicle_Click;
             // 
             // imageList4
             // 
@@ -80,13 +81,13 @@
             // 
             // dataGrid_MyCars_CarsView
             // 
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = Color.FromArgb(227, 225, 232);
-            dataGridViewCellStyle2.ForeColor = Color.FromArgb(37, 30, 56);
-            dataGridViewCellStyle2.Padding = new Padding(2);
-            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(37, 30, 56);
-            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(227, 225, 232);
-            dataGrid_MyCars_CarsView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(227, 225, 232);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(37, 30, 56);
+            dataGridViewCellStyle1.Padding = new Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(37, 30, 56);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(227, 225, 232);
+            dataGrid_MyCars_CarsView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGrid_MyCars_CarsView.BackgroundColor = Color.FromArgb(229, 155, 137);
             dataGrid_MyCars_CarsView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGrid_MyCars_CarsView.Location = new Point(51, 96);
@@ -120,7 +121,6 @@
             lbl_MyCars_enterID.Size = new Size(270, 32);
             lbl_MyCars_enterID.TabIndex = 23;
             lbl_MyCars_enterID.Text = "Enter Vehicle ID:";
-            lbl_MyCars_enterID.Click += label1_Click_1;
             // 
             // lbl_MyCars_title
             // 
@@ -145,7 +145,7 @@
             Controls.Add(btn_MyCars_selectVehicle);
             Controls.Add(btn_MyCars_registerNew);
             Location = new Point(267, 0);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "MyCars";
             Size = new Size(885, 506);
             Load += MyCars_Load;
