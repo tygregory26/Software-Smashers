@@ -23,7 +23,7 @@ namespace SoftwareSmashers
             try
             {
                 connection = new MySqlConnection();
-                connection.ConnectionString = $"server={server};uid={username};pwd={password};database={databaseName}";
+                connection.ConnectionString = "server=" + server + ";uid=" + username + ";pwd=" + password + ";database=" + databaseName;
                 connection.Open();
             }
             catch (TimeoutException toe)
@@ -40,7 +40,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT * FROM user;";
+                string query = "SELECT * FROM `group1-csci463_ACarThing`.user;";
                 MySqlDataAdapter sqlData = new MySqlDataAdapter(query, connection);
                 DataTable dTable = new DataTable();
                 sqlData.Fill(dTable);
@@ -48,13 +48,15 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Query failed: " + ex.Message);
-                return null;
             }
+            return null;
         }
 
         public static int? login(string email, string password)
         {
+            // using email and password, check to make sure they match and return userID
             try
             {
                 string query = "SELECT userID FROM user WHERE email = @Email AND password = @Password;";
@@ -67,13 +69,17 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Login failed: " + ex.Message);
-                return null;
             }
+            return null;
         }
 
         public static bool newUser(string firstName, string lastName, string email, string phoneNum, string password)
         {
+            // creates a new user in the database, returns true if successful and false if unsuccessful. 
+            // we will also need to add another query for creating settings - this would be whatever we want to be set as default settings
+            // we could also just call settings(userID) within this function.
             try
             {
                 string query = "INSERT INTO user (firstName, lastName, email, phoneNum, password) VALUES (@First, @Last, @Email, @Phone, @Pass);";
@@ -88,13 +94,16 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("New user failed: " + ex.Message);
-                return false;
             }
+            return false;
         }
 
         public static bool updateUser(string userID, string firstName, string lastName, string email, string phoneNum, string password)
         {
+            // updates existing user, returns true if successful and false if unsuccessful. 
+            // see newUser for formatting
             try
             {
                 string query = "UPDATE user SET firstName = @First, lastName = @Last, email = @Email, phoneNum = @Phone, password = @Pass WHERE userID = @ID;";
@@ -110,13 +119,16 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Update failed: " + ex.Message);
-                return false;
             }
+            return false;
         }
 
         public static string settings(int userID)
         {
+            // pulls settings info from the database based on userID
+            // we should either create a user class or return it all as an array?
             try
             {
                 string query = "SELECT settingJSON FROM settings WHERE userID = @ID;";
@@ -127,13 +139,16 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Settings load failed: " + ex.Message);
-                return "";
             }
+            return "";
         }
 
         public static DataTable? listVehicles(int userID)
         {
+            // lists out all vehicles associated with a specific userID
+            // see viewLogs for formatting
             try
             {
                 string query = "SELECT * FROM vehicle WHERE userID = @ID;";
@@ -146,13 +161,18 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Vehicle list failed: " + ex.Message);
-                return null;
             }
+            return null;
         }
 
         public static bool addVehicle(int userID, string make, string model, string year, string vin, int vehicleType, float battery, float fuel, float oil, float engineTemp, string carName)
         {
+            // creating a new vehicle attatched to userID
+            // we may be randomizing battery, fuel, oil, and engine temp based on vehicle type
+            // make sure to add userID and vehicleID to drivers table (if someone is adding a vehicle it should be assumed they are a driver)
+            // see newUser for formatting
             try
             {
                 string query = @"INSERT INTO vehicle (userID, make, model, year, vin, vehicleType, battery, fuel, oil, engineTemp, carName)
@@ -174,13 +194,15 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Add vehicle failed: " + ex.Message);
-                return false;
             }
+            return false;
         }
 
         public static DataTable? viewLogs()
         {
+            // using carID find all logs associated and display them nicely (we don't need to display id's)
             try
             {
                 string query = "SELECT dateLogged, description, mileage FROM logs ORDER BY dateLogged DESC;";
@@ -191,9 +213,10 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                //query failed
                 Console.WriteLine("Log view failed: " + ex.Message);
-                return null;
             }
+            return null;
         }
     }
 }
