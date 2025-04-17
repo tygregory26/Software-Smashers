@@ -33,18 +33,32 @@ namespace SoftwareSmashers
 
         private void btn_Login_register_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ((ACarThing)this.Parent).loadNewUser();
-        }
+            string email = txt_Login_email.Text;
+            string pass = txt_Login_password.Text;
 
-        private void txt_Login_email_TextChanged(object sender, EventArgs e)
-        {
+            if (email.Length == 0 && pass.Length == 0)
+            {
+                this.Hide();
+                ((ACarThing)this.Parent).loadNewUser(1);
+                return;
+            }
 
-        }
+            //Console.WriteLine("Email: " + email + "\nPass: " + pass);
 
-        private void txt_Login_password_TextChanged(object sender, EventArgs e)
-        {
+            int? user = dbData.login(email, pass);
 
+            // This is a test
+            //Console.WriteLine("User ID: " + user);
+
+            if (user != null)
+            {
+                this.Hide();
+                ((ACarThing)this.Parent).loadNewUser(user.Value);
+            }
+            else
+            {
+                MessageBox.Show("Invalid email or password.");
+            }
         }
     }
 }

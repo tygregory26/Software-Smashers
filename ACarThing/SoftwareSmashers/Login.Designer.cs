@@ -93,7 +93,6 @@
             txt_Login_email.Name = "txt_Login_email";
             txt_Login_email.Size = new Size(233, 23);
             txt_Login_email.TabIndex = 4;
-            txt_Login_email.TextChanged += txt_Login_email_TextChanged;
             // 
             // txt_Login_password
             // 
@@ -103,7 +102,6 @@
             txt_Login_password.PasswordChar = '*';
             txt_Login_password.Size = new Size(233, 23);
             txt_Login_password.TabIndex = 5;
-            txt_Login_password.TextChanged += txt_Login_password_TextChanged;
             // 
             // btn_Login_register
             // 

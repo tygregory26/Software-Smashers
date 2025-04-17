@@ -12,14 +12,19 @@ namespace SoftwareSmashers
 {
     public partial class MyCars : UserControl
     {
-        public MyCars()
+        private int userID;
+        public static DataGridView carsData = new DataGridView();
+
+        public MyCars(int userID)
         {
             InitializeComponent();
+            this.userID = userID;
         }
 
         private void MyCars_Load(object sender, EventArgs e)
         {
-
+            carsData = dataGrid_MyCars_CarsView;
+            carsData.DataSource = dbData.listVehicles(userID);
         }
 
         private void btn_MyCars_selectVehicle_Click(object sender, EventArgs e)

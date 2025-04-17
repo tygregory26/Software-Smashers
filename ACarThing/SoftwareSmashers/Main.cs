@@ -5,6 +5,7 @@ namespace SoftwareSmashers
     public partial class ACarThing : Form
     {
         UserControl? currentPage;
+        int userID;
         dbData DB = new dbData();
 
         public ACarThing()
@@ -26,9 +27,10 @@ namespace SoftwareSmashers
             Login.Show();
         }
 
-        public void loadNewUser()
+        public void loadNewUser(int userID)
         {
             if (currentPage != null) { hideCurrentPage(); }
+            this.userID = userID;
             NewUser NewUser = new NewUser();
             currentPage = NewUser;
             NewUser.Parent = this;
@@ -75,7 +77,7 @@ namespace SoftwareSmashers
         public void loadCarList()
         {
             if (currentPage != null) { hideCurrentPage(); }
-            MyCars carsList = new MyCars();
+            MyCars carsList = new MyCars(userID);
             currentPage = carsList;
             carsList.Parent = this;
             carsList.Show();

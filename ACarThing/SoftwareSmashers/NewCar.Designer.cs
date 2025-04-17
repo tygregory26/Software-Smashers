@@ -50,6 +50,7 @@
             toolTip = new ToolTip(components);
             btn_NewCar_Save = new Button();
             btn_NewCar_Cancel = new Button();
+            btn_NewCar_Delete = new Button();
             ((System.ComponentModel.ISupportInitialize)pic_NewCar_BigImage).BeginInit();
             grp_NewCar_VehicleInfo.SuspendLayout();
             panel1.SuspendLayout();
@@ -342,20 +343,37 @@
             btn_NewCar_Cancel.FlatStyle = FlatStyle.Flat;
             btn_NewCar_Cancel.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_NewCar_Cancel.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_NewCar_Cancel.Location = new Point(200, 690);
+            btn_NewCar_Cancel.Location = new Point(317, 689);
             btn_NewCar_Cancel.Margin = new Padding(4, 5, 4, 5);
             btn_NewCar_Cancel.Name = "btn_NewCar_Cancel";
-            btn_NewCar_Cancel.Size = new Size(226, 63);
+            btn_NewCar_Cancel.Size = new Size(163, 63);
             btn_NewCar_Cancel.TabIndex = 20;
             btn_NewCar_Cancel.Text = "CANCEL";
             btn_NewCar_Cancel.UseVisualStyleBackColor = false;
             btn_NewCar_Cancel.Click += button1_Click;
+            // 
+            // btn_NewCar_Delete
+            // 
+            btn_NewCar_Delete.BackColor = Color.FromArgb(229, 155, 137);
+            btn_NewCar_Delete.BackgroundImageLayout = ImageLayout.None;
+            btn_NewCar_Delete.FlatAppearance.BorderSize = 0;
+            btn_NewCar_Delete.FlatStyle = FlatStyle.Flat;
+            btn_NewCar_Delete.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_NewCar_Delete.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_NewCar_Delete.Location = new Point(136, 689);
+            btn_NewCar_Delete.Margin = new Padding(4, 5, 4, 5);
+            btn_NewCar_Delete.Name = "btn_NewCar_Delete";
+            btn_NewCar_Delete.Size = new Size(163, 63);
+            btn_NewCar_Delete.TabIndex = 21;
+            btn_NewCar_Delete.Text = "DELETE";
+            btn_NewCar_Delete.UseVisualStyleBackColor = false;
             // 
             // NewCar
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 225, 232);
+            Controls.Add(btn_NewCar_Delete);
             Controls.Add(btn_NewCar_Cancel);
             Controls.Add(btn_NewCar_Save);
             Controls.Add(grp_NewCar_VehicleInfo);
@@ -394,5 +412,6 @@
         private Panel panel1;
         private Label lbl_NewCar_vehicleName;
         private TextBox txt_NewCar_vehicleName;
+        private Button btn_NewCar_Delete;
     }
 }
