@@ -26,39 +26,28 @@ namespace SoftwareSmashers
             if (user.Length == 0 && pass.Length == 0)
             {
                 this.Hide();
-                ((ACarThing)this.Parent).loadMenu(false);
-                return;
-            }
-        }
-
-        private void btn_Login_register_Click(object sender, EventArgs e)
-        {
-            string email = txt_Login_email.Text;
-            string pass = txt_Login_password.Text;
-
-            if (email.Length == 0 && pass.Length == 0)
-            {
-                this.Hide();
-                ((ACarThing)this.Parent).loadNewUser(1);
+                ((ACarThing)this.Parent).loadMenu(1);
                 return;
             }
 
-            //Console.WriteLine("Email: " + email + "\nPass: " + pass);
+            int? userID = dbData.login(user, pass);
 
-            int? user = dbData.login(email, pass);
-
-            // This is a test
-            //Console.WriteLine("User ID: " + user);
-
-            if (user != null)
+            if (userID.HasValue)
             {
                 this.Hide();
-                ((ACarThing)this.Parent).loadNewUser(user.Value);
+                ((ACarThing)this.Parent).loadMenu(userID.Value);
             }
             else
             {
                 MessageBox.Show("Invalid email or password.");
             }
+        }
+
+        private void btn_Login_register_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ((ACarThing)this.Parent).loadNewUser();
+
         }
     }
 }

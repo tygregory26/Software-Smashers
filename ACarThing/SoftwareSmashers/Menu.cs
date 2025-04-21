@@ -13,10 +13,17 @@ namespace SoftwareSmashers
 {
     public partial class Menu : UserControl
     {
+        private int userID;
         public Menu()
         {
             InitializeComponent();
-
+        }
+        public Menu(int user)
+        {
+            InitializeComponent();
+            this.userID = user;
+            string name = dbData.getName(userID);
+            this.btn_Menu_settings.Text = "Welcome, " + name;
         }
 
         // Opening Settings
@@ -44,7 +51,7 @@ namespace SoftwareSmashers
 
         private void btn_Menu_editVehicle_Click(object sender, EventArgs e)
         {
-            ((ACarThing)this.Parent).loadCurrCar();
+            //((ACarThing)this.Parent).loadCurrCar();
         }
     }
 }

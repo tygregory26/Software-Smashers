@@ -6,6 +6,7 @@ namespace SoftwareSmashers
     {
         UserControl? currentPage;
         int userID;
+        int carID;
         dbData DB = new dbData();
 
         public ACarThing()
@@ -27,7 +28,7 @@ namespace SoftwareSmashers
             Login.Show();
         }
 
-        public void loadNewUser(int userID)
+        public void loadNewUser()
         {
             if (currentPage != null) { hideCurrentPage(); }
             this.userID = userID;
@@ -37,32 +38,15 @@ namespace SoftwareSmashers
             NewUser.Show();
         }
 
-        public void loadMenu(bool carSreen)
+        public void loadMenu(int userID)
         {
-            Menu Menu = new Menu();
+            Menu Menu = new Menu(userID);
             Menu.Parent = this;
             Menu.Show();
 
             InfoBar infoBar = new InfoBar();
             infoBar.Show();
             Menu.Show();
-            try
-            {
-                if (carSreen)
-                {
-                    Menu.Controls["Btn_Menu_viewLogs"].Show();
-                    Menu.Controls["Btn_Menu_editVehicle"].Show();
-                }
-                else
-                {
-                    Menu.Controls["Btn_Menu_viewLogs"].Hide();
-                    Menu.Controls["Btn_Menu_editVehicle"].Hide();
-                }
-            } catch (NullReferenceException nre)
-            {
-                // Temp thing for dealing with this
-            }
-            
         }
 
         public void loadSettings()
@@ -83,10 +67,11 @@ namespace SoftwareSmashers
             carsList.Show();
         }
 
-        public void loadCurrCar()
+        public void loadCurrCar(int carID)
         {
             if (currentPage != null) { hideCurrentPage(); }
-            IndividualCar individualCar = new IndividualCar();
+            this.carID = carID;
+            IndividualCar individualCar = new IndividualCar(userID, carID);
             currentPage = individualCar;
             individualCar.Parent = this;
             individualCar.Show();

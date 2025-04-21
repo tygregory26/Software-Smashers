@@ -148,7 +148,6 @@
             radiobtn_NewCar_Hybrid.TabIndex = 18;
             radiobtn_NewCar_Hybrid.Text = "Hybrid";
             radiobtn_NewCar_Hybrid.UseVisualStyleBackColor = true;
-            radiobtn_NewCar_Hybrid.CheckedChanged += radiobtn_NewCar_Hybrid_CheckedChanged;
             // 
             // radiobtn_NewCar_Gas
             // 
@@ -161,7 +160,6 @@
             radiobtn_NewCar_Gas.TabIndex = 16;
             radiobtn_NewCar_Gas.Text = "Gas";
             radiobtn_NewCar_Gas.UseVisualStyleBackColor = true;
-            radiobtn_NewCar_Gas.CheckedChanged += radiobtn_NewCar_Gas_CheckedChanged;
             // 
             // radiobtn_NewCar_Electric
             // 
@@ -174,7 +172,6 @@
             radiobtn_NewCar_Electric.TabIndex = 17;
             radiobtn_NewCar_Electric.Text = "Electric";
             radiobtn_NewCar_Electric.UseVisualStyleBackColor = true;
-            radiobtn_NewCar_Electric.CheckedChanged += radiobtn_NewCar_Electric_CheckedChanged;
             // 
             // lbl_NewCar_Type
             // 
@@ -254,7 +251,6 @@
             lbl_NewCar_Make.TextAlign = ContentAlignment.MiddleLeft;
             toolTip.SetToolTip(lbl_NewCar_Make, "The brand that made the vehicle.");
             lbl_NewCar_Make.UseWaitCursor = true;
-            lbl_NewCar_Make.Click += lbl_IndCar_inside_Click;
             // 
             // txt_NewCar_VIN
             // 
@@ -333,7 +329,6 @@
             btn_NewCar_Save.TabIndex = 19;
             btn_NewCar_Save.Text = "SAVE";
             btn_NewCar_Save.UseVisualStyleBackColor = false;
-            btn_NewCar_Save.Click += btn_IndCar_windows_Click;
             // 
             // btn_NewCar_Cancel
             // 
@@ -350,7 +345,6 @@
             btn_NewCar_Cancel.TabIndex = 20;
             btn_NewCar_Cancel.Text = "CANCEL";
             btn_NewCar_Cancel.UseVisualStyleBackColor = false;
-            btn_NewCar_Cancel.Click += button1_Click;
             // 
             // btn_NewCar_Delete
             // 

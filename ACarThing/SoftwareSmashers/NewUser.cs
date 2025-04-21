@@ -26,7 +26,7 @@ namespace SoftwareSmashers
             string phone = txt_NewUser_phoneNum.Text;
 
             this.Hide();
-            ((ACarThing)this.Parent).loadMenu(false);
+            //((ACarThing)this.Parent).loadMenu(false);
             return;
         }
 

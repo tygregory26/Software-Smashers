@@ -76,6 +76,7 @@ namespace SoftwareSmashers
         public static Boolean newUser(string firstName, string lastName, string email, string phoneNum, string password)
         // creates a new user in the database, returns true if successful and false if unsuccessful. 
         {
+            Console.WriteLine("database");
             try
             {
                 string query = "INSERT INTO `group1-csci463_ACarThing`.user " +
@@ -169,6 +170,30 @@ namespace SoftwareSmashers
         // using carID find all logs associated and display them nicely (we don't need to display id's)
         {
             return null;
+        }
+
+        public static string viewVehicle()
+        // using carID return required info from the database (look at IndividualCar for info required)
+        {
+            return "";
+        }
+
+        public static string editVehicle()
+        // using carID return required info from the database (look at NewCar for info required)
+        {
+            return "";
+        }
+
+        public static Boolean checkDriver(int userID, int carID)
+        // check if the userID is a driver of carID
+        {
+            return false;
+        }
+
+        internal static string getName(int userID)
+        // get the first name associated with userID
+        {
+            return "Test";
         }
     }
 }

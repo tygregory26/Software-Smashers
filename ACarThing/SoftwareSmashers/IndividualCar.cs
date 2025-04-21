@@ -12,9 +12,18 @@ namespace SoftwareSmashers
 {
     public partial class IndividualCar : UserControl
     {
+        private int userID;
+        private int carID;
+
         public IndividualCar()
         {
             InitializeComponent();
+        }
+        public IndividualCar(int userID, int carID)
+        {
+            InitializeComponent();
+            this.userID = userID;
+            this.carID = carID;
         }
 
         private void btn_IndCar_start_Click(object sender, EventArgs e)

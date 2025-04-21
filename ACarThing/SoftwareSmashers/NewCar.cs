@@ -12,41 +12,14 @@ namespace SoftwareSmashers
 {
     public partial class NewCar : UserControl
     {
-        public NewCar()
-        {
-            InitializeComponent();
-        }
-
         // Radio button engine types selection has the relevant integer asssociations
         // Gas:        0
         // Electric:   1
         // Hybrid:     2
-        private void lbl_IndCar_inside_Click(object sender, EventArgs e)
+
+        public NewCar()
         {
-
-        }
-
-        private void radiobtn_NewCar_Electric_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radiobtn_NewCar_Gas_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void radiobtn_NewCar_Hybrid_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_IndCar_windows_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button1_Click(object sender, EventArgs e)
-        {
-
+            InitializeComponent();
         }
     }
 }
