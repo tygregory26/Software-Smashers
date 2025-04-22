@@ -13,6 +13,7 @@ namespace SoftwareSmashers
     public partial class MyCars : UserControl
     {
         private int userID;
+        private int carID;
         public static DataGridView carsData = new DataGridView();
 
         public MyCars(int userID)
@@ -32,7 +33,21 @@ namespace SoftwareSmashers
             //Check if txt box contains a car that userID is a driver for
             //load IndividualCar page with carID
             //((ACarThing)this.Parent).loadMenu(true);
-            this.Hide();
+            try
+            {
+                this.carID = Int32.Parse(txt_MyCar_vehicleID.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Please enter a valid vehicleID");
+                return;
+            }
+            if (dbData.checkDriver(userID, carID))
+            {
+                ((ACarThing)this.Parent).loadCurrCar(carID);
+                this.Hide();
+            }
+            MessageBox.Show("Please enter a valid vehicleID");
         }
     }
 }

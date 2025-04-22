@@ -184,10 +184,16 @@ namespace SoftwareSmashers
             return "";
         }
 
+        public static Boolean addDriver(string email, int carID)
+        // using email, search for a driverID and add this person as a driver to carID
+        {
+            return false;
+        }
+
         public static Boolean checkDriver(int userID, int carID)
         // check if the userID is a driver of carID
         {
-            return false;
+            return true;
         }
 
         internal static string getName(int userID)
