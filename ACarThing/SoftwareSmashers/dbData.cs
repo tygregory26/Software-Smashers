@@ -116,13 +116,6 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static string settings(int userID)
-        // pulls settings info from the database based on userID
-        // we should either create a user class or return it all as an array?
-        {
-            return "";
-        }
-
         public static DataTable? listVehicles(int userID)
         // lists out all vehicles associated with a specific userID
         // see viewLogs for formatting
@@ -167,6 +160,13 @@ namespace SoftwareSmashers
                 //query failed
             }
             return false;
+        }
+        
+        public static string settings(int userID)
+        // pulls settings info from the database based on userID
+        // we should either create a user class or return it all as an array?
+        {
+            return "";
         }
 
         public static DataTable? viewLogs()
