@@ -20,14 +20,17 @@ namespace SoftwareSmashers
 
         public dbData()
         {
-            try {
+            try
+            {
                 connection = new MySqlConnection();
                 connection.ConnectionString = "server=" + server + ";uid=" + username + ";pwd=" + password + ";database=" + databaseName;
                 connection.Open();
-            } catch (TimeoutException toe)
+            }
+            catch (TimeoutException toe)
             {
                 // Do something  ??
-            } catch (MySqlException sqle)
+            }
+            catch (MySqlException sqle)
             {
                 // also do something here
             }
@@ -172,10 +175,64 @@ namespace SoftwareSmashers
             return null;
         }
 
-        public static string viewVehicle()
-        // using carID return required info from the database (look at IndividualCar for info required)
+        public static string getCarName(int carID)
+        // using carID return carName
         {
-            return "";
+            return "Name";
+        }
+
+        public static Boolean getCarStartStatus(int carID)
+        // using carID return true if car is on, false if off
+        {
+            return false;
+        }
+
+        public static Boolean getCarWindowStatus(int carID)
+        // using carID return true if windows are open, false if closed
+        {
+            return false;
+        }
+
+        public static Boolean getCarLockStatus(int carID)
+        // using carID return true if car is locked, false if not
+        {
+            return false;
+        }
+
+        public static Boolean getCarArmStatus(int carID)
+        // using carID return true if car is alarmed, false if not
+        {
+            return false;
+        }
+
+        public static float getCarTemp(int carID)
+        // using carID retrun the temperature of the car
+        {
+            return 0.0f;
+        }
+
+        public static float getOutsideTemp()
+        // not sure how we want to get this? Should we hardcode a temp?
+        {
+            return 72.3f;
+        }
+
+        public static int getCarType(int carID)
+        // using carID return the car type, 0 = gas, 1 = electric, 2 = hybrid
+        {
+            return 0;
+        }
+
+        public static float getCarBattery(int carID)
+        // using carID return the percent (100% = 1, 50% = 0.5) of Battery
+        {
+            return 0.0f;
+        }
+
+        public static float getCarFuel(int carID)
+        // using carID return the percent (100% = 1, 50% = 0.5) of Fuel
+        {
+            return 0.0f;
         }
 
         public static string editVehicle()
@@ -196,10 +253,34 @@ namespace SoftwareSmashers
             return true;
         }
 
-        internal static string getName(int userID)
+        public static string getName(int userID)
         // get the first name associated with userID
         {
             return "Test";
+        }
+
+        public static Boolean swapStartCar(int carID, Boolean newValue)
+        // set the newValue for carID (car is starting or turning off) return true when done
+        {
+            return false;
+        }
+
+        public static Boolean swapWindow(int carID, Boolean newValue)
+        // set the newValue for carID (windows are opening or closing) return true when done
+        {
+            return false;
+        }
+
+        public static Boolean swapLock(int carID, Boolean newValue)
+        // set the newValue for carID (locking or unlocking car) return true when done
+        {
+            return false;
+        }
+
+        public static Boolean swapArm(int carID, Boolean newValue)
+        // set the newValue for carID (arming or disarming) return true when done
+        {
+            return false;
         }
     }
 }

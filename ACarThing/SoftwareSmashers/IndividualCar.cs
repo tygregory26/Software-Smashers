@@ -24,6 +24,28 @@ namespace SoftwareSmashers
             InitializeComponent();
             this.userID = userID;
             this.carID = carID;
+
+            this.lbl_IndCar_carName.Text = dbData.getCarName(carID);
+
+            int carType = dbData.getCarType(carID);
+            switch (carType)
+            {
+                case 0:
+                    // gas type is fuel
+                    // remove bottom fuel percent and set top one to correct type
+                    break;
+                case 1:
+                    // gas type is electric
+                    // remove bottom fuel percent and set top one to correct type
+                    break;
+                case 2:
+                    // gas type is hybrid
+                    // keep both fuel percents and set them
+                    break;
+                default:
+                    // error message?
+                    break;
+            }
         }
 
         private void btn_IndCar_start_Click(object sender, EventArgs e)

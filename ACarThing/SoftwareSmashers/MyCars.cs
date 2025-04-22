@@ -46,6 +46,7 @@ namespace SoftwareSmashers
             {
                 ((ACarThing)this.Parent).loadCurrCar(carID);
                 this.Hide();
+                return;
             }
             MessageBox.Show("Please enter a valid vehicleID");
         }
