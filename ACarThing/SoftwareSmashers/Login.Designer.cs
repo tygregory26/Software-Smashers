@@ -57,7 +57,7 @@
             pic_Login_logo.Location = new Point(46, 58);
             pic_Login_logo.Margin = new Padding(2);
             pic_Login_logo.Name = "pic_Login_logo";
-            pic_Login_logo.Size = new Size(506, 358);
+            pic_Login_logo.Size = new Size(508, 378);
             pic_Login_logo.SizeMode = PictureBoxSizeMode.Zoom;
             pic_Login_logo.TabIndex = 1;
             pic_Login_logo.TabStop = false;
