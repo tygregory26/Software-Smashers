@@ -14,6 +14,9 @@ namespace SoftwareSmashers
     {
         private int userID;
         private int carID;
+        private float fuelpercent1;
+        private float fuelpercent2;
+        private float fuelwidth = 747f;
 
         public IndividualCar()
         {
@@ -28,19 +31,45 @@ namespace SoftwareSmashers
             this.lbl_IndCar_carName.Text = dbData.getCarName(carID);
 
             int carType = dbData.getCarType(carID);
+
+            lbl_IndCar_carName.Text = dbData.getCarName(carID);
+
+
             switch (carType)
             {
                 case 0:
                     // gas type is fuel
                     // remove bottom fuel percent and set top one to correct type
+                    this.fuelpercent1 = dbData.getCarFuel(carID);
+                    grp_IndCar_primaryFuel.Text = "Gas Percentage";
+                    lbl_IndCar_primaryPercent.Text = "%";
+                    lbl_IndCar_primaryFuelNum.Text = (Math.Round(fuelpercent1, 2)).ToString();
+                    grp_IndCar_secondaryFuel.Hide();
+                    lbl_IndCar_primaryFG.Width = (int)Math.Round(fuelwidth * fuelpercent1);
                     break;
                 case 1:
                     // gas type is electric
                     // remove bottom fuel percent and set top one to correct type
+                    this.fuelpercent1 = dbData.getCarBattery(carID);
+                    grp_IndCar_primaryFuel.Text = "Battery Percentage";
+                    lbl_IndCar_primaryPercent.Text = "%";
+                    lbl_IndCar_primaryFuelNum.Text = (Math.Round(fuelpercent1, 2)).ToString();
+                    grp_IndCar_secondaryFuel.Hide();
+                    lbl_IndCar_primaryFG.Width = (int)Math.Round(fuelwidth * fuelpercent1);
                     break;
                 case 2:
                     // gas type is hybrid
                     // keep both fuel percents and set them
+                    this.fuelpercent1 = dbData.getCarFuel(carID);
+                    this.fuelpercent2 = dbData.getCarBattery(carID);
+                    grp_IndCar_primaryFuel.Text = "Fuel Percentages";
+                    lbl_IndCar_primaryPercent.Text = "%";
+                    lbl_IndCar_primaryFuelNum.Text = (Math.Round(fuelpercent1, 2)).ToString();
+                    lbl_IndCar_secondaryPercent.Text = "%";
+                    lbl_IndCar_secondaryFuelNum.Text = (Math.Round(fuelpercent2, 2)).ToString();
+                    grp_IndCar_secondaryFuel.Show();
+                    lbl_IndCar_primaryFG.Width = (int)Math.Round(fuelwidth * fuelpercent1);
+                    lbl_IndCar_secondaryFG.Width = (int)Math.Round(fuelwidth * fuelpercent2);
                     break;
                 default:
                     // error message?
