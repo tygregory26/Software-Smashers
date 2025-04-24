@@ -25,6 +25,9 @@ namespace SoftwareSmashers
         public IndividualCar(int userID, int carID)
         {
             InitializeComponent();
+            //btn_IndCar_Edit.Hide();
+            //btn_IndCar_EditDriver.Hide();
+
             this.userID = userID;
             this.carID = carID;
 
@@ -97,5 +100,13 @@ namespace SoftwareSmashers
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            if (dbData.checkOwner(userID, carID))
+            {
+                ((ACarThing)this.Parent).loadEditCar(carID);
+            }
+        }
     }
 }

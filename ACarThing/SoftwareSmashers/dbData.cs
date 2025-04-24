@@ -181,6 +181,11 @@ namespace SoftwareSmashers
             return "Name";
         }
 
+        public static Boolean setCarName(int carID, string name)
+        {
+            return false;
+        }
+
         public static Boolean getCarStartStatus(int carID)
         // using carID return true if car is on, false if off
         {
@@ -253,6 +258,12 @@ namespace SoftwareSmashers
             return true;
         }
 
+        public static Boolean checkOwner(int userID, int carID)
+        // check if the userID is the owner of carID
+        {
+            return true;
+        }
+
         public static string getName(int userID)
         // get the first name associated with userID
         {
@@ -281,6 +292,26 @@ namespace SoftwareSmashers
         // set the newValue for carID (arming or disarming) return true when done
         {
             return false;
+        }
+
+        public static string getCarMake(int carID)
+        {
+            return "";
+        }
+
+        public static string getCarModel(int carID)
+        {
+            return "";
+        }
+
+        public static string getCarYear(int carID)
+        {
+            return "";
+        }
+
+        public static string getCarVin(int carID)
+        {
+            return "";
         }
     }
 }

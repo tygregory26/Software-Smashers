@@ -57,6 +57,8 @@
             lbl_IndCar_secondaryPercent = new Label();
             lbl_IndCar_secondaryFG = new Label();
             lbl_IndCar_secondaryBG = new Label();
+            btn_IndCar_Edit = new Button();
+            btn_IndCar_EditDriver = new Button();
             ((System.ComponentModel.ISupportInitialize)pic_IndCar_car).BeginInit();
             grp_IndCar_temps.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pic_IndCar_start).BeginInit();
@@ -482,11 +484,46 @@
             lbl_IndCar_secondaryBG.TextAlign = ContentAlignment.MiddleCenter;
             lbl_IndCar_secondaryBG.UseWaitCursor = true;
             // 
+            // btn_IndCar_Edit
+            // 
+            btn_IndCar_Edit.BackColor = Color.FromArgb(229, 155, 137);
+            btn_IndCar_Edit.BackgroundImageLayout = ImageLayout.None;
+            btn_IndCar_Edit.FlatAppearance.BorderSize = 0;
+            btn_IndCar_Edit.FlatStyle = FlatStyle.Flat;
+            btn_IndCar_Edit.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_IndCar_Edit.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_IndCar_Edit.Location = new Point(1121, 105);
+            btn_IndCar_Edit.Margin = new Padding(4, 5, 4, 5);
+            btn_IndCar_Edit.Name = "btn_IndCar_Edit";
+            btn_IndCar_Edit.Size = new Size(124, 63);
+            btn_IndCar_Edit.TabIndex = 22;
+            btn_IndCar_Edit.Text = "Edit";
+            btn_IndCar_Edit.UseVisualStyleBackColor = false;
+            btn_IndCar_Edit.Click += button1_Click;
+            // 
+            // btn_IndCar_EditDriver
+            // 
+            btn_IndCar_EditDriver.BackColor = Color.FromArgb(229, 155, 137);
+            btn_IndCar_EditDriver.BackgroundImageLayout = ImageLayout.None;
+            btn_IndCar_EditDriver.FlatAppearance.BorderSize = 0;
+            btn_IndCar_EditDriver.FlatStyle = FlatStyle.Flat;
+            btn_IndCar_EditDriver.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            btn_IndCar_EditDriver.ForeColor = Color.FromArgb(37, 30, 56);
+            btn_IndCar_EditDriver.Location = new Point(1121, 192);
+            btn_IndCar_EditDriver.Margin = new Padding(4, 5, 4, 5);
+            btn_IndCar_EditDriver.Name = "btn_IndCar_EditDriver";
+            btn_IndCar_EditDriver.Size = new Size(124, 100);
+            btn_IndCar_EditDriver.TabIndex = 23;
+            btn_IndCar_EditDriver.Text = "Update Drivers";
+            btn_IndCar_EditDriver.UseVisualStyleBackColor = false;
+            // 
             // IndividualCar
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 225, 232);
+            Controls.Add(btn_IndCar_EditDriver);
+            Controls.Add(btn_IndCar_Edit);
             Controls.Add(grp_IndCar_secondaryFuel);
             Controls.Add(pic_IndCar_carTypeIndicator);
             Controls.Add(grp_IndCar_primaryFuel);
@@ -545,5 +582,7 @@
         private Label lbl_IndCar_secondaryFG;
         private Label lbl_IndCar_secondaryPercent;
         private Label lbl_IndCar_secondaryFuelNum;
+        private Button btn_IndCar_Edit;
+        private Button btn_IndCar_EditDriver;
     }
 }

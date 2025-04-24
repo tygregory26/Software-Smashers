@@ -329,6 +329,7 @@
             btn_NewCar_Save.TabIndex = 19;
             btn_NewCar_Save.Text = "SAVE";
             btn_NewCar_Save.UseVisualStyleBackColor = false;
+            btn_NewCar_Save.Click += btn_NewCar_Save_Click_1;
             // 
             // btn_NewCar_Cancel
             // 
@@ -345,6 +346,7 @@
             btn_NewCar_Cancel.TabIndex = 20;
             btn_NewCar_Cancel.Text = "CANCEL";
             btn_NewCar_Cancel.UseVisualStyleBackColor = false;
+            btn_NewCar_Cancel.Click += btn_NewCar_Cancel_Click;
             // 
             // btn_NewCar_Delete
             // 

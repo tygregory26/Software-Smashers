@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SoftwareSmashers
 {
@@ -49,6 +50,12 @@ namespace SoftwareSmashers
             Menu.Show();
         }
 
+        public void loadIndEdit()
+        {
+            Menu menu = new Menu();
+            menu.showEditButtons();
+        }
+
         public void loadSettings()
         {
             if (currentPage != null) { hideCurrentPage(); }
@@ -75,6 +82,16 @@ namespace SoftwareSmashers
             currentPage = individualCar;
             individualCar.Parent = this;
             individualCar.Show();
+        }
+
+        public void loadEditCar(int carID)
+        {
+            if (currentPage != null) { hideCurrentPage(); }
+            this.carID = carID;
+            NewCar newCar = new NewCar(userID, carID);
+            currentPage = newCar;
+            newCar.Parent = this;
+            newCar.Show();
         }
 
         public void loadLogs()
