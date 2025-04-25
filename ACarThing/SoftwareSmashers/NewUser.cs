@@ -12,7 +12,7 @@ namespace SoftwareSmashers
 {
     public partial class NewUser : UserControl
     {
-        int userID;
+        private int userID;
         Boolean edit = false;
         public NewUser()
         {

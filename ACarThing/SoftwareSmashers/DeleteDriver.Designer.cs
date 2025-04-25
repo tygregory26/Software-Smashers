@@ -49,9 +49,11 @@
             grp_DeleteDriver_Delete.FlatStyle = FlatStyle.Flat;
             grp_DeleteDriver_Delete.Font = new Font("Verdana", 12F, FontStyle.Bold);
             grp_DeleteDriver_Delete.ForeColor = Color.FromArgb(37, 30, 56);
-            grp_DeleteDriver_Delete.Location = new Point(406, 161);
+            grp_DeleteDriver_Delete.Location = new Point(580, 268);
+            grp_DeleteDriver_Delete.Margin = new Padding(4, 5, 4, 5);
             grp_DeleteDriver_Delete.Name = "grp_DeleteDriver_Delete";
-            grp_DeleteDriver_Delete.Size = new Size(435, 108);
+            grp_DeleteDriver_Delete.Padding = new Padding(4, 5, 4, 5);
+            grp_DeleteDriver_Delete.Size = new Size(621, 180);
             grp_DeleteDriver_Delete.TabIndex = 9;
             grp_DeleteDriver_Delete.TabStop = false;
             grp_DeleteDriver_Delete.Text = "Modify Drivers";
@@ -63,10 +65,11 @@
             txt_DeleteDriver_email.Font = new Font("Verdana", 16F);
             txt_DeleteDriver_email.ForeColor = Color.FromArgb(37, 30, 56);
             txt_DeleteDriver_email.ImeMode = ImeMode.NoControl;
-            txt_DeleteDriver_email.Location = new Point(114, 46);
+            txt_DeleteDriver_email.Location = new Point(163, 77);
+            txt_DeleteDriver_email.Margin = new Padding(4, 5, 4, 5);
             txt_DeleteDriver_email.MaxLength = 30;
             txt_DeleteDriver_email.Name = "txt_DeleteDriver_email";
-            txt_DeleteDriver_email.Size = new Size(296, 26);
+            txt_DeleteDriver_email.Size = new Size(423, 39);
             txt_DeleteDriver_email.TabIndex = 21;
             txt_DeleteDriver_email.TextAlign = HorizontalAlignment.Right;
             // 
@@ -75,11 +78,11 @@
             lbl_DeleteDriver_email.CausesValidation = false;
             lbl_DeleteDriver_email.Font = new Font("Verdana", 16F, FontStyle.Bold);
             lbl_DeleteDriver_email.ForeColor = Color.FromArgb(37, 30, 56);
-            lbl_DeleteDriver_email.Location = new Point(13, 33);
-            lbl_DeleteDriver_email.Margin = new Padding(10);
+            lbl_DeleteDriver_email.Location = new Point(19, 55);
+            lbl_DeleteDriver_email.Margin = new Padding(14, 17, 14, 17);
             lbl_DeleteDriver_email.Name = "lbl_DeleteDriver_email";
-            lbl_DeleteDriver_email.Padding = new Padding(10);
-            lbl_DeleteDriver_email.Size = new Size(113, 50);
+            lbl_DeleteDriver_email.Padding = new Padding(14, 17, 14, 17);
+            lbl_DeleteDriver_email.Size = new Size(161, 83);
             lbl_DeleteDriver_email.TabIndex = 20;
             lbl_DeleteDriver_email.Text = "Email:";
             lbl_DeleteDriver_email.TextAlign = ContentAlignment.MiddleLeft;
@@ -88,10 +91,9 @@
             // pic_DeleteDriver_BigImage
             // 
             pic_DeleteDriver_BigImage.Image = (Image)resources.GetObject("pic_DeleteDriver_BigImage.Image");
-            pic_DeleteDriver_BigImage.Location = new Point(31, 132);
-            pic_DeleteDriver_BigImage.Margin = new Padding(2);
+            pic_DeleteDriver_BigImage.Location = new Point(44, 220);
             pic_DeleteDriver_BigImage.Name = "pic_DeleteDriver_BigImage";
-            pic_DeleteDriver_BigImage.Size = new Size(347, 249);
+            pic_DeleteDriver_BigImage.Size = new Size(496, 415);
             pic_DeleteDriver_BigImage.SizeMode = PictureBoxSizeMode.Zoom;
             pic_DeleteDriver_BigImage.TabIndex = 8;
             pic_DeleteDriver_BigImage.TabStop = false;
@@ -104,12 +106,14 @@
             btn_DeleteCar_deleteDriver.FlatStyle = FlatStyle.Flat;
             btn_DeleteCar_deleteDriver.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btn_DeleteCar_deleteDriver.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_DeleteCar_deleteDriver.Location = new Point(640, 296);
+            btn_DeleteCar_deleteDriver.Location = new Point(914, 493);
+            btn_DeleteCar_deleteDriver.Margin = new Padding(4, 5, 4, 5);
             btn_DeleteCar_deleteDriver.Name = "btn_DeleteCar_deleteDriver";
-            btn_DeleteCar_deleteDriver.Size = new Size(201, 61);
+            btn_DeleteCar_deleteDriver.Size = new Size(287, 102);
             btn_DeleteCar_deleteDriver.TabIndex = 24;
             btn_DeleteCar_deleteDriver.Text = "Delete Driver";
             btn_DeleteCar_deleteDriver.UseVisualStyleBackColor = false;
+            btn_DeleteCar_deleteDriver.Click += btn_DeleteCar_deleteDriver_Click;
             // 
             // btn_DeleteCar_cancel
             // 
@@ -119,12 +123,14 @@
             btn_DeleteCar_cancel.FlatStyle = FlatStyle.Flat;
             btn_DeleteCar_cancel.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_DeleteCar_cancel.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_DeleteCar_cancel.Location = new Point(727, 39);
+            btn_DeleteCar_cancel.Location = new Point(1039, 65);
+            btn_DeleteCar_cancel.Margin = new Padding(4, 5, 4, 5);
             btn_DeleteCar_cancel.Name = "btn_DeleteCar_cancel";
-            btn_DeleteCar_cancel.Size = new Size(114, 38);
+            btn_DeleteCar_cancel.Size = new Size(163, 63);
             btn_DeleteCar_cancel.TabIndex = 23;
             btn_DeleteCar_cancel.Text = "CANCEL";
             btn_DeleteCar_cancel.UseVisualStyleBackColor = false;
+            btn_DeleteCar_cancel.Click += btn_DeleteCar_cancel_Click;
             // 
             // btn_DeleteCar_addDriver
             // 
@@ -134,16 +140,18 @@
             btn_DeleteCar_addDriver.FlatStyle = FlatStyle.Flat;
             btn_DeleteCar_addDriver.Font = new Font("Verdana", 18F, FontStyle.Bold);
             btn_DeleteCar_addDriver.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_DeleteCar_addDriver.Location = new Point(406, 296);
+            btn_DeleteCar_addDriver.Location = new Point(580, 493);
+            btn_DeleteCar_addDriver.Margin = new Padding(4, 5, 4, 5);
             btn_DeleteCar_addDriver.Name = "btn_DeleteCar_addDriver";
-            btn_DeleteCar_addDriver.Size = new Size(201, 61);
+            btn_DeleteCar_addDriver.Size = new Size(287, 102);
             btn_DeleteCar_addDriver.TabIndex = 22;
             btn_DeleteCar_addDriver.Text = "Add Driver";
             btn_DeleteCar_addDriver.UseVisualStyleBackColor = false;
+            btn_DeleteCar_addDriver.Click += btn_DeleteCar_addDriver_Click;
             // 
             // DeleteDriver
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 225, 232);
             Controls.Add(btn_DeleteCar_deleteDriver);
@@ -152,8 +160,9 @@
             Controls.Add(pic_DeleteDriver_BigImage);
             Controls.Add(btn_DeleteCar_addDriver);
             Location = new Point(267, 0);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "DeleteDriver";
-            Size = new Size(885, 506);
+            Size = new Size(1264, 843);
             grp_DeleteDriver_Delete.ResumeLayout(false);
             grp_DeleteDriver_Delete.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pic_DeleteDriver_BigImage).EndInit();
