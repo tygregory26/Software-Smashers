@@ -63,7 +63,6 @@ class dbData {
  }
             catch (MySqlException ex)
             { 
- // query failed
  }
             return null; 
  }
@@ -82,7 +81,6 @@ class dbData {
             command.ExecuteNonQuery();
             return true;
         } catch (MySqlException ex) {
-            // query failed
         }
         return false;
     }
@@ -100,7 +98,6 @@ class dbData {
             command.ExecuteNonQuery();
             return true;
         } catch (MySqlException ex) {
-            // query failed
         }
         return false;
     }
@@ -148,7 +145,6 @@ class dbData {
 
             return true;
         } catch (MySqlException ex) {
-            // query failed
         }
         return false;
     }
