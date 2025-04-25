@@ -32,11 +32,20 @@ namespace SoftwareSmashers
         public void loadNewUser()
         {
             if (currentPage != null) { hideCurrentPage(); }
-            this.userID = userID;
             NewUser NewUser = new NewUser();
             currentPage = NewUser;
             NewUser.Parent = this;
             NewUser.Show();
+        }
+
+        public void loadEditUser(int userID)
+        {
+            if (currentPage != null) { hideCurrentPage(); }
+            this.userID = userID;
+            NewUser editUser = new NewUser(userID);
+            currentPage = editUser;
+            editUser.Parent = this;
+            editUser.Show();
         }
 
         public void loadMenu(int userID)

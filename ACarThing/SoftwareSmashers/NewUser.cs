@@ -12,9 +12,30 @@ namespace SoftwareSmashers
 {
     public partial class NewUser : UserControl
     {
+        int userID;
+        Boolean edit = false;
         public NewUser()
         {
             InitializeComponent();
+            lbl_NewUser_register.Text = "Register";
+            lbl_NewUser_password.Show();
+            txt_NewUser_password.Show();
+            edit = false;
+        }
+
+        public NewUser(int userID)
+        {
+            InitializeComponent();
+            lbl_NewUser_register.Text = "Edit";
+            lbl_NewUser_password.Hide();
+            txt_NewUser_password.Hide();
+            this.userID = userID;
+            edit = true;
+
+            txt_NewUser_fname.Text = dbData.getName(userID);
+            txt_NewUser_lname.Text = dbData.getLastName(userID);
+            txt_NewUser_email.Text = dbData.getEmail(userID);
+            txt_NewUser_phoneNum.Text = dbData.getPhone(userID);
         }
 
         private void btn_NewUser_save_Click(object sender, EventArgs e)
@@ -25,8 +46,10 @@ namespace SoftwareSmashers
             string lName = txt_NewUser_lname.Text;
             string phone = txt_NewUser_phoneNum.Text;
 
+            // todo - will need to add default settings info to this when the newUser function is updated (but only when new user - not when editing
+            dbData.newUser(fName, lName, email, phone, pass);
+
             this.Hide();
-            //((ACarThing)this.Parent).loadMenu(false);
             return;
         }
 
