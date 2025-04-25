@@ -40,7 +40,7 @@ class dbData {
  }
             catch (MySqlException ex)
             { 
- // query failed
+
  }
             return null; 
  }
