@@ -48,7 +48,10 @@ namespace SoftwareSmashers
                 this.Hide();
                 return;
             }
-            MessageBox.Show("Please enter a valid vehicleID");
+            else
+            {
+                MessageBox.Show("Please enter a valid vehicleID");
+            }
         }
     }
 }

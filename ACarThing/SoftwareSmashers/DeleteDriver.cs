@@ -30,7 +30,6 @@ namespace SoftwareSmashers
                 MessageBox.Show("Please enter a valid email.");
             }
         }
-
         private void btn_DeleteCar_addDriver_Click(object sender, EventArgs e)
         {
             if (String.IsNullOrEmpty(txt_DeleteDriver_email.Text))

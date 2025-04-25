@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Metrics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,9 +34,9 @@ namespace SoftwareSmashers
             edit = true;
 
             txt_NewUser_fname.Text = dbData.getName(userID);
-            txt_NewUser_lname.Text = dbData.getLastName(userID);
-            txt_NewUser_email.Text = dbData.getEmail(userID);
-            txt_NewUser_phoneNum.Text = dbData.getPhone(userID);
+            //txt_NewUser_lname.Text = dbData.getLastName(userID);
+            //txt_NewUser_email.Text = dbData.getEmail(userID);
+            //txt_NewUser_phoneNum.Text = dbData.getPhone(userID);
         }
 
         private void btn_NewUser_save_Click(object sender, EventArgs e)
