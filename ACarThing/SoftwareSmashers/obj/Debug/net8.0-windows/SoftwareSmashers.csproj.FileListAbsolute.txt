@@ -111,3 +111,4 @@ C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSma
 C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.InfoBar.resources
 C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.Logs.resources
 C:\Users\Sydney\Home Folder\Github stuff\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\Software.0E12C76E.Up2Date
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.DeleteDriver.resources
