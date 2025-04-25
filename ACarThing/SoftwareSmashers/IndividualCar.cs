@@ -108,5 +108,10 @@ namespace SoftwareSmashers
                 ((ACarThing)this.Parent).loadEditCar(carID);
             }
         }
+
+        private void btn_IndCar_EditDriver_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
