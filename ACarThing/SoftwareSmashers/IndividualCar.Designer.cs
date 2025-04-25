@@ -42,16 +42,16 @@
             lbl_IndCar_inTemp = new Label();
             lbl_IndCar_outTemp = new Label();
             grp_IndCar_temps = new GroupBox();
-            pic_IndCar_start = new PictureBox();
-            pic_IndCar_window = new PictureBox();
-            pic_IndCar_lock = new PictureBox();
-            pic_IndCar_arm = new PictureBox();
+            pic_IndCar_started = new PictureBox();
+            pic_IndCar_windowUp = new PictureBox();
+            pic_IndCar_unlocked = new PictureBox();
+            pic_IndCar_armed = new PictureBox();
             grp_IndCar_primaryFuel = new GroupBox();
             lbl_IndCar_primaryFG = new Label();
             lbl_IndCar_primaryBG = new Label();
             lbl_IndCar_primaryFuelNum = new Label();
             lbl_IndCar_primaryPercent = new Label();
-            pic_IndCar_carTypeIndicator = new PictureBox();
+            pic_IndCar_carTypeGas = new PictureBox();
             grp_IndCar_secondaryFuel = new Panel();
             lbl_IndCar_secondaryFuelNum = new Label();
             lbl_IndCar_secondaryPercent = new Label();
@@ -60,15 +60,25 @@
             btn_IndCar_EditVehicle = new Button();
             btn_IndCar_EditDriver = new Button();
             btn_IndCar_ViewActivity = new Button();
+            pic_IndCar_stopped = new PictureBox();
+            pic_IndCar_windowDown = new PictureBox();
+            pic_IndCar_locked = new PictureBox();
+            pic_IndCar_carTypeElectric = new PictureBox();
+            pic_IndCar_Unarmed = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pic_IndCar_car).BeginInit();
             grp_IndCar_temps.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_start).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_window).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_lock).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_arm).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_started).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_windowUp).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_unlocked).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_armed).BeginInit();
             grp_IndCar_primaryFuel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_carTypeIndicator).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_carTypeGas).BeginInit();
             grp_IndCar_secondaryFuel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_stopped).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_windowDown).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_locked).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_carTypeElectric).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_Unarmed).BeginInit();
             SuspendLayout();
             // 
             // pic_IndCar_car
@@ -88,9 +98,9 @@
             lbl_IndCar_carName.Font = new Font("Verdana", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_IndCar_carName.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_carName.Location = new Point(53, 39);
-            lbl_IndCar_carName.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_carName.Margin = new Padding(10);
             lbl_IndCar_carName.Name = "lbl_IndCar_carName";
-            lbl_IndCar_carName.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_carName.Padding = new Padding(10);
             lbl_IndCar_carName.Size = new Size(263, 108);
             lbl_IndCar_carName.TabIndex = 2;
             lbl_IndCar_carName.Text = "Car Name";
@@ -168,9 +178,9 @@
             lbl_IndCar_outside.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_outside.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_outside.Location = new Point(344, 20);
-            lbl_IndCar_outside.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_outside.Margin = new Padding(10);
             lbl_IndCar_outside.Name = "lbl_IndCar_outside";
-            lbl_IndCar_outside.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_outside.Padding = new Padding(10);
             lbl_IndCar_outside.Size = new Size(152, 47);
             lbl_IndCar_outside.TabIndex = 9;
             lbl_IndCar_outside.Text = "Outside:";
@@ -184,9 +194,9 @@
             lbl_IndCar_inside.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_inside.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_inside.Location = new Point(58, 20);
-            lbl_IndCar_inside.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_inside.Margin = new Padding(10);
             lbl_IndCar_inside.Name = "lbl_IndCar_inside";
-            lbl_IndCar_inside.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_inside.Padding = new Padding(10);
             lbl_IndCar_inside.Size = new Size(116, 47);
             lbl_IndCar_inside.TabIndex = 10;
             lbl_IndCar_inside.Text = "Inside:";
@@ -200,9 +210,9 @@
             lbl_IndCar_degree2.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_degree2.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_degree2.Location = new Point(578, 22);
-            lbl_IndCar_degree2.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_degree2.Margin = new Padding(10);
             lbl_IndCar_degree2.Name = "lbl_IndCar_degree2";
-            lbl_IndCar_degree2.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_degree2.Padding = new Padding(10);
             lbl_IndCar_degree2.Size = new Size(66, 43);
             lbl_IndCar_degree2.TabIndex = 11;
             lbl_IndCar_degree2.Text = "°F";
@@ -216,9 +226,9 @@
             lbl_IndCar_degree1.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_degree1.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_degree1.Location = new Point(241, 22);
-            lbl_IndCar_degree1.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_degree1.Margin = new Padding(10);
             lbl_IndCar_degree1.Name = "lbl_IndCar_degree1";
-            lbl_IndCar_degree1.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_degree1.Padding = new Padding(10);
             lbl_IndCar_degree1.Size = new Size(67, 43);
             lbl_IndCar_degree1.TabIndex = 12;
             lbl_IndCar_degree1.Text = "°F";
@@ -232,9 +242,9 @@
             lbl_IndCar_inTemp.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_inTemp.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_inTemp.Location = new Point(148, 21);
-            lbl_IndCar_inTemp.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_inTemp.Margin = new Padding(10);
             lbl_IndCar_inTemp.Name = "lbl_IndCar_inTemp";
-            lbl_IndCar_inTemp.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_inTemp.Padding = new Padding(10);
             lbl_IndCar_inTemp.Size = new Size(102, 47);
             lbl_IndCar_inTemp.TabIndex = 13;
             lbl_IndCar_inTemp.Text = "000";
@@ -248,9 +258,9 @@
             lbl_IndCar_outTemp.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_outTemp.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_outTemp.Location = new Point(484, 20);
-            lbl_IndCar_outTemp.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_outTemp.Margin = new Padding(10);
             lbl_IndCar_outTemp.Name = "lbl_IndCar_outTemp";
-            lbl_IndCar_outTemp.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_outTemp.Padding = new Padding(10);
             lbl_IndCar_outTemp.Size = new Size(86, 49);
             lbl_IndCar_outTemp.TabIndex = 14;
             lbl_IndCar_outTemp.Text = "000";
@@ -274,45 +284,45 @@
             grp_IndCar_temps.TabStop = false;
             grp_IndCar_temps.Text = "Temperatures";
             // 
-            // pic_IndCar_start
+            // pic_IndCar_started
             // 
-            pic_IndCar_start.BackgroundImage = (Image)resources.GetObject("pic_IndCar_start.BackgroundImage");
-            pic_IndCar_start.BackgroundImageLayout = ImageLayout.Zoom;
-            pic_IndCar_start.Location = new Point(155, 160);
-            pic_IndCar_start.Name = "pic_IndCar_start";
-            pic_IndCar_start.Size = new Size(48, 46);
-            pic_IndCar_start.TabIndex = 16;
-            pic_IndCar_start.TabStop = false;
+            pic_IndCar_started.BackgroundImage = (Image)resources.GetObject("pic_IndCar_started.BackgroundImage");
+            pic_IndCar_started.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_started.Location = new Point(155, 160);
+            pic_IndCar_started.Name = "pic_IndCar_started";
+            pic_IndCar_started.Size = new Size(48, 46);
+            pic_IndCar_started.TabIndex = 16;
+            pic_IndCar_started.TabStop = false;
             // 
-            // pic_IndCar_window
+            // pic_IndCar_windowUp
             // 
-            pic_IndCar_window.BackgroundImage = (Image)resources.GetObject("pic_IndCar_window.BackgroundImage");
-            pic_IndCar_window.BackgroundImageLayout = ImageLayout.Zoom;
-            pic_IndCar_window.Location = new Point(334, 160);
-            pic_IndCar_window.Name = "pic_IndCar_window";
-            pic_IndCar_window.Size = new Size(48, 46);
-            pic_IndCar_window.TabIndex = 17;
-            pic_IndCar_window.TabStop = false;
+            pic_IndCar_windowUp.BackgroundImage = (Image)resources.GetObject("pic_IndCar_windowUp.BackgroundImage");
+            pic_IndCar_windowUp.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_windowUp.Location = new Point(334, 160);
+            pic_IndCar_windowUp.Name = "pic_IndCar_windowUp";
+            pic_IndCar_windowUp.Size = new Size(48, 46);
+            pic_IndCar_windowUp.TabIndex = 17;
+            pic_IndCar_windowUp.TabStop = false;
             // 
-            // pic_IndCar_lock
+            // pic_IndCar_unlocked
             // 
-            pic_IndCar_lock.BackgroundImage = (Image)resources.GetObject("pic_IndCar_lock.BackgroundImage");
-            pic_IndCar_lock.BackgroundImageLayout = ImageLayout.Zoom;
-            pic_IndCar_lock.Location = new Point(518, 160);
-            pic_IndCar_lock.Name = "pic_IndCar_lock";
-            pic_IndCar_lock.Size = new Size(48, 46);
-            pic_IndCar_lock.TabIndex = 18;
-            pic_IndCar_lock.TabStop = false;
+            pic_IndCar_unlocked.BackgroundImage = (Image)resources.GetObject("pic_IndCar_unlocked.BackgroundImage");
+            pic_IndCar_unlocked.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_unlocked.Location = new Point(518, 160);
+            pic_IndCar_unlocked.Name = "pic_IndCar_unlocked";
+            pic_IndCar_unlocked.Size = new Size(48, 46);
+            pic_IndCar_unlocked.TabIndex = 18;
+            pic_IndCar_unlocked.TabStop = false;
             // 
-            // pic_IndCar_arm
+            // pic_IndCar_armed
             // 
-            pic_IndCar_arm.BackgroundImage = (Image)resources.GetObject("pic_IndCar_arm.BackgroundImage");
-            pic_IndCar_arm.BackgroundImageLayout = ImageLayout.Zoom;
-            pic_IndCar_arm.Location = new Point(713, 160);
-            pic_IndCar_arm.Name = "pic_IndCar_arm";
-            pic_IndCar_arm.Size = new Size(48, 46);
-            pic_IndCar_arm.TabIndex = 19;
-            pic_IndCar_arm.TabStop = false;
+            pic_IndCar_armed.BackgroundImage = (Image)resources.GetObject("pic_IndCar_armed.BackgroundImage");
+            pic_IndCar_armed.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_armed.Location = new Point(693, 160);
+            pic_IndCar_armed.Name = "pic_IndCar_armed";
+            pic_IndCar_armed.Size = new Size(48, 46);
+            pic_IndCar_armed.TabIndex = 19;
+            pic_IndCar_armed.TabStop = false;
             // 
             // grp_IndCar_primaryFuel
             // 
@@ -335,9 +345,9 @@
             lbl_IndCar_primaryFG.CausesValidation = false;
             lbl_IndCar_primaryFG.Font = new Font("Verdana", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_IndCar_primaryFG.Location = new Point(160, 34);
-            lbl_IndCar_primaryFG.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryFG.Margin = new Padding(10);
             lbl_IndCar_primaryFG.Name = "lbl_IndCar_primaryFG";
-            lbl_IndCar_primaryFG.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryFG.Padding = new Padding(10);
             lbl_IndCar_primaryFG.Size = new Size(395, 36);
             lbl_IndCar_primaryFG.TabIndex = 21;
             lbl_IndCar_primaryFG.TextAlign = ContentAlignment.MiddleCenter;
@@ -349,9 +359,9 @@
             lbl_IndCar_primaryBG.CausesValidation = false;
             lbl_IndCar_primaryBG.Font = new Font("Verdana", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_IndCar_primaryBG.Location = new Point(160, 34);
-            lbl_IndCar_primaryBG.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryBG.Margin = new Padding(10);
             lbl_IndCar_primaryBG.Name = "lbl_IndCar_primaryBG";
-            lbl_IndCar_primaryBG.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryBG.Padding = new Padding(10);
             lbl_IndCar_primaryBG.Size = new Size(523, 36);
             lbl_IndCar_primaryBG.TabIndex = 20;
             lbl_IndCar_primaryBG.TextAlign = ContentAlignment.MiddleCenter;
@@ -364,9 +374,9 @@
             lbl_IndCar_primaryFuelNum.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_primaryFuelNum.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_primaryFuelNum.Location = new Point(13, 27);
-            lbl_IndCar_primaryFuelNum.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryFuelNum.Margin = new Padding(10);
             lbl_IndCar_primaryFuelNum.Name = "lbl_IndCar_primaryFuelNum";
-            lbl_IndCar_primaryFuelNum.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryFuelNum.Padding = new Padding(10);
             lbl_IndCar_primaryFuelNum.Size = new Size(80, 54);
             lbl_IndCar_primaryFuelNum.TabIndex = 15;
             lbl_IndCar_primaryFuelNum.Text = "000";
@@ -380,24 +390,24 @@
             lbl_IndCar_primaryPercent.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_primaryPercent.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_primaryPercent.Location = new Point(81, 31);
-            lbl_IndCar_primaryPercent.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryPercent.Margin = new Padding(10);
             lbl_IndCar_primaryPercent.Name = "lbl_IndCar_primaryPercent";
-            lbl_IndCar_primaryPercent.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_primaryPercent.Padding = new Padding(10);
             lbl_IndCar_primaryPercent.Size = new Size(77, 47);
             lbl_IndCar_primaryPercent.TabIndex = 12;
             lbl_IndCar_primaryPercent.Text = "%";
             lbl_IndCar_primaryPercent.TextAlign = ContentAlignment.MiddleLeft;
             lbl_IndCar_primaryPercent.UseWaitCursor = true;
             // 
-            // pic_IndCar_carTypeIndicator
+            // pic_IndCar_carTypeGas
             // 
-            pic_IndCar_carTypeIndicator.BackgroundImage = (Image)resources.GetObject("pic_IndCar_carTypeIndicator.BackgroundImage");
-            pic_IndCar_carTypeIndicator.BackgroundImageLayout = ImageLayout.Zoom;
-            pic_IndCar_carTypeIndicator.Location = new Point(624, 18);
-            pic_IndCar_carTypeIndicator.Name = "pic_IndCar_carTypeIndicator";
-            pic_IndCar_carTypeIndicator.Size = new Size(48, 46);
-            pic_IndCar_carTypeIndicator.TabIndex = 20;
-            pic_IndCar_carTypeIndicator.TabStop = false;
+            pic_IndCar_carTypeGas.BackgroundImage = (Image)resources.GetObject("pic_IndCar_carTypeGas.BackgroundImage");
+            pic_IndCar_carTypeGas.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_carTypeGas.Location = new Point(624, 18);
+            pic_IndCar_carTypeGas.Name = "pic_IndCar_carTypeGas";
+            pic_IndCar_carTypeGas.Size = new Size(48, 46);
+            pic_IndCar_carTypeGas.TabIndex = 20;
+            pic_IndCar_carTypeGas.TabStop = false;
             // 
             // grp_IndCar_secondaryFuel
             // 
@@ -417,9 +427,9 @@
             lbl_IndCar_secondaryFuelNum.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_secondaryFuelNum.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_secondaryFuelNum.Location = new Point(13, 8);
-            lbl_IndCar_secondaryFuelNum.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryFuelNum.Margin = new Padding(10);
             lbl_IndCar_secondaryFuelNum.Name = "lbl_IndCar_secondaryFuelNum";
-            lbl_IndCar_secondaryFuelNum.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryFuelNum.Padding = new Padding(10);
             lbl_IndCar_secondaryFuelNum.Size = new Size(80, 54);
             lbl_IndCar_secondaryFuelNum.TabIndex = 22;
             lbl_IndCar_secondaryFuelNum.Text = "000";
@@ -433,9 +443,9 @@
             lbl_IndCar_secondaryPercent.Font = new Font("Verdana", 15.75F, FontStyle.Bold);
             lbl_IndCar_secondaryPercent.ForeColor = Color.FromArgb(37, 30, 56);
             lbl_IndCar_secondaryPercent.Location = new Point(81, 12);
-            lbl_IndCar_secondaryPercent.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryPercent.Margin = new Padding(10);
             lbl_IndCar_secondaryPercent.Name = "lbl_IndCar_secondaryPercent";
-            lbl_IndCar_secondaryPercent.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryPercent.Padding = new Padding(10);
             lbl_IndCar_secondaryPercent.Size = new Size(77, 47);
             lbl_IndCar_secondaryPercent.TabIndex = 22;
             lbl_IndCar_secondaryPercent.Text = "gal.";
@@ -448,9 +458,9 @@
             lbl_IndCar_secondaryFG.CausesValidation = false;
             lbl_IndCar_secondaryFG.Font = new Font("Verdana", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_IndCar_secondaryFG.Location = new Point(160, 15);
-            lbl_IndCar_secondaryFG.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryFG.Margin = new Padding(10);
             lbl_IndCar_secondaryFG.Name = "lbl_IndCar_secondaryFG";
-            lbl_IndCar_secondaryFG.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryFG.Padding = new Padding(10);
             lbl_IndCar_secondaryFG.Size = new Size(395, 36);
             lbl_IndCar_secondaryFG.TabIndex = 22;
             lbl_IndCar_secondaryFG.TextAlign = ContentAlignment.MiddleCenter;
@@ -462,9 +472,9 @@
             lbl_IndCar_secondaryBG.CausesValidation = false;
             lbl_IndCar_secondaryBG.Font = new Font("Verdana", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_IndCar_secondaryBG.Location = new Point(160, 15);
-            lbl_IndCar_secondaryBG.Margin = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryBG.Margin = new Padding(10);
             lbl_IndCar_secondaryBG.Name = "lbl_IndCar_secondaryBG";
-            lbl_IndCar_secondaryBG.Padding = new Padding(10, 10, 10, 10);
+            lbl_IndCar_secondaryBG.Padding = new Padding(10);
             lbl_IndCar_secondaryBG.Size = new Size(523, 36);
             lbl_IndCar_secondaryBG.TabIndex = 22;
             lbl_IndCar_secondaryBG.TextAlign = ContentAlignment.MiddleCenter;
@@ -517,21 +527,77 @@
             btn_IndCar_ViewActivity.Text = "View Activity";
             btn_IndCar_ViewActivity.UseVisualStyleBackColor = false;
             // 
+            // pic_IndCar_stopped
+            // 
+            pic_IndCar_stopped.BackgroundImage = (Image)resources.GetObject("pic_IndCar_stopped.BackgroundImage");
+            pic_IndCar_stopped.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_stopped.Location = new Point(155, 160);
+            pic_IndCar_stopped.Name = "pic_IndCar_stopped";
+            pic_IndCar_stopped.Size = new Size(48, 46);
+            pic_IndCar_stopped.TabIndex = 25;
+            pic_IndCar_stopped.TabStop = false;
+            // 
+            // pic_IndCar_windowDown
+            // 
+            pic_IndCar_windowDown.BackgroundImage = (Image)resources.GetObject("pic_IndCar_windowDown.BackgroundImage");
+            pic_IndCar_windowDown.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_windowDown.Location = new Point(334, 160);
+            pic_IndCar_windowDown.Name = "pic_IndCar_windowDown";
+            pic_IndCar_windowDown.Size = new Size(48, 46);
+            pic_IndCar_windowDown.TabIndex = 26;
+            pic_IndCar_windowDown.TabStop = false;
+            // 
+            // pic_IndCar_locked
+            // 
+            pic_IndCar_locked.BackgroundImage = (Image)resources.GetObject("pic_IndCar_locked.BackgroundImage");
+            pic_IndCar_locked.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_locked.Location = new Point(518, 160);
+            pic_IndCar_locked.Name = "pic_IndCar_locked";
+            pic_IndCar_locked.Size = new Size(48, 46);
+            pic_IndCar_locked.TabIndex = 27;
+            pic_IndCar_locked.TabStop = false;
+            pic_IndCar_locked.Click += pic_IndCar_locked_Click;
+            // 
+            // pic_IndCar_carTypeElectric
+            // 
+            pic_IndCar_carTypeElectric.BackgroundImage = (Image)resources.GetObject("pic_IndCar_carTypeElectric.BackgroundImage");
+            pic_IndCar_carTypeElectric.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_carTypeElectric.Location = new Point(624, 64);
+            pic_IndCar_carTypeElectric.Name = "pic_IndCar_carTypeElectric";
+            pic_IndCar_carTypeElectric.Size = new Size(48, 46);
+            pic_IndCar_carTypeElectric.TabIndex = 28;
+            pic_IndCar_carTypeElectric.TabStop = false;
+            // 
+            // pic_IndCar_Unarmed
+            // 
+            pic_IndCar_Unarmed.BackgroundImage = (Image)resources.GetObject("pic_IndCar_Unarmed.BackgroundImage");
+            pic_IndCar_Unarmed.BackgroundImageLayout = ImageLayout.Zoom;
+            pic_IndCar_Unarmed.Location = new Point(693, 160);
+            pic_IndCar_Unarmed.Name = "pic_IndCar_Unarmed";
+            pic_IndCar_Unarmed.Size = new Size(48, 46);
+            pic_IndCar_Unarmed.TabIndex = 29;
+            pic_IndCar_Unarmed.TabStop = false;
+            // 
             // IndividualCar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(227, 225, 232);
+            Controls.Add(pic_IndCar_Unarmed);
+            Controls.Add(pic_IndCar_carTypeElectric);
+            Controls.Add(pic_IndCar_locked);
+            Controls.Add(pic_IndCar_windowDown);
+            Controls.Add(pic_IndCar_stopped);
             Controls.Add(btn_IndCar_ViewActivity);
             Controls.Add(btn_IndCar_EditDriver);
             Controls.Add(btn_IndCar_EditVehicle);
             Controls.Add(grp_IndCar_secondaryFuel);
-            Controls.Add(pic_IndCar_carTypeIndicator);
+            Controls.Add(pic_IndCar_carTypeGas);
             Controls.Add(grp_IndCar_primaryFuel);
-            Controls.Add(pic_IndCar_arm);
-            Controls.Add(pic_IndCar_lock);
-            Controls.Add(pic_IndCar_window);
-            Controls.Add(pic_IndCar_start);
+            Controls.Add(pic_IndCar_armed);
+            Controls.Add(pic_IndCar_unlocked);
+            Controls.Add(pic_IndCar_windowUp);
+            Controls.Add(pic_IndCar_started);
             Controls.Add(grp_IndCar_temps);
             Controls.Add(btn_IndCar_arm);
             Controls.Add(btn_IndCar_lock);
@@ -540,18 +606,23 @@
             Controls.Add(lbl_IndCar_carName);
             Controls.Add(pic_IndCar_car);
             Location = new Point(267, 0);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "IndividualCar";
             Size = new Size(885, 506);
             ((System.ComponentModel.ISupportInitialize)pic_IndCar_car).EndInit();
             grp_IndCar_temps.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_start).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_window).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_lock).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_arm).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_started).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_windowUp).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_unlocked).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_armed).EndInit();
             grp_IndCar_primaryFuel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pic_IndCar_carTypeIndicator).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_carTypeGas).EndInit();
             grp_IndCar_secondaryFuel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_stopped).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_windowDown).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_locked).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_carTypeElectric).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_IndCar_Unarmed).EndInit();
             ResumeLayout(false);
         }
 
@@ -570,15 +641,15 @@
         private Label lbl_IndCar_inTemp;
         private Label lbl_IndCar_outTemp;
         private GroupBox grp_IndCar_temps;
-        private PictureBox pic_IndCar_start;
-        private PictureBox pic_IndCar_window;
-        private PictureBox pic_IndCar_lock;
-        private PictureBox pic_IndCar_arm;
+        private PictureBox pic_IndCar_started;
+        private PictureBox pic_IndCar_windowUp;
+        private PictureBox pic_IndCar_unlocked;
+        private PictureBox pic_IndCar_armed;
         private GroupBox grp_IndCar_primaryFuel;
         private Label lbl_IndCar_primaryFuelNum;
         private Label lbl_IndCar_primaryPercent;
         private Label lbl_IndCar_primaryBG;
-        private PictureBox pic_IndCar_carTypeIndicator;
+        private PictureBox pic_IndCar_carTypeGas;
         private Panel grp_IndCar_secondaryFuel;
         private Label lbl_IndCar_secondaryBG;
         private Label lbl_IndCar_secondaryFG;
@@ -587,5 +658,10 @@
         private Button btn_IndCar_EditVehicle;
         private Button btn_IndCar_EditDriver;
         private Button btn_IndCar_ViewActivity;
+        private PictureBox pic_IndCar_stopped;
+        private PictureBox pic_IndCar_windowDown;
+        private PictureBox pic_IndCar_locked;
+        private PictureBox pic_IndCar_carTypeElectric;
+        private PictureBox pic_IndCar_Unarmed;
     }
 }
