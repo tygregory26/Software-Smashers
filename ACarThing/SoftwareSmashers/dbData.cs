@@ -385,7 +385,7 @@ namespace SoftwareSmashers
                 string query = "SELECT COUNT(*) FROM `group1-csci463_ACarThing`.drivers WHERE driverLink = " + userID
                         + " AND vehicleLink = " + carID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return Convert.ToInt32(command.ExecuteScalar()) > 0;
+                return (Convert.ToInt32(command.ExecuteScalar()) > 0);
             }
             catch (MySqlException ex)
             {
