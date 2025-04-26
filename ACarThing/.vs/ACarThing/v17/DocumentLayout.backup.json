@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\dbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\dbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\mycars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\mycars.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\softwaresmashers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\settings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\daisy\\onedrive\\desktop\\software-smashers\\acarthing\\softwaresmashers\\dbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\dbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\softwaresmashers\\newuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -90,17 +90,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "dbData.cs",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\dbData.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\dbData.cs",
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\dbData.cs",
               "RelativeToolTip": "SoftwareSmashers\\dbData.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAD4v3MAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAlwHgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-10T03:48:03.407Z",
               "IsPinned": true,
@@ -116,31 +116,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs",
-              "RelativeDocumentMoniker": "SoftwareSmashers\\Main.cs",
-              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs [Design]",
-              "RelativeToolTip": "SoftwareSmashers\\Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T22:09:02.133Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Login.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Login.cs",
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Login.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:40:34.592Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-25T18:40:34.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Settings.cs",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Settings.cs",
@@ -160,8 +147,7 @@
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewUser.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\NewUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:15:09.162Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-25T18:15:09.162Z"
             },
             {
               "$type": "Document",
@@ -173,12 +159,11 @@
               "RelativeToolTip": "SoftwareSmashers\\Main.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAjwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T20:36:11.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T20:36:11.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "NewUser.cs",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewUser.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\NewUser.cs",
@@ -186,24 +171,22 @@
               "RelativeToolTip": "SoftwareSmashers\\NewUser.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAYwDIAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:12:28.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:12:28.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Menu.cs",
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T20:15:55.525Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-24T20:15:55.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IndividualCar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\IndividualCar.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\IndividualCar.cs",
@@ -215,16 +198,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MyCars.cs",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\MyCars.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\MyCars.cs",
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\MyCars.cs",
               "RelativeToolTip": "SoftwareSmashers\\MyCars.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwDMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-25T17:53:45.175Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs",
+              "RelativeDocumentMoniker": "SoftwareSmashers\\Main.cs",
+              "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs [Design]",
+              "RelativeToolTip": "SoftwareSmashers\\Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T22:09:02.133Z"
             },
             {
               "$type": "Document",
@@ -235,8 +229,7 @@
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\DeleteDriver.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\DeleteDriver.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:35:06.384Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-25T18:35:06.384Z"
             },
             {
               "$type": "Document",
@@ -248,20 +241,18 @@
               "RelativeToolTip": "SoftwareSmashers\\DeleteDriver.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAEwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:35:18.433Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:35:18.433Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Settings.cs [Design]",
               "DocumentMoniker": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Settings.cs",
               "ToolTip": "C:\\Users\\daisy\\OneDrive\\Desktop\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Settings.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:22:08.563Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-25T18:22:08.563Z"
             },
             {
               "$type": "Document",
@@ -273,8 +264,7 @@
               "RelativeToolTip": "SoftwareSmashers\\DeleteDriver.Designer.cs",
               "ViewState": "AgIAAH0AAAAAAAAAAAAQwJQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T21:47:17.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T21:47:17.331Z"
             },
             {
               "$type": "Document",
@@ -286,8 +276,7 @@
               "RelativeToolTip": "SoftwareSmashers\\Login.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T18:40:36.835Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-25T18:40:36.835Z"
             },
             {
               "$type": "Document",
@@ -334,8 +323,7 @@
               "RelativeToolTip": "SoftwareSmashers\\Menu.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAgwDkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T20:16:01.476Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T20:16:01.476Z"
             },
             {
               "$type": "Document",
