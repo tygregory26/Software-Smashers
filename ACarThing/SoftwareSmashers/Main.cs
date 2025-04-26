@@ -50,6 +50,7 @@ namespace SoftwareSmashers
 
         public void loadMenu(int userID)
         {
+            this.userID = userID;
             Menu Menu = new Menu(userID);
             Menu.Parent = this;
             Menu.Show();

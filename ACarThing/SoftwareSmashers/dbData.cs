@@ -122,7 +122,8 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT * FROM `group1-csci463_ACarThing`.vehicle WHERE ownerID = " + userID + "; ";
+                //MessageBox.Show(userID.ToString());
+                string query = "SELECT * FROM `group1-csci463_ACarThing`.vehicle WHERE ownerID = " + userID.ToString() + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 MySqlDataAdapter sqlData = new MySqlDataAdapter(command);
                 DataTable dTable = new DataTable();
