@@ -8,6 +8,7 @@ using System.Net.Http.Metrics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic.ApplicationServices;
 
 namespace SoftwareSmashers
 {
@@ -50,7 +51,18 @@ namespace SoftwareSmashers
             // todo - will need to add default settings info to this when the newUser function is updated (but only when new user - not when editing
             dbData.newUser(fName, lName, email, phone, pass);
 
-            this.Hide();
+            int? userID = dbData.login(email, pass);
+
+            if (userID.HasValue)
+            {
+                this.Hide();
+                ((ACarThing)this.Parent).loadMenu(userID.Value);
+            }
+            else
+            {
+                this.Hide();
+                ((ACarThing)this.Parent).loadLogin();
+            }
             return;
         }
 
