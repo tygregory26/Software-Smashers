@@ -69,5 +69,12 @@ namespace SoftwareSmashers
             btn_Menu_editVehicle.Show();
             btn_Menu_viewLogs.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            btn_Menu_editVehicle.Hide();
+            btn_Menu_viewLogs.Hide();
+            ((ACarThing)this.Parent).loadEditUser(userID);
+        }
     }
 }

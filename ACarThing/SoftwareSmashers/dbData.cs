@@ -4,6 +4,7 @@ using System.Data;using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualBasic.ApplicationServices;
 using MySql.Data.MySqlClient;
 
 namespace SoftwareSmashers
@@ -34,23 +35,6 @@ namespace SoftwareSmashers
             {
                 // also do something here
             }
-        }
-
-        public static DataTable? example()
-        {
-            try
-            {
-                string query = "SELECT * FROM `group1-csci463_ACarThing`.user; ";
-                MySqlDataAdapter sqlData = new MySqlDataAdapter(query, connection);
-                DataTable dTable = new DataTable();
-                sqlData.Fill(dTable);
-                return dTable;
-            }
-            catch (MySqlException ex)
-            {
-
-            }
-            return null;
         }
 
         public static int? login(string email, string password)
@@ -350,11 +334,6 @@ namespace SoftwareSmashers
             return 0.0f;
         }
 
-        public static string editVehicle()
-        {
-            return "";
-        }
-
         public static Boolean addDriver(string email, int carID)
         {
             try
@@ -538,6 +517,62 @@ namespace SoftwareSmashers
             catch (MySqlException ex)
             {
             }
+            return "";
+        }
+
+        public static string getLastName(int userID)
+        {
+            return "Last";
+        }
+
+        public static string getEmail(int userID)
+        {
+            return "email.email.com";
+        }
+
+        public static string getPhone(int userID)
+        {
+            return "7012223333";
+        }
+
+        public static string getTimeZone(int userID)
+        {
+            return "Central Time";
+        }
+
+        public static string getNotifications(int userID)
+        {
+            return "All Notifications";
+        }
+
+        public static string getLengthUnits(int userID)
+        {
+            return "Miles";
+        }
+
+        public static string getVolumeUnits(int userID)
+        {
+            return "Gallons";
+        }
+
+        public static string getTempUnits(int userID)
+        {
+            return "Fahrenheit";
+        }
+
+        public static string getTimeUnits(int userID)
+        {
+            return "12 hour";
+        }
+
+        public static Boolean setSettings(int userID, string timeZone, string notifications, string lengthUnits, string volumeUnits, string tempUnits, string timeUnits)
+        {
+            // return true if it works, false if not
+            return false;
+        }
+
+        public static string editVehicle()
+        {
             return "";
         }
 

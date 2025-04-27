@@ -35,9 +35,9 @@ namespace SoftwareSmashers
             edit = true;
 
             txt_NewUser_fname.Text = dbData.getName(userID);
-            //txt_NewUser_lname.Text = dbData.getLastName(userID);
-            //txt_NewUser_email.Text = dbData.getEmail(userID);
-            //txt_NewUser_phoneNum.Text = dbData.getPhone(userID);
+            txt_NewUser_lname.Text = dbData.getLastName(userID);
+            txt_NewUser_email.Text = dbData.getEmail(userID);
+            txt_NewUser_phoneNum.Text = dbData.getPhone(userID);
         }
 
         private void btn_NewUser_save_Click(object sender, EventArgs e)

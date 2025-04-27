@@ -175,6 +175,7 @@
             btn_Settings_save.TabIndex = 12;
             btn_Settings_save.Text = "Save";
             btn_Settings_save.UseVisualStyleBackColor = false;
+            btn_Settings_save.Click += btn_Settings_save_Click;
             // 
             // btn_Settings_cancel
             // 
@@ -189,6 +190,7 @@
             btn_Settings_cancel.TabIndex = 13;
             btn_Settings_cancel.Text = "Cancel";
             btn_Settings_cancel.UseVisualStyleBackColor = false;
+            btn_Settings_cancel.Click += btn_Settings_cancel_Click;
             // 
             // combo_Settings_timeUnits
             // 

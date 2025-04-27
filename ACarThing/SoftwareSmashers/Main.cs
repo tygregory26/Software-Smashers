@@ -69,7 +69,7 @@ namespace SoftwareSmashers
         public void loadSettings()
         {
             if (currentPage != null) { hideCurrentPage(); }
-            Settings Settings = new Settings();
+            Settings Settings = new Settings(userID);
             currentPage = Settings;
             Settings.Parent = this;
             Settings.Show();

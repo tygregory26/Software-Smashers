@@ -34,6 +34,7 @@
             btn_Menu_logout = new Button();
             btn_Menu_viewLogs = new Button();
             btn_Menu_editVehicle = new Button();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pic_Menu_logo).BeginInit();
             SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             btn_Menu_myVehicles.FlatStyle = FlatStyle.Flat;
             btn_Menu_myVehicles.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_myVehicles.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_myVehicles.Location = new Point(0, 327);
+            btn_Menu_myVehicles.Location = new Point(0, 409);
             btn_Menu_myVehicles.Name = "btn_Menu_myVehicles";
             btn_Menu_myVehicles.Size = new Size(267, 85);
             btn_Menu_myVehicles.TabIndex = 1;
@@ -99,7 +100,7 @@
             btn_Menu_viewLogs.FlatStyle = FlatStyle.Flat;
             btn_Menu_viewLogs.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_viewLogs.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_viewLogs.Location = new Point(0, 408);
+            btn_Menu_viewLogs.Location = new Point(0, 519);
             btn_Menu_viewLogs.Name = "btn_Menu_viewLogs";
             btn_Menu_viewLogs.Size = new Size(267, 85);
             btn_Menu_viewLogs.TabIndex = 7;
@@ -114,7 +115,7 @@
             btn_Menu_editVehicle.FlatStyle = FlatStyle.Flat;
             btn_Menu_editVehicle.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_editVehicle.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_editVehicle.Location = new Point(0, 490);
+            btn_Menu_editVehicle.Location = new Point(0, 610);
             btn_Menu_editVehicle.Name = "btn_Menu_editVehicle";
             btn_Menu_editVehicle.Size = new Size(267, 85);
             btn_Menu_editVehicle.TabIndex = 8;
@@ -122,11 +123,27 @@
             btn_Menu_editVehicle.UseVisualStyleBackColor = true;
             btn_Menu_editVehicle.Click += btn_Menu_editVehicle_Click;
             // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderColor = Color.FromArgb(197, 120, 112);
+            button1.FlatAppearance.BorderSize = 3;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Verdana", 12F, FontStyle.Bold);
+            button1.ForeColor = Color.FromArgb(37, 30, 56);
+            button1.Location = new Point(0, 327);
+            button1.Name = "button1";
+            button1.Size = new Size(267, 85);
+            button1.TabIndex = 9;
+            button1.Text = "Edit User";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
             // Menu
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 155, 137);
+            Controls.Add(button1);
             Controls.Add(btn_Menu_editVehicle);
             Controls.Add(btn_Menu_viewLogs);
             Controls.Add(btn_Menu_logout);
@@ -147,6 +164,7 @@
         private Button btn_Menu_logout;
         private Button btn_Menu_viewLogs;
         private Button btn_Menu_editVehicle;
+        private Button button1;
 
         public Button Btn_Menu_viewLogs { get => btn_Menu_viewLogs; set => btn_Menu_viewLogs = value; }
         public Button Btn_Menu_editVehicle { get => btn_Menu_editVehicle; set => btn_Menu_editVehicle = value; }
