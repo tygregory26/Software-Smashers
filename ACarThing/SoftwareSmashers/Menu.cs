@@ -48,7 +48,7 @@ namespace SoftwareSmashers
         {
             btn_Menu_editVehicle.Hide();
             btn_Menu_viewLogs.Hide();
-            ((ACarThing)this.Parent).loadLogs();
+            //((ACarThing)this.Parent).loadLogs(carID);
         }
 
         private void btn_Menu_logout_Click(object sender, EventArgs e)

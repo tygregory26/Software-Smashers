@@ -53,6 +53,7 @@
             btn_MyCars_registerNew.TabIndex = 4;
             btn_MyCars_registerNew.Text = "Register New";
             btn_MyCars_registerNew.UseVisualStyleBackColor = false;
+            btn_MyCars_registerNew.Click += btn_MyCars_registerNew_Click;
             // 
             // btn_MyCars_selectVehicle
             // 

@@ -30,18 +30,35 @@ namespace SoftwareSmashers
         {
             // being used as edit car (we already have carID)
             newCar = false;
-            InitializeComponent();
+            btn_NewCar_Delete.Hide();
             this.carID = carID;
+            InitializeComponent();
             txt_NewCar_vehicleName.Text = dbData.getCarName(carID);
             txt_NewCar_Make.Text = dbData.getCarMake(carID);
             txt_NewCar_Model.Text = dbData.getCarModel(carID);
             txt_NewCar_Year.Text = dbData.getCarYear(carID);
             txt_NewCar_VIN.Text = dbData.getCarVin(carID);
+            switch (dbData.getCarType(carID))
+            {
+                case 0:
+                    radiobtn_NewCar_Gas.Checked = true;
+                    break;
+                case 1:
+                    radiobtn_NewCar_Electric.Checked = true;
+                    break;
+                case 2:
+                    radiobtn_NewCar_Hybrid.Checked = true;
+                    break;
+                default:
+                    break;
+            }
         }
         public NewCar(int userID)
         {
             // being used as new car (we don't already have carID)
             newCar = true;
+            btn_NewCar_Delete.Show();
+            this.userID = userID;
             InitializeComponent();
         }
 
@@ -59,17 +76,59 @@ namespace SoftwareSmashers
 
         private void btn_NewCar_Save_Click_1(object sender, EventArgs e)
         {
+
+            string name = txt_NewCar_vehicleName.Text;
+            string make = txt_NewCar_Make.Text;
+            string model = txt_NewCar_Model.Text;
+            string year = txt_NewCar_Year.Text;
+            string vin = txt_NewCar_VIN.Text;
+            int type = 0;
+            if (radiobtn_NewCar_Gas.Checked)
+            {
+                type = 0;
+            }
+            else if (radiobtn_NewCar_Electric.Checked)
+            {
+                type = 1;
+            }
+            else if (radiobtn_NewCar_Hybrid.Checked)
+            {
+                type = 2;
+            }
+
             if (newCar)
             {
-                dbData.addVehicle(userID, txt_NewCar_Make.Text, txt_NewCar_Model.Text, txt_NewCar_Year.Text, txt_NewCar_VIN.Text, 1, .42f, .34f, .45f, .98f, txt_NewCar_vehicleName.Text);
                 // will need to get vehicleID back from this?
-                ((ACarThing)this.Parent).loadCurrCar(carID);
+                carID = dbData.addVehicle(userID, make, model, year, vin, type, .42f, .34f, .45f, .98f, name);
+
+                if (carID == 0)
+                {
+                    ((ACarThing)this.Parent).loadCarList();
+                }
+                else
+                {
+                    //((ACarThing)this.Parent).loadCurrCar(carID);
+                }
 
             }
             else
             {
-                //dbData.editVehicle();
+                dbData.editVehicle(carID, make, model, year, vin, type, name);
                 ((ACarThing)this.Parent).loadCurrCar(carID);
+            }
+        }
+
+        private void btn_NewCar_Delete_Click(object sender, EventArgs e)
+        {
+            // double checking, but the user shouldn't be in edit car if they are not the owner
+
+            if (dbData.checkOwner(userID, carID))
+            {
+                dbData.deleteCar(userID);
+            }
+            else
+            {
+                MessageBox.Show("Oops something went wrong.");
             }
         }
     }

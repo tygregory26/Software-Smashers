@@ -13,24 +13,22 @@ namespace SoftwareSmashers
 {
     public partial class Logs : UserControl
     {
+        private int carID;
+
         public Logs()
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        public Logs(int carID)
         {
-
+            this.carID = carID;
+            InitializeComponent();
+            dataGrid_Logs_data.DataSource = dbData.viewLogs(carID);
         }
 
-        private void dataGrid_Logs_data_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_Logs_back_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void Logs_Load(object sender, EventArgs e)
-        {
-            dataGrid_Logs_data.DataSource = dbData.viewLogs();
+            ((ACarThing)this.Parent).loadCurrCar(carID);
         }
     }
 }

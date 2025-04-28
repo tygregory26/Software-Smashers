@@ -53,5 +53,11 @@ namespace SoftwareSmashers
                 MessageBox.Show("Please enter a valid vehicleID");
             }
         }
+
+        private void btn_MyCars_registerNew_Click(object sender, EventArgs e)
+        {
+            ((ACarThing)this.Parent).loadNewCar(userID);
+            this.Hide();
+        }
     }
 }

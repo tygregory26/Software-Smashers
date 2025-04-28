@@ -51,7 +51,6 @@
             dataGrid_Logs_data.RowHeadersWidth = 62;
             dataGrid_Logs_data.Size = new Size(946, 545);
             dataGrid_Logs_data.TabIndex = 0;
-            dataGrid_Logs_data.CellContentClick += dataGrid_Logs_data_CellContentClick;
             // 
             // lbl_Logs_title
             // 
@@ -63,7 +62,6 @@
             lbl_Logs_title.Size = new Size(485, 48);
             lbl_Logs_title.TabIndex = 1;
             lbl_Logs_title.Text = "Logs for \"CARNAME\"";
-            lbl_Logs_title.Click += label1_Click;
             // 
             // btn_Logs_back
             // 
@@ -78,6 +76,7 @@
             btn_Logs_back.TabIndex = 2;
             btn_Logs_back.Text = "Back";
             btn_Logs_back.UseVisualStyleBackColor = false;
+            btn_Logs_back.Click += btn_Logs_back_Click;
             // 
             // Logs
             // 
@@ -90,7 +89,6 @@
             Location = new Point(267, 0);
             Name = "Logs";
             Size = new Size(1264, 843);
-            Load += Logs_Load;
             ((System.ComponentModel.ISupportInitialize)dataGrid_Logs_data).EndInit();
             ResumeLayout(false);
             PerformLayout();

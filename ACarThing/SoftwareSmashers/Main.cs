@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.VisualBasic.ApplicationServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SoftwareSmashers
@@ -103,14 +104,34 @@ namespace SoftwareSmashers
             newCar.Parent = this;
             newCar.Show();
         }
-
-        public void loadLogs()
+        public void loadNewCar(int userID)
         {
             if (currentPage != null) { hideCurrentPage(); }
-            Logs logs = new Logs();
+            this.carID = carID;
+            NewCar newCar = new NewCar(userID);
+            currentPage = newCar;
+            newCar.Parent = this;
+            newCar.Show();
+        }
+
+        public void loadLogs(int carID)
+        {
+            this.carID = carID;
+            if (currentPage != null) { hideCurrentPage(); }
+            Logs logs = new Logs(carID);
             currentPage = logs;
             logs.Parent = this;
             logs.Show();
+        }
+
+        public void loadDeleteDriver(int carID)
+        {
+            this.carID = carID;
+            if (currentPage != null) { hideCurrentPage(); }
+            DeleteDriver deleteDriver = new DeleteDriver(carID, userID);
+            currentPage = deleteDriver;
+            deleteDriver.Parent = this;
+            deleteDriver.Show();
         }
 
         public void hideCurrentPage()

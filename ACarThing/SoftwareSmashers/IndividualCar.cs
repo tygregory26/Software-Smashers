@@ -37,6 +37,16 @@ namespace SoftwareSmashers
 
             lbl_IndCar_carName.Text = dbData.getCarName(carID);
 
+            if (dbData.checkOwner(userID, carID))
+            {
+                btn_IndCar_EditVehicle.Show();
+                btn_IndCar_EditDriver.Show();
+            }
+            else
+            {
+                btn_IndCar_EditVehicle.Hide();
+                btn_IndCar_EditDriver.Hide();
+            }
 
             switch (carType)
             {
@@ -82,22 +92,22 @@ namespace SoftwareSmashers
 
         private void btn_IndCar_start_Click(object sender, EventArgs e)
         {
-
+            dbData.swapStartCar(carID);
         }
 
         private void btn_IndCar_windows_Click(object sender, EventArgs e)
         {
-
+            dbData.swapWindow(carID);
         }
 
         private void btn_IndCar_arm_Click(object sender, EventArgs e)
         {
-
+            dbData.swapArm(carID);
         }
 
         private void btn_IndCar_lock_Click(object sender, EventArgs e)
         {
-
+            dbData.swapLock(carID);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -111,12 +121,13 @@ namespace SoftwareSmashers
 
         private void btn_IndCar_EditDriver_Click(object sender, EventArgs e)
         {
-
+            ((ACarThing)this.Parent).loadDeleteDriver(carID);
         }
 
-        private void pic_IndCar_locked_Click(object sender, EventArgs e)
+        private void btn_IndCar_ViewActivity_Click(object sender, EventArgs e)
         {
 
+            ((ACarThing)this.Parent).loadLogs(carID);
         }
     }
 }

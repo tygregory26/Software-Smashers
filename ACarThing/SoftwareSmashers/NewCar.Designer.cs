@@ -363,6 +363,7 @@
             btn_NewCar_Delete.TabIndex = 21;
             btn_NewCar_Delete.Text = "DELETE";
             btn_NewCar_Delete.UseVisualStyleBackColor = false;
+            btn_NewCar_Delete.Click += btn_NewCar_Delete_Click;
             // 
             // NewCar
             // 

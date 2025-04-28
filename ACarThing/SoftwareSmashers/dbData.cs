@@ -121,7 +121,7 @@ namespace SoftwareSmashers
             return null;
         }
 
-        public static Boolean addVehicle(int userID, string make, string model, string year, string vin, int vehicleType,
+        public static int addVehicle(int userID, string make, string model, string year, string vin, int vehicleType,
                 float battery, float fuel, float oil, float engineTemp, string carName)
         // creating a new vehicle attatched to userID
         {
@@ -143,12 +143,13 @@ namespace SoftwareSmashers
                 MySqlCommand linkCmd = new MySqlCommand(query2, connection);
                 linkCmd.ExecuteNonQuery();
 
-                return true;
+                // make this return the carID
+                return 1;
             }
             catch (MySqlException ex)
             {
             }
-            return false;
+            return 0;
         }
 
         public static string settings(int userID)
@@ -171,7 +172,7 @@ namespace SoftwareSmashers
             return "";
         }
 
-        public static DataTable? viewLogs()
+        public static DataTable? viewLogs(int carID)
         {
             try
             {
@@ -400,7 +401,7 @@ namespace SoftwareSmashers
             return "";
         }
 
-        public static Boolean swapStartCar(int carID, Boolean newValue)
+        public static Boolean swapStartCar(int carID)
         {
             try
             {
@@ -416,7 +417,7 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static Boolean swapWindow(int carID, Boolean newValue)
+        public static Boolean swapWindow(int carID)
         {
             try
             {
@@ -432,7 +433,7 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static Boolean swapLock(int carID, Boolean newValue)
+        public static Boolean swapLock(int carID)
         {
             try
             {
@@ -448,7 +449,7 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static Boolean swapArm(int carID, Boolean newValue)
+        public static Boolean swapArm(int carID)
         {
             try
             {
@@ -571,10 +572,25 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static string editVehicle()
+        public static string editVehicle(int carID, string make, string model, string year, string vin, int vehicleType, string carName)
         {
             return "";
         }
 
+        public static Boolean isDriver(string email, int carID)
+        {
+            return false;
+        }
+
+        public static Boolean removeDriver(string email, int carID)
+        {
+            return false;
+        }
+
+        public static Boolean deleteCar(int carID)
+            // make sure anything with carID gets deleted in our tables
+        {
+            return false;
+        }
     }
 }
