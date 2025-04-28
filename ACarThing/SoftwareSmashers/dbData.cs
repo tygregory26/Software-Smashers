@@ -405,7 +405,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET isStarted = " + (newValue ? 1 : 0)
+                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET isStarted = " + (getCarStartStatus(carID) ? 0 : 1)
                         + " WHERE carID = " + carID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();
@@ -421,7 +421,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET windowsUp = " + (newValue ? 1 : 0)
+                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET windowsUp = " + (getCarWindowStatus(carID) ? 0 : 1)
                         + " WHERE carID = " + carID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();
@@ -437,7 +437,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET doorsLocked = " + (newValue ? 1 : 0)
+                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET doorsLocked = " + (getCarLockStatus(carID) ? 0 : 1)
                         + " WHERE carID = " + carID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();
@@ -453,7 +453,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET alarmArmed = " + (newValue ? 1 : 0)
+                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET alarmArmed = " + (getCarArmStatus(carID) ? 0 : 1)
                         + " WHERE carID = " + carID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();
