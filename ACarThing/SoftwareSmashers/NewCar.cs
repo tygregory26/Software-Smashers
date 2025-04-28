@@ -29,10 +29,10 @@ namespace SoftwareSmashers
         public NewCar(int userID, int carID)
         {
             // being used as edit car (we already have carID)
-            newCar = false;
-            btn_NewCar_Delete.Hide();
-            this.carID = carID;
             InitializeComponent();
+            newCar = false;
+            btn_NewCar_Delete.Show();
+            this.carID = carID;
             txt_NewCar_vehicleName.Text = dbData.getCarName(carID);
             txt_NewCar_Make.Text = dbData.getCarMake(carID);
             txt_NewCar_Model.Text = dbData.getCarModel(carID);
@@ -56,10 +56,10 @@ namespace SoftwareSmashers
         public NewCar(int userID)
         {
             // being used as new car (we don't already have carID)
-            newCar = true;
-            btn_NewCar_Delete.Show();
-            this.userID = userID;
             InitializeComponent();
+            newCar = true;
+            btn_NewCar_Delete.Hide();
+            this.userID = userID;
         }
 
         private void btn_NewCar_Cancel_Click(object sender, EventArgs e)
