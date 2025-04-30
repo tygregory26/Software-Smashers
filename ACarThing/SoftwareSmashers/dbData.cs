@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using System.Data;using System.Linq;
+using System.Data;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,11 +30,11 @@ namespace SoftwareSmashers
             }
             catch (TimeoutException toe)
             {
-                // Do something ??
+                Console.WriteLine(ex.Message);
             }
             catch (MySqlException sqle)
             {
-                // also do something here
+                Console.WriteLine(ex.Message);
             }
         }
 
@@ -55,6 +56,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return null;
         }
@@ -76,6 +78,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -96,6 +99,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -116,7 +120,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
-
+                Console.WriteLine(ex.Message);
             }
             return null;
         }
@@ -148,6 +152,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return 0;
         }
@@ -168,6 +173,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
@@ -184,6 +190,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return null;
         }
@@ -198,6 +205,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
@@ -214,6 +222,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -228,6 +237,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -242,6 +252,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -256,6 +267,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -270,6 +282,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -284,6 +297,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return 0.0f;
         }
@@ -303,6 +317,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return 0;
         }
@@ -317,6 +332,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return 0.0f;
         }
@@ -331,6 +347,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return 0.0f;
         }
@@ -354,6 +371,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -369,6 +387,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -383,6 +402,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -397,6 +417,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
@@ -413,6 +434,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -429,6 +451,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -445,6 +468,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -461,6 +485,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return false;
         }
@@ -475,6 +500,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
@@ -489,6 +515,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
@@ -503,6 +530,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
@@ -517,164 +545,258 @@ namespace SoftwareSmashers
             }
             catch (MySqlException ex)
             {
+                Console.WriteLine(ex.Message);
             }
             return "";
         }
 
         public static string getLastName(int userID)
         {
-    try
-        {
-        string query = "SELECT lastName FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "User";
-        }    
-    catch (MySqlException)
-        {
-        return "User";
-        }
+            try
+            {
+                string query = "SELECT lastName FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "User";
+            }
+            catch (MySqlException)
+            {
+                Console.WriteLine(ex.Message);
+                return "User";
+            }
         }
 
-       public static string getEmail(int userID)
+        public static string getEmail(int userID)
         {
             try
-        {
-        string query = "SELECT email FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "user@example.com";
-        }
+            {
+                string query = "SELECT email FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "user@example.com";
+            }
             catch (MySqlException)
-        {
-            return "user@example.com";
-        }
+            {
+                Console.WriteLine(ex.Message);
+                return "user@example.com";
+            }
         }
 
         public static string getPhone(int userID)
         {
             try
-        {
-        string query = "SELECT phoneNumber FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-            return command.ExecuteScalar()?.ToString() ?? "000-000-0000";
-        }
+            {
+                string query = "SELECT phoneNumber FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "000-000-0000";
+            }
             catch (MySqlException)
-        {
-            return "000-000-0000";
-        }
+            {
+                Console.WriteLine(ex.Message);
+                return "000-000-0000";
+            }
         }
 
 
         public static string getTimeZone(int userID)
         {
             try
-        {
-        string query = "SELECT timeZone FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "UTC";
-        }
+            {
+                string query = "SELECT timeZone FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "UTC";
+            }
             catch (MySqlException)
-        {
-            return "UTC";
-        }
+            {
+                Console.WriteLine(ex.Message);
+                return "UTC";
+            }
         }
 
 
-      public static bool getNotifications(int userID)
+        public static bool getNotifications(int userID)
         {
             try
-        {
-        string query = "SELECT notificationsEnabled FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-            return Convert.ToBoolean(command.ExecuteScalar());
-        }
+            {
+                string query = "SELECT notificationsEnabled FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return Convert.ToBoolean(command.ExecuteScalar());
+            }
             catch (MySqlException)
-        {
-            return true;
+            {
+                Console.WriteLine(ex.Message);
+                return true;
+            }
         }
-    }
 
 
-       public static string getLengthUnits(int userID)
+        public static string getLengthUnits(int userID)
         {
             try
-        {
-        string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-            return command.ExecuteScalar()?.ToString() ?? "metric";
-        }
+            {
+                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "metric";
+            }
             catch (MySqlException)
-        {
-            return "metric";
-        }
+            {
+                Console.WriteLine(ex.Message);
+                return "metric";
+            }
         }
 
         public static string getVolumeUnits(int userID)
         {
             try
-        {
-        string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-            return command.ExecuteScalar()?.ToString() ?? "metric";
-        }
+            {
+                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "metric";
+            }
             catch (MySqlException)
-        {
-            return "metric";
-        }
+            {
+                Console.WriteLine(ex.Message);
+                return "metric";
+            }
         }
 
-       public static string getTempUnits(int userID)
+        public static string getTempUnits(int userID)
         {
             try
-         {
-        string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-            return command.ExecuteScalar()?.ToString() ?? "metric";
-        }
+            {
+                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "metric";
+            }
             catch (MySqlException)
-        {
-            return "metric";
-        }
+            {
+                Console.WriteLine(ex.Message);    
+                return "metric";
+            }
         }
 
-      public static string getTimeUnits(int userID)
+        public static string getTimeUnits(int userID)
         {
             try
-        {
-        string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
-        MySqlCommand command = new MySqlCommand(query, connection);
-            return command.ExecuteScalar()?.ToString() ?? "metric";
-        }
+            {
+                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return command.ExecuteScalar()?.ToString() ?? "metric";
+            }
             catch (MySqlException)
-        {
-            return "metric";
-        }
+            {
+                Console.WriteLine(ex.Message);
+                return "metric";
+            }
         }
 
         public static Boolean setSettings(int userID, string timeZone, string notifications, string lengthUnits, string volumeUnits, string tempUnits, string timeUnits)
         {
-            // return true if it works, false if not
-            return false;
+            try
+            {
+                string query = "UPDATE `group1-csci463_ACarThing`.user SET " +
+                               "timeZone = '" + timeZone + "', " +
+                               "notificationsEnabled = " + notifications + ", " +
+                               "unitOfMeasurement = '" + lengthUnits + "' " +
+                               "WHERE userID = " + userID + ";";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.ExecuteNonQuery();
+                return true;
+            }
+            catch (MySqlException)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
 
         public static string editVehicle(int carID, string make, string model, string year, string vin, int vehicleType, string carName)
         {
-            return "";
+            try
+            {
+                string query = "UPDATE `group1-csci463_ACarThing`.vehicle SET " +
+                               "make = '" + make + "', " +
+                               "model = '" + model + "', " +
+                               "year = '" + year + "', " +
+                               "vin = '" + vin + "', " +
+                               "vehicleType = " + vehicleType + ", " +
+                               "carName = '" + carName + "' " +
+                               "WHERE carID = " + carID + ";";
+
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.ExecuteNonQuery();
+                return "Vehicle updated";
+            }
+            catch (MySqlException)
+            {
+                Console.WriteLine(ex.Message);
+                return "Error updating";
+            }
         }
 
         public static Boolean isDriver(string email, int carID)
         {
-            return false;
+            try
+            {
+                string getIDQuery = "SELECT userID FROM `group1-csci463_ACarThing`.user WHERE email = '" + email + "';";
+                MySqlCommand getUserIDCmd = new MySqlCommand(getIDQuery, connection);
+                int userID = Convert.ToInt32(getUserIDCmd.ExecuteScalar());
+
+                string query = "SELECT COUNT(*) FROM `group1-csci463_ACarThing`.drivers WHERE driverLink = " + userID + " AND vehicleLink = " + carID + ";";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                return Convert.ToInt32(command.ExecuteScalar()) > 0;
+            }
+            catch (MySqlException)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
+
 
         public static Boolean removeDriver(string email, int carID)
         {
-            return false;
+            try
+            {
+                string getIDQuery = "SELECT userID FROM `group1-csci463_ACarThing`.user WHERE email = '" + email + "';";
+                MySqlCommand getUserIDCmd = new MySqlCommand(getIDQuery, connection);
+                int userID = Convert.ToInt32(getUserIDCmd.ExecuteScalar());
+
+                string deleteQuery = "DELETE FROM `group1-csci463_ACarThing`.drivers WHERE driverLink = " + userID + " AND vehicleLink = " + carID + ";";
+                MySqlCommand deleteCmd = new MySqlCommand(deleteQuery, connection);
+                deleteCmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (MySqlException)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
 
+
         public static Boolean deleteCar(int carID)
-            // make sure anything with carID gets deleted in our tables
         {
-            return false;
+            try
+            {
+                string deleteDrivers = "DELETE FROM `group1-csci463_ACarThing`.drivers WHERE vehicleLink = " + carID + ";";
+                MySqlCommand deleteDriversCmd = new MySqlCommand(deleteDrivers, connection);
+                deleteDriversCmd.ExecuteNonQuery();
+
+                string deleteLogs = "DELETE FROM `group1-csci463_ACarThing`.Logs WHERE vehicleID = " + carID + ";";
+                MySqlCommand deleteLogsCmd = new MySqlCommand(deleteLogs, connection);
+                deleteLogsCmd.ExecuteNonQuery();
+
+                string deleteVehicle = "DELETE FROM `group1-csci463_ACarThing`.vehicle WHERE carID = " + carID + ";";
+                MySqlCommand deleteVehicleCmd = new MySqlCommand(deleteVehicle, connection);
+                deleteVehicleCmd.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (MySqlException)
+            {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
         }
     }
 }
