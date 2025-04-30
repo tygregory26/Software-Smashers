@@ -30,16 +30,15 @@ namespace SoftwareSmashers
             }
             catch (TimeoutException toe)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(toe.Message);
             }
             catch (MySqlException sqle)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(sqle.Message);
             }
         }
 
         public static int? login(string email, string password)
-        // using email and password, check to make sure they match and return userID
         {
             try
             {
@@ -62,8 +61,6 @@ namespace SoftwareSmashers
         }
 
         public static Boolean newUser(string firstName, string lastName, string email, string phoneNum, string password)
-        // creates a new user in the database, returns true if successful and false if
-        // unsuccessful.
         {
             Console.WriteLine("database");
             try
@@ -553,11 +550,12 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "User";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "User";
             }
+            return "User";
+
         }
 
         public static string getEmail(int userID)
@@ -568,11 +566,11 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "user@example.com";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "user@example.com";
             }
+            return "user@example.com";
         }
 
         public static string getPhone(int userID)
@@ -583,13 +581,12 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "000-000-0000";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "000-000-0000";
             }
+            return "000-000-0000";
         }
-
 
         public static string getTimeZone(int userID)
         {
@@ -599,13 +596,12 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "UTC";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "UTC";
             }
+            return "UTC";
         }
-
 
         public static bool getNotifications(int userID)
         {
@@ -615,13 +611,12 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return Convert.ToBoolean(command.ExecuteScalar());
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return true;
             }
+            return true;
         }
-
 
         public static string getLengthUnits(int userID)
         {
@@ -631,11 +626,11 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "metric";
             }
+            return "metric";
         }
 
         public static string getVolumeUnits(int userID)
@@ -646,11 +641,11 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "metric";
             }
+            return "metric";
         }
 
         public static string getTempUnits(int userID)
@@ -661,11 +656,11 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "metric";
             }
+            return "metric";
         }
 
         public static string getTimeUnits(int userID)
@@ -676,11 +671,11 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "metric";
             }
+            return "metric";
         }
 
         public static Boolean setSettings(int userID, string timeZone, string notifications, string lengthUnits, string volumeUnits, string tempUnits, string timeUnits)
@@ -697,11 +692,11 @@ namespace SoftwareSmashers
                 command.ExecuteNonQuery();
                 return true;
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return false;
             }
+            return false;
         }
 
         public static string editVehicle(int carID, string make, string model, string year, string vin, int vehicleType, string carName)
@@ -721,11 +716,11 @@ namespace SoftwareSmashers
                 command.ExecuteNonQuery();
                 return "Vehicle updated";
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return "Error updating";
             }
+            return "Error updating";
         }
 
         public static Boolean isDriver(string email, int carID)
@@ -740,13 +735,12 @@ namespace SoftwareSmashers
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return Convert.ToInt32(command.ExecuteScalar()) > 0;
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return false;
             }
+            return false;
         }
-
 
         public static Boolean removeDriver(string email, int carID)
         {
@@ -761,13 +755,12 @@ namespace SoftwareSmashers
                 deleteCmd.ExecuteNonQuery();
                 return true;
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return false;
             }
+            return false;
         }
-
 
         public static Boolean deleteCar(int carID)
         {
@@ -787,11 +780,11 @@ namespace SoftwareSmashers
 
                 return true;
             }
-            catch (MySqlException)
+            catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
-                return false;
             }
+            return false;
         }
     }
 }
