@@ -23,6 +23,7 @@ namespace SoftwareSmashers
             lbl_NewUser_password.Show();
             txt_NewUser_password.Show();
             edit = false;
+            pic_NewUser_logo.Show();
         }
 
         public NewUser(int userID)
@@ -33,6 +34,7 @@ namespace SoftwareSmashers
             txt_NewUser_password.Hide();
             this.userID = userID;
             edit = true;
+            pic_NewUser_logo.Hide();
 
             txt_NewUser_fname.Text = dbData.getName(userID);
             txt_NewUser_lname.Text = dbData.getLastName(userID);
@@ -68,9 +70,18 @@ namespace SoftwareSmashers
 
         private void btn_NewUser_cancel_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            ((ACarThing)this.Parent).loadLogin();
-            return;
+            if (edit)
+            {
+                this.Hide();
+                ((ACarThing)this.Parent).loadMenu(userID);
+                return;
+            }
+            else
+            {
+                this.Hide();
+                ((ACarThing)this.Parent).loadLogin();
+                return;
+            }
         }
     }
 }

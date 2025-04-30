@@ -107,7 +107,7 @@ namespace SoftwareSmashers
                 }
                 else
                 {
-                    //((ACarThing)this.Parent).loadCurrCar(carID);
+                    ((ACarThing)this.Parent).loadCurrCar(carID);
                 }
 
             }

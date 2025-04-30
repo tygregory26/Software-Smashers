@@ -14,11 +14,21 @@ namespace SoftwareSmashers
         public ACarThing()
         {
             InitializeComponent();
+            loadInfoBar();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             loadLogin();
+            loadInfoBar();
+        }
+
+        private void loadInfoBar()
+        {
+            InfoBar infoBar = new InfoBar();
+            infoBar.Parent = this;
+            infoBar.Show();
+            infoBar.BringToFront();
         }
 
         public void loadLogin()
@@ -28,6 +38,7 @@ namespace SoftwareSmashers
             currentPage = Login;
             Login.Parent = this;
             Login.Show();
+            loadInfoBar();
         }
 
         public void loadNewUser()
@@ -37,6 +48,7 @@ namespace SoftwareSmashers
             currentPage = NewUser;
             NewUser.Parent = this;
             NewUser.Show();
+            loadInfoBar();
         }
 
         public void loadEditUser(int userID)
@@ -47,6 +59,7 @@ namespace SoftwareSmashers
             currentPage = editUser;
             editUser.Parent = this;
             editUser.Show();
+            loadInfoBar();
         }
 
         public void loadMenu(int userID)
@@ -55,16 +68,7 @@ namespace SoftwareSmashers
             Menu Menu = new Menu(userID);
             Menu.Parent = this;
             Menu.Show();
-
-            InfoBar infoBar = new InfoBar();
-            infoBar.Show();
-            Menu.Show();
-        }
-
-        public void loadIndEdit()
-        {
-            Menu menu = new Menu();
-            menu.showEditButtons();
+            loadInfoBar();
         }
 
         public void loadSettings()
@@ -74,6 +78,7 @@ namespace SoftwareSmashers
             currentPage = Settings;
             Settings.Parent = this;
             Settings.Show();
+            loadInfoBar();
         }
 
         public void loadCarList()
@@ -83,6 +88,7 @@ namespace SoftwareSmashers
             currentPage = carsList;
             carsList.Parent = this;
             carsList.Show();
+            loadInfoBar();
         }
 
         public void loadCurrCar(int carID)
@@ -93,6 +99,7 @@ namespace SoftwareSmashers
             currentPage = individualCar;
             individualCar.Parent = this;
             individualCar.Show();
+            loadInfoBar();
         }
 
         public void loadEditCar(int carID)
@@ -103,6 +110,7 @@ namespace SoftwareSmashers
             currentPage = newCar;
             newCar.Parent = this;
             newCar.Show();
+            loadInfoBar();
         }
         public void loadNewCar(int userID)
         {
@@ -112,6 +120,7 @@ namespace SoftwareSmashers
             currentPage = newCar;
             newCar.Parent = this;
             newCar.Show();
+            loadInfoBar();
         }
 
         public void loadLogs(int carID)
@@ -122,6 +131,7 @@ namespace SoftwareSmashers
             currentPage = logs;
             logs.Parent = this;
             logs.Show();
+            loadInfoBar();
         }
 
         public void loadDeleteDriver(int carID)
@@ -132,6 +142,7 @@ namespace SoftwareSmashers
             currentPage = deleteDriver;
             deleteDriver.Parent = this;
             deleteDriver.Show();
+            loadInfoBar();
         }
 
         public void hideCurrentPage()

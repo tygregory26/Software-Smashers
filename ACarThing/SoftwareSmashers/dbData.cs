@@ -606,19 +606,19 @@ namespace SoftwareSmashers
             return "UTC";
         }
 
-        public static bool getNotifications(int userID)
+        public static string getNotifications(int userID)
         {
             try
             {
                 string query = "SELECT notificationsEnabled FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return Convert.ToBoolean(command.ExecuteScalar());
+                return command.ExecuteScalar()?.ToString() ?? "All Notifications";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return true;
+            return "All Notifications";
         }
 
         public static string getLengthUnits(int userID)
@@ -788,6 +788,11 @@ namespace SoftwareSmashers
                 Console.WriteLine(ex.Message);
             }
             return false;
+        }
+
+        public static Boolean createLog(int carID, string message)
+        {
+            return true;
         }
     }
 }

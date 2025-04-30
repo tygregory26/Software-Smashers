@@ -15,6 +15,12 @@ namespace SoftwareSmashers
         public InfoBar()
         {
             InitializeComponent();
+            imgNotification.Hide();
+            //imgWifi.Hide();
+            //imgCelular.Hide();
+            //imgBattery.Hide();
+            lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
+            lblTime.Text = DateTime.Now.ToString("h:mm tt:");
         }
     }
 }
