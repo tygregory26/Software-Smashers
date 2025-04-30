@@ -537,116 +537,116 @@ namespace SoftwareSmashers
 
        public static string getEmail(int userID)
         {
-    try
+            try
         {
         string query = "SELECT email FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
         return command.ExecuteScalar()?.ToString() ?? "user@example.com";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "user@example.com";
+            return "user@example.com";
         }
         }
 
         public static string getPhone(int userID)
         {
-    try
+            try
         {
         string query = "SELECT phoneNumber FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "000-000-0000";
+            return command.ExecuteScalar()?.ToString() ?? "000-000-0000";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "000-000-0000";
+            return "000-000-0000";
         }
         }
 
 
         public static string getTimeZone(int userID)
         {
-    try
+            try
         {
         string query = "SELECT timeZone FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
         return command.ExecuteScalar()?.ToString() ?? "UTC";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "UTC";
+            return "UTC";
         }
         }
 
 
       public static bool getNotifications(int userID)
         {
-    try
+            try
         {
         string query = "SELECT notificationsEnabled FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
-        return Convert.ToBoolean(command.ExecuteScalar());
+            return Convert.ToBoolean(command.ExecuteScalar());
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return true;
+            return true;
         }
     }
 
 
        public static string getLengthUnits(int userID)
         {
-    try
+            try
         {
         string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "metric";
+            return command.ExecuteScalar()?.ToString() ?? "metric";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "metric";
+            return "metric";
         }
         }
 
         public static string getVolumeUnits(int userID)
         {
-    try
+            try
         {
         string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "metric";
+            return command.ExecuteScalar()?.ToString() ?? "metric";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "metric";
+            return "metric";
         }
         }
 
        public static string getTempUnits(int userID)
         {
-    try
-        {
+            try
+         {
         string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "metric";
+            return command.ExecuteScalar()?.ToString() ?? "metric";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "metric";
+            return "metric";
         }
         }
 
       public static string getTimeUnits(int userID)
         {
-    try
+            try
         {
         string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
         MySqlCommand command = new MySqlCommand(query, connection);
-        return command.ExecuteScalar()?.ToString() ?? "metric";
+            return command.ExecuteScalar()?.ToString() ?? "metric";
         }
-    catch (MySqlException)
+            catch (MySqlException)
         {
-        return "metric";
+            return "metric";
         }
         }
 
