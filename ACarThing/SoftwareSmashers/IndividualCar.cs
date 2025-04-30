@@ -88,26 +88,114 @@ namespace SoftwareSmashers
                     // error message?
                     break;
             }
+
+            if (dbData.getCarArmStatus(carID))
+            {
+                pic_IndCar_armed.Show();
+                pic_IndCar_Unarmed.Hide();
+            }
+            else
+            {
+                pic_IndCar_armed.Hide);
+                pic_IndCar_Unarmed.Show();
+            }
+
+            if (dbData.getCarLockStatus(carID))
+            {
+                pic_IndCar_locked.Show();
+                pic_IndCar_unlocked.Hide();
+            }
+            else
+            {
+                pic_IndCar_locked.Hide);
+                pic_IndCar_unlocked.Show();
+            }
+
+            if (dbData.getCarWindowStatus(carID))
+            {
+                pic_IndCar_windowUp.Show();
+                pic_IndCar_windowDown.Hide();
+            }
+            else
+            {
+                pic_IndCar_windowUp.Hide);
+                pic_IndCar_windowDown.Show();
+            }
+
+            if (dbData.getCarStartStatus(carID))
+            {
+                pic_IndCar_started.Show();
+                pic_IndCar_stopped.Hide();
+            }
+            else
+            {
+                pic_IndCar_started.Hide);
+                pic_IndCar_stopped.Show();
+            }
         }
 
         private void btn_IndCar_start_Click(object sender, EventArgs e)
         {
             dbData.swapStartCar(carID);
+
+            if (dbData.getCarStartStatus(carID))
+            {
+                pic_IndCar_started.Show();
+                pic_IndCar_stopped.Hide();
+            }
+            else
+            {
+                pic_IndCar_started.Hide);
+                pic_IndCar_stopped.Show();
+            }
         }
 
         private void btn_IndCar_windows_Click(object sender, EventArgs e)
         {
             dbData.swapWindow(carID);
+
+            if (dbData.getCarWindowStatus(carID))
+            {
+                pic_IndCar_windowUp.Show();
+                pic_IndCar_windowDown.Hide();
+            }
+            else
+            {
+                pic_IndCar_windowUp.Hide);
+                pic_IndCar_windowDown.Show();
+            }
         }
 
         private void btn_IndCar_arm_Click(object sender, EventArgs e)
         {
             dbData.swapArm(carID);
+
+            if (dbData.getCarArmStatus(carID))
+            {
+                pic_IndCar_armed.Show();
+                pic_IndCar_Unarmed.Hide();
+            }
+            else
+            {
+                pic_IndCar_armed.Hide);
+                pic_IndCar_Unarmed.Show();
+            }
         }
 
         private void btn_IndCar_lock_Click(object sender, EventArgs e)
         {
             dbData.swapLock(carID);
+
+            if (dbData.getCarLockStatus(carID))
+            {
+                pic_IndCar_locked.Show();
+                pic_IndCar_unlocked.Hide();
+            }
+            else
+            {
+                pic_IndCar_locked.Hide);
+                pic_IndCar_unlocked.Show();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

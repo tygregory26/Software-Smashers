@@ -117,4 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="imgBattery.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAEhJREFUSEvt
+        jLEJADAMw/r/0+2uYAShSyACTRY+Z1lGcj8ZYdg1kgIemAULuJsFC7ibBQu4mwULuJuRFPDAjDDsGmHY
+        dVmm8ADYzKNdB2FWTAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="imgWifi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPFJREFUSEvt
+        kzGKAkEQRV+ogYGwidmewD3AXsF0wcRAWFGQTdbAUM+0V9jEG3gAAxMDg802UD70yFhWT9swgqAPKqn6
+        /3dTPQNP7p0+sAIOkfoNmizawM4JS5U88laycYy5pYwLuo5Q9QdMgKY1AA1gHDTWp3orhAqww5/zrKuQ
+        x+ZMNViaZss6M5C3nLUoBjpke6490QP2zu3WwLsVB5SlzEpmTmisBtacwrtxqmIbuODLGP+BoRWFW2tW
+        1p52nmIeDCM7cPgM2uTOLa+2UUGONspHaRX6d2rlxXlU9Wrj2zlAn3FtdJwD1KuVm77BA3MEujaIIYH/
+        HH4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="imgCelular.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAE9JREFUSEvt
+        zUEKgDAQBMH8/9N6zaWQBoUgW5BLw2zWGn9xbe8T88Gj1z7QIfVMh9QzHVLPdEg90yF10qB20qB20qB2
+        0qB20qB20qD2cYAbP7BinmTiVl8AAAAASUVORK5CYII=
+</value>
+  </data>
 </root>

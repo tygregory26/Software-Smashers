@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InfoBar));
             imgNotification = new PictureBox();
             imgBattery = new PictureBox();
             imgWifi = new PictureBox();
@@ -52,7 +53,7 @@
             // 
             // imgBattery
             // 
-            imgBattery.BackgroundImage = Properties.Resources.software_smashers_noText;
+            imgBattery.BackgroundImage = (Image)resources.GetObject("imgBattery.BackgroundImage");
             imgBattery.BackgroundImageLayout = ImageLayout.Zoom;
             imgBattery.Location = new Point(1214, 0);
             imgBattery.Name = "imgBattery";
@@ -62,7 +63,7 @@
             // 
             // imgWifi
             // 
-            imgWifi.BackgroundImage = Properties.Resources.software_smashers_noText;
+            imgWifi.BackgroundImage = (Image)resources.GetObject("imgWifi.BackgroundImage");
             imgWifi.BackgroundImageLayout = ImageLayout.Zoom;
             imgWifi.Location = new Point(1158, 0);
             imgWifi.Name = "imgWifi";
@@ -72,7 +73,7 @@
             // 
             // imgCelular
             // 
-            imgCelular.BackgroundImage = Properties.Resources.software_smashers_noText;
+            imgCelular.BackgroundImage = (Image)resources.GetObject("imgCelular.BackgroundImage");
             imgCelular.BackgroundImageLayout = ImageLayout.Zoom;
             imgCelular.Location = new Point(1102, 0);
             imgCelular.Name = "imgCelular";
@@ -85,9 +86,9 @@
             lblDate.AutoSize = true;
             lblDate.Location = new Point(458, 13);
             lblDate.Name = "lblDate";
-            lblDate.Size = new Size(210, 25);
+            lblDate.Size = new Size(224, 25);
             lblDate.TabIndex = 4;
-            lblDate.Text = "Monday, March 31, 2025";
+            lblDate.Text = "Wednesday, April 30, 2025";
             // 
             // lblTime
             // 
@@ -102,6 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Transparent;
             Controls.Add(lblTime);
             Controls.Add(lblDate);
             Controls.Add(imgCelular);
