@@ -85,7 +85,6 @@ namespace SoftwareSmashers
 
         public static Boolean updateUser(string userID, string firstName, string lastName, string email, string phoneNum,
                 string password)
-        // updates existing user, returns true if successful and false if unsuccessful.
         {
             try
             {
@@ -105,12 +104,9 @@ namespace SoftwareSmashers
         }
 
         public static DataTable? listVehicles(int userID)
-        // lists out all vehicles associated with a specific userID
-        // see viewLogs for formatting
         {
             try
             {
-                //MessageBox.Show(userID.ToString());
                 string query = "SELECT * FROM `group1-csci463_ACarThing`.vehicle WHERE ownerID = " + userID.ToString() + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 MySqlDataAdapter sqlData = new MySqlDataAdapter(command);
@@ -127,28 +123,24 @@ namespace SoftwareSmashers
 
         public static int addVehicle(int userID, string make, string model, string year, string vin, int vehicleType,
                 float battery, float fuel, float oil, float engineTemp, string carName)
-        // creating a new vehicle attatched to userID
         {
             try
             {
                 string query = "INSERT INTO `group1-csci463_ACarThing`.vehicle " +
-                        "(make, model, year, vin, vehicleType, batteryLevel, fuelLevel, oilLevel, engineTemp, ownerID, carName) VALUES "
-                        +
-                        "('" + make + "', '" + model + "', '" + year + "', '" + vin + "', " + vehicleType + ", " + battery
-                        + ", " + fuel + ", " + oil + ", " + engineTemp + ", " + userID + ", '" + carName + "'); ";
+                               "(make, model, year, vin, vehicleType, batteryLevel, fuelLevel, oilLevel, engineTemp, ownerID, carName) VALUES " +
+                               "('" + make + "', '" + model + "', '" + year + "', '" + vin + "', " + vehicleType + ", " +
+                               battery + ", " + fuel + ", " + oil + ", " + engineTemp + ", " + userID + ", '" + carName + "');";
                 MySqlCommand insertCmd = new MySqlCommand(query, connection);
                 insertCmd.ExecuteNonQuery();
 
-                int insertedVehicleID = Convert
-                        .ToInt32(new MySqlCommand("SELECT LAST_INSERT_ID(); ", connection).ExecuteScalar());
+                int insertedVehicleID = Convert.ToInt32(new MySqlCommand("SELECT LAST_INSERT_ID();", connection).ExecuteScalar());
 
-                string query2 = "INSERT INTO `group1-csci463_ACarThing`.drivers (driverLink, vehicleLink) VALUES (" + userID
-                        + ", " + insertedVehicleID + "); ";
+                string query2 = "INSERT INTO `group1-csci463_ACarThing`.drivers (driverLink, vehicleLink) VALUES (" +
+                                userID + ", " + insertedVehicleID + ");";
                 MySqlCommand linkCmd = new MySqlCommand(query2, connection);
                 linkCmd.ExecuteNonQuery();
 
-                // make this return the carID
-                return 1;
+                return insertedVehicleID;
             }
             catch (MySqlException ex)
             {
@@ -182,7 +174,10 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT logEntry, logType, timeStamp FROM `group1-csci463_ACarThing`.Logs ORDER BY timeStamp DESC; ";
+                string query = "SELECT logEntry, logType, timeStamp " +
+                               "FROM `group1-csci463_ACarThing`.Logs " +
+                               "WHERE vehicleID = " + carID + " " +
+                               "ORDER BY timeStamp DESC;";
                 MySqlDataAdapter sqlData = new MySqlDataAdapter(query, connection);
                 DataTable dTable = new DataTable();
                 sqlData.Fill(dTable);
@@ -668,7 +663,7 @@ namespace SoftwareSmashers
             }
             catch (MySqlException)
             {
-                Console.WriteLine(ex.Message);    
+                Console.WriteLine(ex.Message);
                 return "metric";
             }
         }
