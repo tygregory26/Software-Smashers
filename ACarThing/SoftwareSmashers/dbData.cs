@@ -104,7 +104,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT v.carID FROM `group1-csci463_ACarThing`.vehicle v " +
+                string query = "SELECT v.carID AS 'Vehicle ID', v.carName AS 'Vehicle Name', v.make as Make, v.model as Model, v.year as Year FROM `group1-csci463_ACarThing`.vehicle v " +
                                "JOIN `group1-csci463_ACarThing`.drivers d ON v.carID = d.vehicleLink " +
                                "WHERE d.driverLink = " + userID + ";";
 
@@ -174,7 +174,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT logType AS Type, logEntry AS Message, timpStamp AS Date " +
+                string query = "SELECT logType AS Type, logEntry AS Message, timeStamp AS Date " +
                                "FROM `group1-csci463_ACarThing`.Logs " +
                                "WHERE vehicleID = " + carID + " " +
                                "ORDER BY timeStamp DESC;";

@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\dbdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\tysou\\onedrive\\documents\\github\\software-smashers\\software-smashers\\acarthing\\softwaresmashers\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\logs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|c:\\users\\tysou\\onedrive\\documents\\github\\software-smashers\\software-smashers\\acarthing\\softwaresmashers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC61D82F-0572-43EB-9D29-97F6807D3D09}|SoftwareSmashers\\SoftwareSmashers.csproj|solutionrelative:softwaresmashers\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -54,12 +58,25 @@
               "Title": "dbData.cs",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\dbData.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\dbData.cs",
-              "ToolTip": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\dbData.cs",
-              "RelativeToolTip": "SoftwareSmashers\\dbData.cs",
-              "ViewState": "AgIAAJ0CAAAAAAAAAAAswBgDAAAuAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\dbData.cs*",
+              "RelativeToolTip": "SoftwareSmashers\\dbData.cs*",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAlwLAAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-26T16:49:04.47Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Logs.cs",
+              "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Logs.cs",
+              "RelativeDocumentMoniker": "SoftwareSmashers\\Logs.cs",
+              "ToolTip": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Logs.cs",
+              "RelativeToolTip": "SoftwareSmashers\\Logs.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwBkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T22:45:18.497Z",
               "EditorCaption": ""
             },
             {
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Main.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Main.cs",
@@ -79,19 +96,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Menu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Menu.cs",
               "ToolTip": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs [Design]",
               "RelativeToolTip": "SoftwareSmashers\\Menu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T12:41:28.891Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-30T12:41:28.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Settings.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Settings.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Settings.cs",
@@ -102,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IndividualCar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\IndividualCar.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\IndividualCar.cs",
@@ -113,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "InfoBar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\InfoBar.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\InfoBar.cs",
@@ -124,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "NewUser.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewUser.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\NewUser.cs",
@@ -135,7 +151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\Menu.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\Menu.cs",
@@ -143,12 +159,11 @@
               "RelativeToolTip": "SoftwareSmashers\\Menu.cs",
               "ViewState": "AgIAADEAAAAAAAAAAAAYwEcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-27T17:30:34.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-27T17:30:34.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "NewCar.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tysou\\OneDrive\\Documents\\GitHub\\Software-Smashers\\Software-Smashers\\ACarThing\\SoftwareSmashers\\NewCar.cs",
               "RelativeDocumentMoniker": "SoftwareSmashers\\NewCar.cs",
