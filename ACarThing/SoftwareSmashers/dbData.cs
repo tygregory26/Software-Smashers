@@ -174,7 +174,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT logEntry, logType, timeStamp " +
+                string query = "SELECT logType AS Type, logEntry AS Message, timpStamp AS Date " +
                                "FROM `group1-csci463_ACarThing`.Logs " +
                                "WHERE vehicleID = " + carID + " " +
                                "ORDER BY timeStamp DESC;";
