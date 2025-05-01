@@ -14,7 +14,7 @@ namespace SoftwareSmashers
     {
         private static MySqlConnection? connection = null;
 
-        private string server = "172.16.233.77";
+        private string server = "10.226.29.234";
         private string username = "group1-csci463";
         private string password = "fjePQu34?";
         private string databaseName = "group1-csci463_ACarThing";
@@ -795,7 +795,7 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static Boolean createLog(int carID, string message)
+        public static Boolean createLog(int carID, string entry, string type)
         {
             return true;
         }

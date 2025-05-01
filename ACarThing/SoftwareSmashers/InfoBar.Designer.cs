@@ -103,7 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Transparent;
+            BackColor = Color.FromArgb(227, 225, 232);
             Controls.Add(lblTime);
             Controls.Add(lblDate);
             Controls.Add(imgCelular);

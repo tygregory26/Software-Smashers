@@ -96,7 +96,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_armed.Hide);
+                pic_IndCar_armed.Hide();
                 pic_IndCar_Unarmed.Show();
             }
 
@@ -107,7 +107,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_locked.Hide);
+                pic_IndCar_locked.Hide();
                 pic_IndCar_unlocked.Show();
             }
 
@@ -118,7 +118,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_windowUp.Hide);
+                pic_IndCar_windowUp.Hide();
                 pic_IndCar_windowDown.Show();
             }
 
@@ -129,7 +129,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_started.Hide);
+                pic_IndCar_started.Hide();
                 pic_IndCar_stopped.Show();
             }
         }
@@ -145,7 +145,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_started.Hide);
+                pic_IndCar_started.Hide();
                 pic_IndCar_stopped.Show();
             }
         }
@@ -161,7 +161,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_windowUp.Hide);
+                pic_IndCar_windowUp.Hide();
                 pic_IndCar_windowDown.Show();
             }
         }
@@ -177,7 +177,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_armed.Hide);
+                pic_IndCar_armed.Hide();
                 pic_IndCar_Unarmed.Show();
             }
         }
@@ -193,7 +193,7 @@ namespace SoftwareSmashers
             }
             else
             {
-                pic_IndCar_locked.Hide);
+                pic_IndCar_locked.Hide();
                 pic_IndCar_unlocked.Show();
             }
         }
