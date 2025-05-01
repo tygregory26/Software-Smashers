@@ -610,7 +610,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT notificationsEnabled FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                string query = "SELECT notifications FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "All Notifications";
             }
@@ -625,7 +625,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                string query = "SELECT lengthUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
@@ -640,7 +640,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                string query = "SELECT volumeUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
@@ -655,7 +655,7 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                string query = "SELECT temperatureUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 return command.ExecuteScalar()?.ToString() ?? "metric";
             }
@@ -670,16 +670,17 @@ namespace SoftwareSmashers
         {
             try
             {
-                string query = "SELECT unitOfMeasurement FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
+                string query = "SELECT timeUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return command.ExecuteScalar()?.ToString() ?? "metric";
+                return command.ExecuteScalar()?.ToString() ?? "24h";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return "metric";
+            return "24h";
         }
+
 
         public static Boolean setSettings(int userID, string timeZone, string notifications, string lengthUnits, string volumeUnits, string tempUnits, string timeUnits)
         {
@@ -687,8 +688,11 @@ namespace SoftwareSmashers
             {
                 string query = "UPDATE `group1-csci463_ACarThing`.user SET " +
                                "timeZone = '" + timeZone + "', " +
-                               "notificationsEnabled = " + notifications + ", " +
-                               "unitOfMeasurement = '" + lengthUnits + "' " +
+                               "notifications = '" + notifications + "', " +
+                               "lengthUnits = '" + lengthUnits + "', " +
+                               "volumeUnits = '" + volumeUnits + "', " +
+                               "temperatureUnits = '" + tempUnits + "', " +
+                               "timeUnits = '" + timeUnits + "' " +
                                "WHERE userID = " + userID + ";";
 
                 MySqlCommand command = new MySqlCommand(query, connection);
@@ -701,6 +705,7 @@ namespace SoftwareSmashers
             }
             return false;
         }
+
 
         public static string editVehicle(int carID, string make, string model, string year, string vin, int vehicleType, string carName)
         {
