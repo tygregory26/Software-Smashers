@@ -159,7 +159,7 @@
             Controls.Add(btn_DeleteCar_cancel);
             Controls.Add(pic_DeleteDriver_BigImage);
             Controls.Add(btn_DeleteCar_addDriver);
-            Location = new Point(267, 0);
+            Location = new Point(267, 50);
             Margin = new Padding(4, 5, 4, 5);
             Name = "DeleteDriver";
             Size = new Size(1264, 843);

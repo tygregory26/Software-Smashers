@@ -243,8 +243,9 @@
             Controls.Add(btn_NewUser_save);
             Controls.Add(pic_NewUser_logo);
             Controls.Add(grp_NewUser_registrationInfo);
+            Location = new Point(0, 50);
             Name = "NewUser";
-            Size = new Size(1531, 843);
+            Size = new Size(1761, 843);
             ((System.ComponentModel.ISupportInitialize)pic_NewUser_logo).EndInit();
             grp_NewUser_registrationInfo.ResumeLayout(false);
             grp_NewUser_registrationInfo.PerformLayout();

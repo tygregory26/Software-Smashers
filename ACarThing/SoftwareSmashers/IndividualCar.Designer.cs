@@ -628,7 +628,7 @@
             Controls.Add(btn_IndCar_start);
             Controls.Add(lbl_IndCar_carName);
             Controls.Add(pic_IndCar_car);
-            Location = new Point(267, 0);
+            Location = new Point(267, 50);
             Name = "IndividualCar";
             Size = new Size(1264, 843);
             ((System.ComponentModel.ISupportInitialize)pic_IndCar_car).EndInit();

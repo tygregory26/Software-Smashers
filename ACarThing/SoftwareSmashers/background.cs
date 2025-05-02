@@ -10,14 +10,11 @@ using System.Windows.Forms;
 
 namespace SoftwareSmashers
 {
-    public partial class InfoBar : UserControl
+    public partial class background : UserControl
     {
-        public InfoBar()
+        public background()
         {
             InitializeComponent();
-            imgNotification.Hide();
-            lblDate.Text = DateTime.Now.ToString("dddd, MMMM dd, yyyy");
-            lblTime.Text = DateTime.Now.ToString("h:mm tt");
         }
     }
 }

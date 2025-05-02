@@ -375,7 +375,7 @@
             Controls.Add(btn_NewCar_Save);
             Controls.Add(grp_NewCar_VehicleInfo);
             Controls.Add(pic_NewCar_BigImage);
-            Location = new Point(267, 0);
+            Location = new Point(267, 50);
             Margin = new Padding(4, 5, 4, 5);
             Name = "NewCar";
             Size = new Size(1264, 843);

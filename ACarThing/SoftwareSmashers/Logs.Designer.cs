@@ -86,7 +86,7 @@
             Controls.Add(btn_Logs_back);
             Controls.Add(lbl_Logs_title);
             Controls.Add(dataGrid_Logs_data);
-            Location = new Point(267, 0);
+            Location = new Point(267, 50);
             Name = "Logs";
             Size = new Size(1264, 843);
             ((System.ComponentModel.ISupportInitialize)dataGrid_Logs_data).EndInit();

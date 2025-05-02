@@ -7,6 +7,7 @@ namespace SoftwareSmashers
     public partial class ACarThing : Form
     {
         UserControl? currentPage;
+        UserControl? menuPage;
         int userID;
         int carID;
         dbData DB = new dbData();
@@ -64,10 +65,25 @@ namespace SoftwareSmashers
 
         public void loadMenu(int userID)
         {
+            if (menuPage != null)
+            {
+                menuPage.Hide();
+                menuPage = null;
+            }
+
             this.userID = userID;
             Menu Menu = new Menu(userID);
             Menu.Parent = this;
             Menu.Show();
+
+            menuPage = Menu;
+
+            if (currentPage != null) { hideCurrentPage();}
+            background background = new background();
+            currentPage = background;
+            background.Parent = this;
+            background.Show();
+
             loadInfoBar();
         }
 

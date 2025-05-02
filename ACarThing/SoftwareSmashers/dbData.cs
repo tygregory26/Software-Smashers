@@ -243,7 +243,7 @@ namespace SoftwareSmashers
             {
                 string query = "SELECT windowsUp FROM `group1-csci463_ACarThing`.vehicle WHERE carID = " + carID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return !Convert.ToBoolean(command.ExecuteScalar());
+                return Convert.ToBoolean(command.ExecuteScalar());
             }
             catch (MySqlException ex)
             {

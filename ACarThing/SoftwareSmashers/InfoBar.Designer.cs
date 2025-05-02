@@ -55,7 +55,7 @@
             // 
             imgBattery.BackgroundImage = (Image)resources.GetObject("imgBattery.BackgroundImage");
             imgBattery.BackgroundImageLayout = ImageLayout.Zoom;
-            imgBattery.Location = new Point(1214, 0);
+            imgBattery.Location = new Point(1474, 0);
             imgBattery.Name = "imgBattery";
             imgBattery.Size = new Size(50, 50);
             imgBattery.TabIndex = 1;
@@ -65,7 +65,7 @@
             // 
             imgWifi.BackgroundImage = (Image)resources.GetObject("imgWifi.BackgroundImage");
             imgWifi.BackgroundImageLayout = ImageLayout.Zoom;
-            imgWifi.Location = new Point(1158, 0);
+            imgWifi.Location = new Point(1418, 0);
             imgWifi.Name = "imgWifi";
             imgWifi.Size = new Size(50, 50);
             imgWifi.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             imgCelular.BackgroundImage = (Image)resources.GetObject("imgCelular.BackgroundImage");
             imgCelular.BackgroundImageLayout = ImageLayout.Zoom;
-            imgCelular.Location = new Point(1102, 0);
+            imgCelular.Location = new Point(1362, 0);
             imgCelular.Name = "imgCelular";
             imgCelular.Size = new Size(50, 50);
             imgCelular.TabIndex = 3;
@@ -84,7 +84,7 @@
             // lblDate
             // 
             lblDate.AutoSize = true;
-            lblDate.Location = new Point(458, 13);
+            lblDate.Location = new Point(648, 12);
             lblDate.Name = "lblDate";
             lblDate.Size = new Size(224, 25);
             lblDate.TabIndex = 4;
@@ -93,7 +93,7 @@
             // lblTime
             // 
             lblTime.AutoSize = true;
-            lblTime.Location = new Point(692, 13);
+            lblTime.Location = new Point(887, 12);
             lblTime.Name = "lblTime";
             lblTime.Size = new Size(77, 25);
             lblTime.TabIndex = 5;
@@ -111,7 +111,7 @@
             Controls.Add(imgBattery);
             Controls.Add(imgNotification);
             Name = "InfoBar";
-            Size = new Size(1264, 50);
+            Size = new Size(1531, 50);
             ((System.ComponentModel.ISupportInitialize)imgNotification).EndInit();
             ((System.ComponentModel.ISupportInitialize)imgBattery).EndInit();
             ((System.ComponentModel.ISupportInitialize)imgWifi).EndInit();

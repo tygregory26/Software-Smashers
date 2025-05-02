@@ -158,3 +158,4 @@ C:\Users\tysou\OneDrive\Documents\GitHub\Software-Smashers\Software-Smashers\ACa
 C:\Users\tysou\OneDrive\Documents\GitHub\Software-Smashers\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.pdb
 C:\Users\tysou\OneDrive\Documents\GitHub\Software-Smashers\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.genruntimeconfig.cache
 C:\Users\tysou\OneDrive\Documents\GitHub\Software-Smashers\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\ref\SoftwareSmashers.dll
+C:\Users\daisy\OneDrive\Desktop\Software-Smashers\ACarThing\SoftwareSmashers\obj\Debug\net8.0-windows\SoftwareSmashers.background.resources

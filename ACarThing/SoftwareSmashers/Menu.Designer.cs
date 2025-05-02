@@ -85,7 +85,7 @@
             btn_Menu_logout.FlatStyle = FlatStyle.Flat;
             btn_Menu_logout.Font = new Font("Verdana", 10F, FontStyle.Bold);
             btn_Menu_logout.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_logout.Location = new Point(49, 728);
+            btn_Menu_logout.Location = new Point(48, 746);
             btn_Menu_logout.Name = "btn_Menu_logout";
             btn_Menu_logout.Size = new Size(169, 85);
             btn_Menu_logout.TabIndex = 6;
@@ -100,7 +100,7 @@
             btn_Menu_viewLogs.FlatStyle = FlatStyle.Flat;
             btn_Menu_viewLogs.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_viewLogs.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_viewLogs.Location = new Point(0, 519);
+            btn_Menu_viewLogs.Location = new Point(0, 563);
             btn_Menu_viewLogs.Name = "btn_Menu_viewLogs";
             btn_Menu_viewLogs.Size = new Size(267, 85);
             btn_Menu_viewLogs.TabIndex = 7;
@@ -115,7 +115,7 @@
             btn_Menu_editVehicle.FlatStyle = FlatStyle.Flat;
             btn_Menu_editVehicle.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_editVehicle.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_editVehicle.Location = new Point(0, 610);
+            btn_Menu_editVehicle.Location = new Point(0, 645);
             btn_Menu_editVehicle.Name = "btn_Menu_editVehicle";
             btn_Menu_editVehicle.Size = new Size(267, 85);
             btn_Menu_editVehicle.TabIndex = 8;
@@ -150,6 +150,7 @@
             Controls.Add(pic_Menu_logo);
             Controls.Add(btn_Menu_myVehicles);
             Controls.Add(btn_Menu_settings);
+            Location = new Point(0, 50);
             Name = "Menu";
             Size = new Size(267, 843);
             ((System.ComponentModel.ISupportInitialize)pic_Menu_logo).EndInit();

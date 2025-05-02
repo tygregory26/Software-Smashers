@@ -34,8 +34,9 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1531, 842);
+            ClientSize = new Size(1531, 892);
             ForeColor = SystemColors.ControlText;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "ACarThing";
             Text = "Software Smashers";
             Load += Form1_Load;

@@ -19,6 +19,7 @@ namespace SoftwareSmashers
         public NewUser()
         {
             InitializeComponent();
+            Location = new System.Drawing.Point(0, 50);
             lbl_NewUser_register.Text = "Register";
             lbl_NewUser_password.Show();
             txt_NewUser_password.Show();
@@ -29,6 +30,7 @@ namespace SoftwareSmashers
         public NewUser(int userID)
         {
             InitializeComponent();
+            Location = new System.Drawing.Point(-230, 50);
             lbl_NewUser_register.Text = "Edit";
             lbl_NewUser_password.Hide();
             txt_NewUser_password.Hide();

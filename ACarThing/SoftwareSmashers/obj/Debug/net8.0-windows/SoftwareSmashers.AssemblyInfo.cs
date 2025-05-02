@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoftwareSmashers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf8a10ece3dd8fcd03d370e9ce458841f3fc706b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+239a0c5eca0b10a66ca8c7fa146dbf09dc372d85")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoftwareSmashers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoftwareSmashers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

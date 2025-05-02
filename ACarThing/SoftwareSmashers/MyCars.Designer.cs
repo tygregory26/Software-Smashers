@@ -139,7 +139,7 @@
             Controls.Add(dataGrid_MyCars_CarsView);
             Controls.Add(btn_MyCars_selectVehicle);
             Controls.Add(btn_MyCars_registerNew);
-            Location = new Point(267, 0);
+            Location = new Point(267, 50);
             Name = "MyCars";
             Size = new Size(1264, 843);
             Load += MyCars_Load;

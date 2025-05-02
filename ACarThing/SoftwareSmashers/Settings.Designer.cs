@@ -260,7 +260,7 @@
             Controls.Add(grp_Settings_settings);
             Controls.Add(btn_Settings_save);
             Controls.Add(btn_Settings_cancel);
-            Location = new Point(267, 0);
+            Location = new Point(267, 50);
             Name = "Settings";
             Size = new Size(1264, 843);
             grp_Settings_settings.ResumeLayout(false);
