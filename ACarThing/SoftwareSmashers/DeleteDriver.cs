@@ -25,6 +25,7 @@ namespace SoftwareSmashers
             InitializeComponent();
             this.carID = carID;
             this.userID = userID;
+            dataGrid_Driver_data.DataSource = dbData.viewDrivers(carID);
         }
 
         private void btn_DeleteCar_deleteDriver_Click(object sender, EventArgs e)
@@ -47,6 +48,8 @@ namespace SoftwareSmashers
             {
                 MessageBox.Show(driverEmail + " is not a driver of this vehicle.");
             }
+
+            dataGrid_Driver_data.DataSource = dbData.viewDrivers(carID);
         }
         private void btn_DeleteCar_addDriver_Click(object sender, EventArgs e)
         {
@@ -64,6 +67,8 @@ namespace SoftwareSmashers
             {
                 dbData.addDriver(driverEmail, carID);
             }
+
+            dataGrid_Driver_data.DataSource = dbData.viewDrivers(carID);
         }
 
         private void btn_DeleteCar_cancel_Click(object sender, EventArgs e)
