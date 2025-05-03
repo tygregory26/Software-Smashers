@@ -52,22 +52,30 @@ namespace SoftwareSmashers
             string lName = txt_NewUser_lname.Text;
             string phone = txt_NewUser_phoneNum.Text;
 
-            // todo - will need to add default settings info to this when the newUser function is updated (but only when new user - not when editing
-            dbData.newUser(fName, lName, email, phone, pass);
-
-            int? userID = dbData.login(email, pass);
-
-            if (userID.HasValue)
+            if (edit)
             {
+                dbData.updateUser(userID, fName, lName, email, phone);
                 this.Hide();
-                ((ACarThing)this.Parent).loadMenu(userID.Value);
+                ((ACarThing)this.Parent).loadMenu(userID);
             }
             else
             {
-                this.Hide();
-                ((ACarThing)this.Parent).loadLogin();
+                dbData.newUser(fName, lName, email, phone, pass);
+                int? user = dbData.login(email, pass);
+
+                if (user.HasValue)
+                {
+                    this.Hide();
+                    ((ACarThing)this.Parent).loadMenu(user.Value);
+                }
+                else
+                {
+                    this.Hide();
+                    ((ACarThing)this.Parent).loadLogin();
+                }
+                return;
+
             }
-            return;
         }
 
         private void btn_NewUser_cancel_Click(object sender, EventArgs e)

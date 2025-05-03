@@ -80,14 +80,13 @@ namespace SoftwareSmashers
             return false;
         }
 
-        public static Boolean updateUser(string userID, string firstName, string lastName, string email, string phoneNum,
-                string password)
+        public static Boolean updateUser(int userID, string firstName, string lastName, string email, string phoneNum)
         {
             try
             {
                 string query = "UPDATE `group1-csci463_ACarThing`.user SET " +
                         "firstName = '" + firstName + "', lastName = '" + lastName + "', email = '" + email + "', " +
-                        "phoneNumber = '" + phoneNum + "', password = '" + password + "' " +
+                        "phoneNumber = '" + phoneNum + "'," +
                         "WHERE userID = " + userID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();
@@ -597,13 +596,13 @@ namespace SoftwareSmashers
             {
                 string query = "SELECT timeZone FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return command.ExecuteScalar()?.ToString() ?? "UTC";
+                return command.ExecuteScalar()?.ToString() ?? "Central Time";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return "UTC";
+            return "Central Time";
         }
 
         public static string getNotifications(int userID)
@@ -627,13 +626,13 @@ namespace SoftwareSmashers
             {
                 string query = "SELECT lengthUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return command.ExecuteScalar()?.ToString() ?? "metric";
+                return command.ExecuteScalar()?.ToString() ?? "Miles";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return "metric";
+            return "Miles";
         }
 
         public static string getVolumeUnits(int userID)
@@ -642,13 +641,13 @@ namespace SoftwareSmashers
             {
                 string query = "SELECT volumeUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return command.ExecuteScalar()?.ToString() ?? "metric";
+                return command.ExecuteScalar()?.ToString() ?? "Gallons";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return "metric";
+            return "Gallons";
         }
 
         public static string getTempUnits(int userID)
@@ -657,13 +656,13 @@ namespace SoftwareSmashers
             {
                 string query = "SELECT temperatureUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return command.ExecuteScalar()?.ToString() ?? "metric";
+                return command.ExecuteScalar()?.ToString() ?? "Fahrenheit";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return "metric";
+            return "Fahrenheit";
         }
 
         public static string getTimeUnits(int userID)
@@ -672,13 +671,13 @@ namespace SoftwareSmashers
             {
                 string query = "SELECT timeUnits FROM `group1-csci463_ACarThing`.user WHERE userID = " + userID + ";";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                return command.ExecuteScalar()?.ToString() ?? "24h";
+                return command.ExecuteScalar()?.ToString() ?? "12 hour";
             }
             catch (MySqlException ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            return "24h";
+            return "12 hour";
         }
 
 
