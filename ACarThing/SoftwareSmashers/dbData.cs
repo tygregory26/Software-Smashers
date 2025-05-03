@@ -86,7 +86,7 @@ namespace SoftwareSmashers
             {
                 string query = "UPDATE `group1-csci463_ACarThing`.user SET " +
                         "firstName = '" + firstName + "', lastName = '" + lastName + "', email = '" + email + "', " +
-                        "phoneNumber = '" + phoneNum + "'," +
+                        "phoneNumber = '" + phoneNum + "'" +
                         "WHERE userID = " + userID + "; ";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();

@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Org.BouncyCastle.Asn1.Cmp.Challenge;
 
 namespace SoftwareSmashers
 {
@@ -98,8 +99,12 @@ namespace SoftwareSmashers
 
             if (newCar)
             {
-                // will need to get vehicleID back from this?
-                carID = dbData.addVehicle(userID, make, model, year, vin, type, .42f, .34f, .45f, .98f, name);
+                Random random = new Random();
+                float v1 = (float)(random.NextDouble() * 100);
+                float v2 = (float)(random.NextDouble() * 100);
+                float v3 = (float)(random.NextDouble() * 100);
+                float v4 = (float)(random.NextDouble() * 70 + 70);
+                carID = dbData.addVehicle(userID, make, model, year, vin, type, 42f, 34f, 45f, 98f, name);
 
                 if (carID == 0)
                 {
