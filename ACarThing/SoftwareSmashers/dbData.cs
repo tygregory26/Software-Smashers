@@ -798,5 +798,23 @@ namespace SoftwareSmashers
         {
             return true;
         }
+
+        public static DataTable? viewDrivers(int carID)
+        {
+            try
+            {
+                string query = "";
+
+                MySqlDataAdapter sqlData = new MySqlDataAdapter(query, connection);
+                DataTable dTable = new DataTable();
+                sqlData.Fill(dTable);
+                return dTable;
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return null;
+        }
     }
 }
