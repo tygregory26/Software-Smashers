@@ -23,6 +23,7 @@ namespace SoftwareSmashers
         {
             this.carID = carID;
             InitializeComponent();
+            lbl_Logs_title.Text = "Logs for " + dbData.getCarName(carID);
             dataGrid_Logs_data.DataSource = dbData.viewLogs(carID);
         }
 

@@ -72,7 +72,7 @@ namespace SoftwareSmashers
             string type = "Break in";
             string message = "The door sensor has gone off";
 
-            if (dbData.createLog(carID, type, message))
+            if (dbData.createLog(carID, message, type))
             {
                 MessageBox.Show("Alert! Your car, " + dbData.getCarName(carID) + " has a new message.\n" + message);
             }
