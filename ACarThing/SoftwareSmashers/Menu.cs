@@ -74,7 +74,7 @@ namespace SoftwareSmashers
 
             if (dbData.createLog(carID, type, message))
             {
-                MessageBox.Show("Alert! Your car, " + dbData.getCarName(carID) + " has a new message./n" + message);
+                MessageBox.Show("Alert! Your car, " + dbData.getCarName(carID) + " has a new message.\n" + message);
             }
         }
 
