@@ -796,14 +796,29 @@ namespace SoftwareSmashers
 
         public static Boolean createLog(int carID, string entry, string type)
         {
-            return true;
+            try
+            {
+                string query = "INSERT INTO `group1-csci463_ACarThing`.Logs (vehicleID, logEntry, logType) " +
+                               "VALUES (" + carID + ", '" + entry + "', '" + type + "');";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.ExecuteNonQuery();
+                return true;
+            }
+            catch (MySqlException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            return false;
         }
 
         public static DataTable? viewDrivers(int carID)
         {
             try
             {
-                string query = "";
+                string query = "SELECT u.firstName AS 'First Name', u.lastName AS 'Last Name', u.email AS 'Email' " +
+                               "FROM `group1-csci463_ACarThing`.drivers d " +
+                               "JOIN `group1-csci463_ACarThing`.user u ON d.driverLink = u.userID " +
+                               "WHERE d.vehicleLink = " + carID + ";";
 
                 MySqlDataAdapter sqlData = new MySqlDataAdapter(query, connection);
                 DataTable dTable = new DataTable();
