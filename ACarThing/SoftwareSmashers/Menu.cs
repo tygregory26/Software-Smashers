@@ -68,9 +68,9 @@ namespace SoftwareSmashers
         {
             // this is to "fake" a notification - we are going to update this to match the car we want to be looking at.
 
-            int carID = 1;
-            string type = "";
-            string message = "";
+            int carID = 7;
+            string type = "Break in";
+            string message = "The door sensor has gone off";
 
             if (dbData.createLog(carID, type, message))
             {

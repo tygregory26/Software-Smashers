@@ -105,6 +105,7 @@ namespace SoftwareSmashers
                 float v3 = (float)(random.NextDouble() * 100);
                 float v4 = (float)(random.NextDouble() * 70 + 70);
                 carID = dbData.addVehicle(userID, make, model, year, vin, type, 42f, 34f, 45f, 98f, name);
+                dbData.createLog(carID, "This vehicle was added to the app!", "New Vehicle");
 
                 if (carID == 0)
                 {

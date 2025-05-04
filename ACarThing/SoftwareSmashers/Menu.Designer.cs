@@ -45,10 +45,9 @@
             btn_Menu_settings.FlatStyle = FlatStyle.Flat;
             btn_Menu_settings.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_settings.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_settings.Location = new Point(0, 147);
-            btn_Menu_settings.Margin = new Padding(2, 2, 2, 2);
+            btn_Menu_settings.Location = new Point(0, 245);
             btn_Menu_settings.Name = "btn_Menu_settings";
-            btn_Menu_settings.Size = new Size(187, 51);
+            btn_Menu_settings.Size = new Size(267, 85);
             btn_Menu_settings.TabIndex = 0;
             btn_Menu_settings.Text = "Welcome, Name";
             btn_Menu_settings.UseVisualStyleBackColor = true;
@@ -61,10 +60,9 @@
             btn_Menu_myVehicles.FlatStyle = FlatStyle.Flat;
             btn_Menu_myVehicles.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_myVehicles.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_myVehicles.Location = new Point(0, 245);
-            btn_Menu_myVehicles.Margin = new Padding(2, 2, 2, 2);
+            btn_Menu_myVehicles.Location = new Point(0, 408);
             btn_Menu_myVehicles.Name = "btn_Menu_myVehicles";
-            btn_Menu_myVehicles.Size = new Size(187, 51);
+            btn_Menu_myVehicles.Size = new Size(267, 85);
             btn_Menu_myVehicles.TabIndex = 1;
             btn_Menu_myVehicles.Text = "My Vehicles";
             btn_Menu_myVehicles.UseVisualStyleBackColor = true;
@@ -73,10 +71,9 @@
             // pic_Menu_logo
             // 
             pic_Menu_logo.Image = Properties.Resources.software_smashers_noText;
-            pic_Menu_logo.Location = new Point(2, 0);
-            pic_Menu_logo.Margin = new Padding(2, 2, 2, 2);
+            pic_Menu_logo.Location = new Point(3, 0);
             pic_Menu_logo.Name = "pic_Menu_logo";
-            pic_Menu_logo.Size = new Size(183, 143);
+            pic_Menu_logo.Size = new Size(261, 238);
             pic_Menu_logo.SizeMode = PictureBoxSizeMode.Zoom;
             pic_Menu_logo.TabIndex = 5;
             pic_Menu_logo.TabStop = false;
@@ -88,10 +85,9 @@
             btn_Menu_logout.FlatStyle = FlatStyle.Flat;
             btn_Menu_logout.Font = new Font("Verdana", 10F, FontStyle.Bold);
             btn_Menu_logout.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_logout.Location = new Point(34, 448);
-            btn_Menu_logout.Margin = new Padding(2, 2, 2, 2);
+            btn_Menu_logout.Location = new Point(49, 747);
             btn_Menu_logout.Name = "btn_Menu_logout";
-            btn_Menu_logout.Size = new Size(118, 51);
+            btn_Menu_logout.Size = new Size(169, 85);
             btn_Menu_logout.TabIndex = 6;
             btn_Menu_logout.Text = "Log Out";
             btn_Menu_logout.UseVisualStyleBackColor = true;
@@ -104,10 +100,9 @@
             btn_Menu_viewLogs.FlatStyle = FlatStyle.Flat;
             btn_Menu_viewLogs.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_viewLogs.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_viewLogs.Location = new Point(0, 338);
-            btn_Menu_viewLogs.Margin = new Padding(2, 2, 2, 2);
+            btn_Menu_viewLogs.Location = new Point(0, 563);
             btn_Menu_viewLogs.Name = "btn_Menu_viewLogs";
-            btn_Menu_viewLogs.Size = new Size(187, 51);
+            btn_Menu_viewLogs.Size = new Size(267, 85);
             btn_Menu_viewLogs.TabIndex = 7;
             btn_Menu_viewLogs.Text = "Activity";
             btn_Menu_viewLogs.UseVisualStyleBackColor = true;
@@ -122,10 +117,9 @@
             btn_Menu_editVehicle.FlatStyle = FlatStyle.Flat;
             btn_Menu_editVehicle.Font = new Font("Verdana", 12F, FontStyle.Bold);
             btn_Menu_editVehicle.ForeColor = Color.FromArgb(37, 30, 56);
-            btn_Menu_editVehicle.Location = new Point(0, 387);
-            btn_Menu_editVehicle.Margin = new Padding(2, 2, 2, 2);
+            btn_Menu_editVehicle.Location = new Point(0, 645);
             btn_Menu_editVehicle.Name = "btn_Menu_editVehicle";
-            btn_Menu_editVehicle.Size = new Size(187, 51);
+            btn_Menu_editVehicle.Size = new Size(267, 85);
             btn_Menu_editVehicle.TabIndex = 8;
             btn_Menu_editVehicle.Text = "Edit Vehicle";
             btn_Menu_editVehicle.UseVisualStyleBackColor = true;
@@ -138,10 +132,9 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Verdana", 12F, FontStyle.Bold);
             button1.ForeColor = Color.FromArgb(37, 30, 56);
-            button1.Location = new Point(0, 196);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Location = new Point(0, 327);
             button1.Name = "button1";
-            button1.Size = new Size(187, 51);
+            button1.Size = new Size(267, 85);
             button1.TabIndex = 9;
             button1.Text = "Edit User";
             button1.UseVisualStyleBackColor = true;
@@ -149,7 +142,7 @@
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 155, 137);
             Controls.Add(button1);
@@ -160,9 +153,8 @@
             Controls.Add(btn_Menu_myVehicles);
             Controls.Add(btn_Menu_settings);
             Location = new Point(0, 50);
-            Margin = new Padding(2, 2, 2, 2);
             Name = "Menu";
-            Size = new Size(187, 506);
+            Size = new Size(267, 843);
             ((System.ComponentModel.ISupportInitialize)pic_Menu_logo).EndInit();
             ResumeLayout(false);
         }

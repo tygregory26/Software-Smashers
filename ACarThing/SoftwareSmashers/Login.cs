@@ -23,12 +23,13 @@ namespace SoftwareSmashers
             string user = txt_Login_email.Text;
             string pass = txt_Login_password.Text;
 
-            if (user.Length == 0 && pass.Length == 0)
-            {
-                this.Hide();
-                ((ACarThing)this.Parent).loadMenu(1);
-                return;
-            }
+            // This was being used for testing purposes
+            //if (user.Length == 0 && pass.Length == 0)
+            //{
+            //    this.Hide();
+            //    ((ACarThing)this.Parent).loadMenu(1);
+            //    return;
+            //}
 
             int? userID = dbData.login(user, pass);
 

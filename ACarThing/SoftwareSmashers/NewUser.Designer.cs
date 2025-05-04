@@ -177,6 +177,7 @@
             txt_NewUser_password.BorderStyle = BorderStyle.None;
             txt_NewUser_password.Location = new Point(286, 365);
             txt_NewUser_password.Name = "txt_NewUser_password";
+            txt_NewUser_password.PasswordChar = '*';
             txt_NewUser_password.Size = new Size(237, 24);
             txt_NewUser_password.TabIndex = 11;
             // 
